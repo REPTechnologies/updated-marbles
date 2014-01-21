@@ -6,7 +6,8 @@ class UsersController < ApplicationController
    def create
     @user = User.new(user_params)    # Not the final implementation!
     if @user.save
-      redirect_to root_url, notice: "Success! Stay tune!"
+      redirect_to root_url
+      flash[:success] = "Success! Stay tuned!"
       
     else
       render action: 'new', alert: "Signup failed."
