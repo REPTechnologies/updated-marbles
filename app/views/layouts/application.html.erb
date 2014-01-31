@@ -7,19 +7,19 @@
   <meta name="description" content="marbles.mx landing page">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>marbles.mx | get in the mix</title>
-  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "custom", media: "all", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 	
   <div id="container" class="<%= params[:controller] %>">
     <%= render "layouts/application/header" %>
-    <div id="content">
+
       <%= yield %>
-    </div>
+   
 <%= render "layouts/application/footer" %>
   </div>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "custom", "data-turbolinks-track" => true %>
 
 </body>
 </html>
