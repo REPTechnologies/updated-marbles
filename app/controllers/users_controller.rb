@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     if @user.save
      redirect_to root_url
       flash[:success] = "Success! Stay tuned!"
-       
+       UserMailer.welcome_email(@user).deliver
       
     else
      
