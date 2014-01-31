@@ -205,6 +205,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  actionmailer (~> 4.0.2)
   bcrypt-ruby (= 3.1.2)
   bootstrap-sass (= 3.0.3.0)
   bootstrap-will_paginate (= 0.0.9)

@@ -9,6 +9,7 @@ gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3', '1.3.8'
@@ -18,6 +19,8 @@ group :development, :test do
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.3.9'
    gem 'webrick', '~> 1.3.1'
+  gem "actionmailer", "~> 4.0.2"
+  
 end
 
 group :test do
