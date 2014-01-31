@@ -11,8 +11,8 @@ class UsersController < ApplicationController
        
       
     else
-      
-      render action: 'new', alert: "Signup failed."
+     
+      render action: 'new'
     end
   end
   

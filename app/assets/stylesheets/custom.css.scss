@@ -11,7 +11,12 @@ $grayMediumLight: #eaeaea;
   box-sizing: border-box;
 }
 
-
+.f1 {
+  width: 800px;
+  position:relative;
+  margin-left: 50%;
+  z-index: 10;
+}
 /* miscellaneous */
 
 .debug_dump {
@@ -27,6 +32,14 @@ ror_explanation {
   color: #f00;
   ul {
     list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: bullet;
     margin: 0 0 18px 0;
   }
 }
@@ -48,7 +61,7 @@ $dark-text-color: $dark-gray-color;
 
 $content-width: 1200px;
 $padding-size: 10px;
-$footer-height: 40px;
+$footer-height: 50px;
 
 @mixin border-box() {
   -moz-box-sizing: border-box;
@@ -87,12 +100,12 @@ header.fixed {
 }
 
 footer{
- 
+  
   position: fixed;
   width: 100%;
   bottom: 0;
   left: 0;
-  height: 65px;
+  height: $footer-height;
 }
 
 .center {
