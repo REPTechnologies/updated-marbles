@@ -77,4 +77,15 @@ MarblesLandingpage::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  
+  config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+ enable_starttls_auto: true, 
+  address:              'smtp.gmail.com',
+  port:                 587,
+  domain:               'myApp.com',
+  user_name:            'testerov3r9000@gmail.com',
+  password:             'Libraries2012',
+  authentication:       'plain'
+   }
 end
