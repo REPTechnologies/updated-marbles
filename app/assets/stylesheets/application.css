@@ -12,6 +12,7 @@
  *= require_self
  *= require normalize
  *= require main
+ *= require bootstrap
  *= require custom
  *= require_tree .
  */

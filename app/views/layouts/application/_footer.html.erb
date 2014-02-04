@@ -1,15 +1,17 @@
 <footer>
- 		<div class="f1">
-    <%= form_for(@user) do |f| %>
-
-      <%= f.label :email, "Coming Soon!! Want updates?"%>
-      <%= f.text_field :email %>
- 
-      <%= f.submit "Sign up", class: "btn btn-large btn-primary" %>
-      
-    <% end %>
-
+  <div class="center">
+    <div class="right">
+      <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" id="new_user" method="post">
+        <div style="margin:0;padding:0;display:inline">
+          <input name="utf8" type="hidden" value="✓">
+        </div>
+        <label for="user_email">Coming Soon!! Want updates?</label>
+        <div id="email_group" class="form-group">
+          <input id="user_email" name="user[email]" type="text" class="form-control">
+        </div>
+        <input class="btn btn-large btn-primary" name="commit" type="submit" value="Sign up">
+      </form>
+    </div>
   </div>
-
 </footer>
 
