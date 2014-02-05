@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>marbles.mx | get in the mix</title>
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= favicon_link_tag 'icon.ico' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="container" class="<%= params[:controller] %>">
+  <div id="page" class="<%= params[:controller] %>">
     <%= render "layouts/application/header" %>
     <div id="content">
       <%= yield %>
