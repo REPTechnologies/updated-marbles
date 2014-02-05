@@ -1,7 +1,21 @@
 @import 'defs';
 
+
+p.grey {
+  
+  color: $primary-color;
+  font-size: 20pt;
+  text-align: center;
+}
+
+p.middle {
+  
+  color: $primary-color;
+  font-size: 18pt;
+
+}
 body {
-  background-color: $primary-color;
+  background-color: $white-color;
 }
 
 #container {
@@ -67,11 +81,11 @@ section {
   padding: 1px $padding-size;
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: $light-gray-color;
 }
 
-secton:nth-child(odd) {
+section:nth-child(even) {
   background-color: $white-color;
 }
 
@@ -82,3 +96,6 @@ secton:nth-child(odd) {
     margin: 0 0 18px 0;
   }
 }
+
+
+
