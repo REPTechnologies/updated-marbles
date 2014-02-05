@@ -16,7 +16,7 @@ header, footer {
   position: relative;
 }
 
-header.main {
+header.main, footer {
   z-index: 10;
   padding: $padding-size;
 }
