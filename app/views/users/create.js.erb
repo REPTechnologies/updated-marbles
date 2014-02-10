@@ -1,10 +1,13 @@
 App.clearMessages();
 <% if @user.errors.any? %>
   <% @user.errors.full_messages.each do |msg| %>
+  	<% if msg == "Email can't be blank"%>
+  	<%else%> 	
     App.errorMessage('<%= j msg %>');
+    <%end%>
   <% end %>
   $('#email_group').addClass('has-error').removeClass('has-success');
 <% else %>
-  App.successMessage('Sucess! We'll keep you posted.');
+  App.successMessage("Sucess! We'll keep you posted.");
   $('#email_group').addClass('has-success').removeClass('has-error');
 <% end %>
