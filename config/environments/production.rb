@@ -35,6 +35,8 @@ MarblesLandingpage::Application.configure do
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
 
+  config.assets.initialize_on_precompile = false
+
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
@@ -77,15 +79,16 @@ MarblesLandingpage::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-  
+
   config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = {
- enable_starttls_auto: true, 
-  address:              'smtp.gmail.com',
-  port:                 587,
-  domain:               'myApp.com',
-  user_name:            'testerov3r9000@gmail.com',
-  password:             'Libraries2012',
-  authentication:       'plain'
-   }
+  config.action_mailer.smtp_settings = {
+    enable_starttls_auto: true,
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'reptech.io',
+    user_name:            'donovan@reptech.io',
+    password:             'bgdxeipszbavyxys',
+    authentication:       'plain'
+  }
+
 end

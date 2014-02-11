@@ -1,10 +1,10 @@
 class UserMailer < ActionMailer::Base
-  default from: "testerOv3r9000@gmail.com"
+  default from: "marbles@reptech.io"
 
   def welcome_email(user)
     @user = user
-    
-    mail(to: @user.email, subject: 'Message', from: 'testerOv3r9000@gmail.com')
-    
+
+    mail(to: @user.email, subject: "Welcome to marbles.io")
+
     end
 end
