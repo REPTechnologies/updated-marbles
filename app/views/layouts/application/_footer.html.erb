@@ -1,16 +1,37 @@
 <footer>
   <div class="center">
-    <div class="right">
-      <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" id="new_user" method="post">
-        <div style="margin:0;padding:0;display:inline">
-          <input name="utf8" type="hidden" value="✓">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-1">
+              <a href="https://www.facebook.com/pages/marblesmx/563236917102261">
+                <%= image_tag "circle_pack/fb.png", height: 34 %>
+              </a>
+            </div>
+            <div class="col-md-1">
+              <a href="https://twitter.com/marbles_mx">
+                <%= image_tag "circle_pack/twitter.png", height: 34 %>
+              </a>
+            </div>
+            <div class="col-md-1">
+              <a href="https://plus.google.com/110497402587675887674" rel="publisher">
+                <%= image_tag "circle_pack/google+.png", height: 34 %>
+              </a>
+            </div>
+          </div>
         </div>
-        <label for="user_email">Coming Soon!! Want updates?</label>
-        <div id="email_group" class="form-group">
-          <input id="user_email" name="user[email]" type="text" class="form-control" placeholder="your email">
+        <div class="col-md-6 right">
+          <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" id="new_user" method="post">
+            <input name="utf8" type="hidden" value="✓">
+            <label for="user_email">Coming Soon!! Want updates?</label>
+            <div id="email_group" class="form-group">
+              <input id="user_email" name="user[email]" type="text" class="form-control" placeholder="your email">
+            </div>
+            <input class="btn btn-large btn-primary" name="commit" type="submit" value="Sign up">
+          </form>
         </div>
-        <input class="btn btn-large btn-primary" name="commit" type="submit" value="Sign up">
-      </form>
+      </div>
     </div>
   </div>
 </footer>
