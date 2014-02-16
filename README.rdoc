@@ -1,3 +1,4 @@
 == Marbles Landing Page
 
-The other one was just a test. Made with Ruby on Rails.
+=== Deployment Status
+{<img alt="Status?branch=master" src="https://www.codeship.io/projects/d2804bb0-78d3-0131-1490-3a36723d28f5/status?branch=master" />}[https://www.codeship.io/projects/14082]
