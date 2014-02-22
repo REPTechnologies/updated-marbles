@@ -20,7 +20,7 @@ group :development, :test do
   gem 'childprocess', '0.3.9'
    gem 'webrick', '~> 1.3.1'
   gem "actionmailer", "~> 4.0.2"
-
+  
 end
 
 group :test do
@@ -58,9 +58,6 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
-
-# Use New Relic monitoring
-gem 'newrelic_rpm'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
