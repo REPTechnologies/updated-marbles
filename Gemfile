@@ -20,7 +20,7 @@ group :development, :test do
   gem 'childprocess', '0.3.9'
    gem 'webrick', '~> 1.3.1'
   gem "actionmailer", "~> 4.0.2"
-  
+
 end
 
 group :test do
@@ -70,3 +70,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Use New Relic monitoring
+gem 'newrelic_rpm'
