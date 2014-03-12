@@ -18,15 +18,16 @@ group :development, :test do
   gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.3.9'
-   gem 'webrick', '~> 1.3.1'
+  gem 'webrick', '~> 1.3.1'
   gem "actionmailer", "~> 4.0.2"
 
 end
 
 group :test do
-  gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
+  gem 'capybara-webkit', '1.1.1'
   gem 'factory_girl_rails', '4.2.1'
+  gem 'database_cleaner', '1.2.0'
 end
 
 # Use SCSS for stylesheets
