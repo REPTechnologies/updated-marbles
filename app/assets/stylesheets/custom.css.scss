@@ -5,7 +5,6 @@ body {
 }
 
 #page {
-  background-color: $white-color;
   min-height: 500px;
   padding-bottom: $footer-height;
 }
@@ -19,6 +18,21 @@ header, footer {
 header.main, footer {
   z-index: 10;
   padding: $padding-size;
+}
+
+header.main {
+  background: $primary-color url('../assets/banner.png') no-repeat center center;
+  @include background-size(cover);
+  height: 100vh;
+  
+  .container {
+    position: relative;
+    top: 25vh;
+    
+    .row {
+      padding: $padding-size;
+    }
+  }
 }
 
 .fixed {
@@ -66,17 +80,3 @@ section {
   padding-top: $padding-size;
   padding-bottom: $padding-size;
 }
-
-section:nth-child(even) {
-  background-color: $light-gray-color;
-}
-
-section:nth-child(odd) {
-  background-color: $white-color;
-}
-
-
-
-
-
-
