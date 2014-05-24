@@ -54,7 +54,7 @@ describe 'Landing page' do
     let(:submit) { 'submit-fixed' }
     
     before do
-      page.execute_script "window.scrollBy(0, window.innerHeight * 2)"
+      page.execute_script "window.scrollBy(0, window.innerHeight)"
     end
 
     describe 'with invalid information' do
