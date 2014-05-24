@@ -21,7 +21,7 @@ header.main, footer {
 }
 
 header.main {
-  background: $primary-color url('../assets/banner.png') no-repeat center center;
+  background: $primary-color image-url('banner.png') no-repeat center center;
   @include background-size(cover);
   height: 100vh;
   
