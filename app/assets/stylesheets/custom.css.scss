@@ -26,6 +26,11 @@ header.main {
   height: 100vh;
 }
 
+header.main > .container {
+  position: relative;
+  top: 25vh;
+}
+
 .fixed {
   @include border-box;
   position: fixed;
