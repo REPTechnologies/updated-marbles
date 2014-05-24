@@ -54,6 +54,7 @@ describe 'Landing page' do
     let(:submit) { 'submit-fixed' }
     
     before do
+      page.driver.resize_window(500, 500)
       page.execute_script "window.scrollBy(0, window.innerHeight)"
     end
 
