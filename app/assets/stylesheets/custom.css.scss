@@ -24,11 +24,15 @@ header.main {
   background: $primary-color url('../assets/banner.png') no-repeat center center;
   @include background-size(cover);
   height: 100vh;
-}
-
-header.main > .container {
-  position: relative;
-  top: 25vh;
+  
+  .container {
+    position: relative;
+    top: 25vh;
+    
+    .row {
+      padding: $padding-size;
+    }
+  }
 }
 
 .fixed {

@@ -4,12 +4,37 @@
     <h2 class="text-center">
       <span class="accent">marbles.mx </span>delivers local events and activities to help you thrive
     </h2>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+          <input name="utf8" type="hidden" value="✓">
+          <div id="email_group" class="form-group">
+            <input id="user_email" name="user[email]" type="text" class="form-control" placeholder="Enter email address">
+          </div>
+          <input class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
+        </form>
+      </div>
+    </div>
   </div>
 </header>
 <header class="fixed">
   <div class="container">
-    <%= image_tag "icon.png", height: '40'%>
-    <span class="accent">marbles.mx</span> get in the mix
+    <div class="row">
+      <div class="col-md-6">
+        <%= image_tag "icon.png", height: '40'%>
+        <span class="accent">marbles.mx</span> get in the mix
+      </div>
+      <div class="col-md-6 right">
+        <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+          <input name="utf8" type="hidden" value="✓">
+          <label for="user_email">Coming Soon!</label>
+          <div id="email_group" class="form-group">
+            <input id="user_email" name="user[email]" type="text" class="form-control" placeholder="Email">
+          </div>
+          <input class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
+        </form>
+      </div>
+    </div>
   </div>
 </header>
 <%= render "layouts/application/error_messages" %>
