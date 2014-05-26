@@ -16,7 +16,6 @@ header, footer {
 }
 
 header.main, footer {
-  z-index: 10;
   padding: $padding-size;
 }
 
@@ -24,11 +23,15 @@ header.main {
   background: $primary-color image-url('banner.png') no-repeat center center;
   @include background-size(cover);
   height: 100vh;
-  
+  min-height: 460px;
+  z-index: 10;
+
   .container {
-    position: relative;
-    top: 25vh;
-    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include translate(-50%,-50%);
+
     .row {
       padding: $padding-size;
     }
@@ -44,9 +47,8 @@ header.main {
 }
 
 header.fixed {
-  height: 60px;
   z-index: 5;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 div.fixed {
