@@ -23,11 +23,11 @@ header.main, footer {
 header.main {
   background: $primary-color image-url('banner.png') no-repeat center center;
   @include background-size(cover);
-  height: 100vh;
+  height: 80vh;
   
   .container {
     position: relative;
-    top: 25vh;
+    top: 15vh;
     
     .row {
       padding: $padding-size;
@@ -87,5 +87,10 @@ section.container {
  
 .glyphicon {
   padding-top: $padding-size;
-    font-size: 48px;
+  font-size: 48px;
+}
+
+.photo {
+  position: absolute;
+  height: 80vh;
 }
