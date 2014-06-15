@@ -90,7 +90,20 @@ section.container {
   font-size: 48px;
 }
 
-.photo {
-  position: absolute;
-  height: 80vh;
+#pathphoto {
+  background: $primary-color image-url('pathusplash.png') no-repeat center center;
+  @include background-size(cover);
+  height: 800px;
+  
+  .container {
+    margin-top: 300px;
+    
+    h1 {
+      color: $white-color;
+    }
+  }
+  
 }
+
+
+  
