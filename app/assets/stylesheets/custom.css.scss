@@ -82,3 +82,30 @@ section {
   padding-top: $padding-size;
   padding-bottom: $padding-size;
 }
+
+section.container {
+  margin-bottom: 50px;
+}
+ 
+.glyphicon {
+  padding-top: $padding-size;
+  font-size: 48px;
+}
+
+#pathphoto {
+  background: $primary-color image-url('pathusplash.png') no-repeat center center;
+  @include background-size(cover);
+  height: 800px;
+  
+  .container {
+    margin-top: 300px;
+    
+    h1 {
+      color: $white-color;
+    }
+  }
+  
+}
+
+
+  
