@@ -1,7 +1,7 @@
 var App = {
   messageTime: 3000
 };
-(function($, undefined) {
+(function ($, undefined) {
   var timer = null;
 
   var clearMessages = function clearMessagesFn() {
@@ -28,12 +28,18 @@ var App = {
 
   App.successMessage = function sucessMessageFn(msg) {
     addAlert(msg, 'alert-success');
+    ga('send', 'event', 'alert', 'success', msg, {'nonInteraction': true});
   };
 
   App.errorMessage = function errorMessageFn(msg) {
     addAlert(msg, 'alert-danger');
+    ga('send', 'event', 'alert', 'error', msg, {'nonInteraction': true});
   };
 
   App.clearMessages = clearMessages;
+
+  $('[name="commit"]').click(function () {
+    ga('send', 'event', 'button', 'click', 'get early access');
+  });
 })(jQuery);
 
