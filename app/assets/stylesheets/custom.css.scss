@@ -28,6 +28,10 @@ header.main {
  align-content: center;
 }
 
+#email_group {
+  box-sizing: border-box;
+}
+
 header.main {
   background: $primary-color image-url('banner.png') no-repeat center center;
   @include background-size(cover);
