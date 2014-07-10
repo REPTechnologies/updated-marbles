@@ -7,7 +7,7 @@
         <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
           <input name="utf8" type="hidden" value="✓">
           <div id="email_group" class="form-group">
-            <input id="user-email-main" name="user[email]" type="text" class="form-control" placeholder="Enter email address">
+            <input id="user-email-main" name="user[email]" type="text" class="form-conclasstrol" placeholder="Enter email address">
           </div>
           <input id="submit-main" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
         </form>
@@ -18,14 +18,14 @@
 <header class="fixed">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 col-sm-6 hidden-xs" id="fixed logo">
         <%= image_tag "marbles icon 4.lg.png", height: '40'%>
-        <span class="accent">marbles.mx</span> get in the mix
+        <span class="accent">marbles.mx</span><span id="get in the mix hidden-sm"> get in the mix</span>
       </div>
-      <div class="col-md-6 right col-sm-8 right col-xs-12 right">
+      <div class="col-lg-5 col-md-6 right col-sm-6">
         <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
           <input name="utf8" type="hidden" value="✓">
-          <label for="user_email">Coming Soon!</label>
+            <label id="coming_soon" for="user_email" class="hidden-md hidden-sm hidden-xs">Coming Soon!</label>
           <div id="email_group" class="form-group">
             <input id="user-email-fixed" name="user[email]" type="text" class="form-control" placeholder="Email">
           </div>

@@ -31,11 +31,11 @@ header.main {
 header.main {
   background: $primary-color image-url('banner.png') no-repeat center center;
   @include background-size(cover);
-  height: 80vh;
+  height: 83vh;
   
   .container {
     position: relative;
-    top: 15vh;
+    top: 10vh;
     
     .row {
       padding: $padding-size;
@@ -49,6 +49,24 @@ header.main {
   top: 0;
   width: 100%;
   left: 0;
+}
+
+#get in the mix {
+  display: inline-block;
+  float: left;
+  margin: 0px;  
+}
+  
+#coming_soon { 
+  display: inline-block;
+  float: left;
+  margin: $padding-size;
+}
+
+#submit.fixed {
+  display: inline-block;
+  float: left;
+  margin: 0px;
 }
 
 header.fixed {
