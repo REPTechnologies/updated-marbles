@@ -15,9 +15,17 @@ header, footer {
   position: relative;
 }
 
-header.main, footer {
+footer {
   z-index: 10;
   padding: $padding-size;
+}
+
+header.main {
+  z-index: 10;
+}
+
+#logo {
+ align-content: center;
 }
 
 header.main {
