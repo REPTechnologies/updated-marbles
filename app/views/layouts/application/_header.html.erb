@@ -1,13 +1,16 @@
 <header class="main">
-  <div class="container text-center" id="logo">
+  <div class="container text-center">
     <%= image_tag "marbles 4.small.png" %>
-    <h2 class="col-sm-8 col-sm-offset-2">delivers local events and activities so you can experience life beyond the classroom</h2>
+    <h2 class="text-center">
+      <span class="accent">marbles.mx </span>delivers local events and activities so you can
+    </h2>
+    <h2> experience life beyond the classroom</h2>
     <div class="row">
       <div class="col-md-12 text-center">
-        <form id="new_user" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+        <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
           <input name="utf8" type="hidden" value="✓">
           <div id="email_group" class="form-group">
-            <input id="user-email-main" name="user[email]" type="text" class="form-conclasstrol" placeholder="Enter email address">
+            <input id="user-email-main" name="user[email]" type="text" class="form-control" placeholder="Enter email address">
           </div>
           <input id="submit-main" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
         </form>
@@ -18,14 +21,13 @@
 <header class="fixed">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-sm-6 hidden-xs" id="fixed logo">
+      <div class="col-xs-12 col-sm-5">
         <%= image_tag "marbles icon 4.lg.png", height: '40'%>
-        <span class="accent">marbles.mx</span><span id="get in the mix hidden-sm"> get in the mix</span>
+        <span class="accent">marbles.mx</span> get in the mix
       </div>
-      <div class="col-lg-5 col-md-6 right col-sm-6">
+      <div class="col-xs-12 col-sm-7 right">
         <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
           <input name="utf8" type="hidden" value="✓">
-            <label id="coming_soon" for="user_email" class="hidden-md hidden-sm hidden-xs">Coming Soon!</label>
           <div id="email_group" class="form-group">
             <input id="user-email-fixed" name="user[email]" type="text" class="form-control" placeholder="Email">
           </div>

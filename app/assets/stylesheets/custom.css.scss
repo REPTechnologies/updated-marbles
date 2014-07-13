@@ -15,32 +15,24 @@ header, footer {
   position: relative;
 }
 
-footer {
+header.main, footer {
   z-index: 10;
   padding: $padding-size;
 }
 
 header.main {
-  z-index: 10;
-}
-
-#logo {
- align-content: center;
-}
-
-#email_group {
-  box-sizing: border-box;
-}
-
-header.main {
   background: $primary-color image-url('banner.png') no-repeat center center;
   @include background-size(cover);
-  height: 83vh;
-  
+  height: 80vh;
+  min-height: 460px;
+  z-index: 10;
+
   .container {
-    position: relative;
-    top: 10vh;
-    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include translate(-50%,-50%);
+
     .row {
       padding: $padding-size;
     }
@@ -55,28 +47,9 @@ header.main {
   left: 0;
 }
 
-#get in the mix {
-  display: inline-block;
-  float: left;
-  margin: 0px;  
-}
-  
-#coming_soon { 
-  display: inline-block;
-  float: left;
-  margin: $padding-size;
-}
-
-#submit.fixed {
-  display: inline-block;
-  float: left;
-  margin: 0px;
-}
-
 header.fixed {
-  height: 60px;
   z-index: 5;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 div.fixed {
