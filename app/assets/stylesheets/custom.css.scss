@@ -94,7 +94,7 @@ section.container {
 }
 
 #pathphoto {
-  background: $primary-color image-url('pathusplash.png') no-repeat center center;
+  background: $primary-color image-url("pathusplash.png') no-repeat center center;
   @include background-size(cover);
   height: 800px;
   
