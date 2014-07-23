@@ -15,13 +15,17 @@ header, footer {
   position: relative;
 }
 
+.mainlogo {
+  max-height: 200px;
+}
+
 header.main, footer {
   z-index: 10;
   padding: $padding-size;
 }
 
 header.main {
-  background: $primary-color image-url('banner.png') no-repeat center center;
+  background: $primary-color image-url('banner1.png') no-repeat center center;
   @include background-size(cover);
   height: 80vh;
   min-height: 460px;
@@ -94,7 +98,7 @@ section.container {
 }
 
 #pathphoto {
-  background: $primary-color image-url('pathusplash.png') no-repeat center center;
+  background: $primary-color image-url('pathusplash.1.png') no-repeat center center;
   @include background-size(cover);
   height: 800px;
   
