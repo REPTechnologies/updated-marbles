@@ -123,4 +123,38 @@ section.container {
   display: inline-block;
 }
 
+#steps {
+  background: $primary-color image-url('steps.png') no-repeat center center;
+  @include background-size(cover);
+  height: 400px;
   
+  .container {
+    margin-top: 120px;
+    
+    h2 {
+      color: $white-color;
+    }
+  }
+}
+
+#signup {
+  text-align: center;
+  position: relative;
+  padding: $padding-size;
+}
+
+.position {
+  color: $dark-gray-color;
+  margin-top: 25px;
+  text-align: center
+}
+
+.name {
+  text-align: center;
+}
+
+.blurb {
+  text-align: center;
+  margin-top: 30px;
+  padding: $padding-size;
+}
