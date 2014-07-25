@@ -109,8 +109,52 @@ section.container {
       color: $white-color;
     }
   }
-  
 }
 
+.findscreenshot {
+  max-width: 400px;
+}
 
+.featuressubheading {
+  color: #fff;
+  font-size: 24px;
+  background-color: #997e57;
+  padding: 3px 6px;
+  display: inline-block;
+}
+
+#steps {
+  background: $primary-color image-url('steps2.png') no-repeat center center;
+  @include background-size(cover);
+  height: 400px;
   
+  .container {
+    margin-top: 120px;
+    
+    h2 {
+      color: $white-color;
+    }
+  }
+}
+
+#signup {
+  text-align: center;
+  position: relative;
+  padding: $padding-size;
+}
+
+.position {
+  color: $dark-gray-color;
+  margin-top: 25px;
+  text-align: center
+}
+
+.name {
+  text-align: center;
+}
+
+.blurb {
+  text-align: center;
+  margin-top: 30px;
+  padding: $padding-size;
+}
