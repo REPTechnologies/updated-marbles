@@ -107,4 +107,3 @@ describe 'Landing page' do
   end
 
 end
-
