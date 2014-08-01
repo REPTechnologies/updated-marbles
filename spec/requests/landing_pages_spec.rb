@@ -99,12 +99,8 @@ describe 'Landing page' do
 
   it 'has description' do
     should have_content <<-DESC
-      marbles.mx is intended to turn your technology to work for you.  Instead of tech determining
-      how we feel and interact with people, marbles.mx helps
-      you interact with unique opportunities, events, and people,
-      all to help you live a happier, healthier life.
+    marbles.mx delivers local events and activities so you can experience life beyond the classroom
     DESC
   end
 
 end
-
