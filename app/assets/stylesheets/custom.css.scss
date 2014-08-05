@@ -157,3 +157,27 @@ section.container {
   margin-top: 30px;
   padding: $padding-size;
 }
+
+.topcontainer {
+  text-align: center;
+  height: 100%;
+  color: #95a5a6;
+  
+  #one {
+    background: #ecf0f1;
+    height: 12vh;
+    opacity: .65;
+  }
+  
+  #two {
+    background: #e74c3c;
+    height: 12vh;
+    opacity: .65;
+  }
+  
+  #three {
+    background: #9b59b6;
+    height: 12vh;
+    opacity: .65;
+  }
+}
