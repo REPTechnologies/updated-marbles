@@ -99,7 +99,7 @@ describe 'Landing page' do
 
   it 'has description' do
     should have_content <<-DESC
-    marbles.mx delivers local events and activities so you can experience life beyond the classroom
+    marbles.mx helps you harmonize your life so you can thrive inside and outside the classroom
     DESC
   end
 
