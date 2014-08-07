@@ -88,9 +88,6 @@ section {
   padding-bottom: $padding-size;
 }
 
-section.container {
-  margin-bottom: 50px;
-}
  
 .glyphicon {
   padding-top: $padding-size;
@@ -158,26 +155,42 @@ section.container {
   padding: $padding-size;
 }
 
-.topcontainer {
+.container {
   text-align: center;
-  height: 100%;
-  color: #95a5a6;
   
   #one {
-    background: #ecf0f1;
-    height: 12vh;
-    opacity: .65;
+    height: 150px;
   }
   
   #two {
-    background: #e74c3c;
-    height: 12vh;
-    opacity: .65;
+    height: 150px;
   }
   
   #three {
-    background: #9b59b6;
-    height: 12vh;
-    opacity: .65;
+    height: 150px;
   }
 }
+
+.chakra {
+  position: relative;
+  text-align:center;
+}
+
+.container.row {
+  position: relative;
+  text-align: center;
+}
+
+#features {
+  display: block;
+  text-align: center;
+}
+
+#phonetext {
+  text-align: left;
+}
+
+.col-xs-12 {
+  text-align: left;
+}
+
