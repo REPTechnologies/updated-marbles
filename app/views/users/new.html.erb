@@ -1,16 +1,30 @@
-<div class="topcontainer">
-  <div class="row">
-    <div id="one" class="col-md-4">
-      <h3>compulsively switching tabs all the time?</h3>
+<div class="container">
+  <div class="row" style="margin-top: 40px;">
+    <div id="one" class="col-md-4 col-sm-4">
+      <%= image_tag "tv.png" %>
     </div>
-    <div id="two" class="col-md-4">  
-      <h3>continuously concerned with notifications?</h3>
+    <div id="two" class="col-md-4 col-sm-4">  
+        <%= image_tag "phone.png" %>
     </div>
-    <div id="three" class="col-md-4">
-      <h3>mind racing all hours of the day?</h3>
+    <div id="three" class="col-md-4 col-sm-4">
+        <%= image_tag "comp.png" %>
     </div>
   </div>
 </div>
+
+<section class="chakra">
+  <div class="row" style="margin-top: 30px;">
+    <div id="one" class="col-md-12 text-centered">
+        <%= image_tag "chakra1.png" %>
+        <%= image_tag "chakra2.png" %>
+        <%= image_tag "chakra3.png" %>
+        <%= image_tag "chakra4.png" %>
+        <%= image_tag "chakra5.png" %>
+        <%= image_tag "chakra6.png" %>
+        <%= image_tag "chakra7.png" %>
+      </div>
+  </div>
+</section>
 
 <section class="container">
   <hr/>
@@ -23,33 +37,33 @@
   <hr/>
 </section>
   
-<section class="container">
-  <div class="col-md-4 text-center">
+<section id="features" class="container">
+  <div class="col-md-4 col-xs-6 text-center">
       <span class="glyphicon glyphicon-check"></span>
       <h2>Identify</h2>
       <p class="lead">satisfaction in 6 essential components of life</p>
     </div>
-  <div class="col-md-4 text-center">
+  <div class="col-md-4 col-xs-6 text-center">
       <span class="glyphicon glyphicon-search"></span>
       <h2>Discover</h2>
-      <p class="lead">the best ways to explore and develop beyond the classroom</p>
+      <p class="lead">the best ways to explore and develop beyond boundaries</p>
     </div>
-  <div class="col-md-4 text-center">
+  <div class="col-md-4 col-xs-6 text-center">
       <span class="glyphicon glyphicon-stats"></span>
       <h2>Track</h2>
-      <p class="lead">trends and learn what helps you thrive</p>
+      <p class="lead">trends and activity, learn what helps you thrive</p>
     </div>
-  <div class="col-md-4 text-center">
+  <div class="col-md-4 col-xs-6 text-center">
       <span class="glyphicon glyphicon-globe"></span>
       <h2>Connect</h2>
       <p class="lead">with influencial peers who care about the bigger picture</p>
     </div>
-    <div class="col-md-4 text-center">
+    <div class="col-md-4 col-xs-6 text-center">
       <span class="glyphicon glyphicon-plus"></span>
       <h2>Share</h2>
       <p class="lead">your group's events and activities...no more blitzing fb or posterizing the mall</p>
     </div>
-    <div class="col-md-4 text-center">
+    <div class="col-md-4 col-xs-6 text-center">
       <span class="glyphicon glyphicon-calendar"></span>
       <h2>Join</h2>
       <p class="lead">the best opportunities to expand your mind and network</p>
@@ -65,37 +79,36 @@
 
 <section class="container" style="margin-top: 80px;">
   <div class="row">
-    <div class="col-md-4 col-md-offset-1 text-center">
+    <div class="col-sm-5 col-md-4">
       <div id="findscreenshot">
         <%= image_tag "mobile screenshot for banner.1.png" %>
       </div>
     </div>
-    <div class="col-md-7" style="margin-top: 30px;">
+    <div class="col-sm-7 text-left" style="margin-top: 25px;">
       <h3>A Personal Guide for Your Life Beyond the Classroom</h3>
       <div class="row">
         <div class="col-xs-12">
           <div class="featuressubheading">A completely new way to engage.</div>
         </div>
-        <div class="col-xs-12" style="margin-top: 5px;">
-          <div class="featuressubheading">Finding your path should be easy, get there early.</div>
-        </div>
       </div>
     </div>
-    <div class="col-md-3" style="margin-top: 15px;">
-      <h4>Filter Out the Noise</h4>
-      <p>There are hundreds if not thousands of things to do in the area, our events and activities are specifically curated for how you are feeling.  <span class="accent">marbles.mx</span> is all about helping you get where you want to go.</p>
-    </div>
-    <div class="col-md-3" style="margin-top: 15px;">
-      <h4>Customized in Real-time</h4>
-      <p>Instead of waiting for the one or two groups you know about to put on an event, get out there!  <span class="accent">marbles.mx</span> uses your input on the Poll to make sure you will get something out of the event.</p>
-    </div>
-     <div class="col-md-3" style="margin-top: 15px;">
-      <h4>Spend Time Wisely</h4>
-      <p>We live in a world with thousnds of distractions. If you are sick of wasting mental energy worrying about facebook notifications or what to do next, start taking action. Start getting to know your habits and turn them into positive results.</p>
-    </div>
-    <div class="col-md-3" style="margin-top: 15px;">
-      <h4>Engage with Quality Groups</h4>
-      <p>Instead of worring about if something will be worth your time, trust your community!  <span class="accent">marbles.mx</span> is community driven so that you can access each organizations past history and know if these are the type of people, places, and topics you want to explore.</p>
+    <div id="phonetext" class="row text-left"> 
+      <div class="col-sm-3 text-left" style="margin-top: 15px;">
+        <h4>Filter Out the Noise</h4>
+        <p>There are hundreds of things to do in the area, our events and activities are specifically curated for how you are feeling.  <span class="accent">marbles.mx</span> is all about helping you get where you want to go.</p>
+      </div>
+      <div class="col-sm-3" style="margin-top: 15px;">
+        <h4>Customized in Real-time</h4>
+        <p>Instead of waiting for the one or two groups you know about to put on an event, get out there!  <span class="accent">marbles.mx</span> uses your input on the Poll to make sure you will get something out of the event.</p>
+      </div>
+       <div class="col-sm-3" style="margin-top: 15px;">
+        <h4>Spend Time Wisely</h4>
+        <p>We live in a world with thousnds of distractions. If you are sick of wasting mental energy worrying about facebook notifications or what to do next, start taking action. Start getting to know your habits and turn them into positive results.</p>
+      </div>
+      <div class="col-sm-3" style="margin-top: 15px;">
+        <h4>Engage Quality Groups</h4>
+        <p>Instead of worring about if something will be worth your time, trust your community!  <span class="accent">marbles.mx</span>works so that you can understand organizations history and know if these are the type of people, places, and topics you want to explore.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -109,7 +122,7 @@
 <section class="container" style="margin-top: 200px;">
   <div class="row">
     <div class="col-md-4 text-centered">
-      <%= image_tag "adam.png" %>
+      <%= image_tag "adam.png", style: "height: 275px" %>
       <h3 class="name">Adam</h3>
       <h3 class="position">Business Development</h3>
       <h3 class="name"><%= link_to('@thatmhg', 'https://twitter.com/thatmhg') %></h3>
@@ -123,7 +136,7 @@
         </div>
       </div>
       <div class="col-md-4">
-      <%= image_tag "donovan.png" %>
+      <%= image_tag "donovan.png", style: "height: 275px" %>
         <div class="text-centered">
           <h3 class="name">Donovan</h3>
           <h3 class="position">Product Development</h3>
