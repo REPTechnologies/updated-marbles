@@ -88,9 +88,6 @@ section {
   padding-bottom: $padding-size;
 }
 
-section.container {
-  margin-bottom: 50px;
-}
  
 .glyphicon {
   padding-top: $padding-size;
@@ -193,8 +190,7 @@ section.container {
   text-align: left;
 }
 
-.col-xs-12.col-sm7.text-right {
-  display: inline-block;
+.col-xs-12 {
+  text-align: left;
 }
-
 
