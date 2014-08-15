@@ -146,11 +146,13 @@ section {
 }
 
 .name {
+  color: $dark-gray-color;
   text-align: center;
 }
 
 .blurb {
   text-align: center;
+  color: $dark-gray-color;
   margin-top: 30px;
   padding: $padding-size;
 }
@@ -194,3 +196,17 @@ section {
   text-align: left;
 }
 
+#chevrondown {
+  color: $dark-gray-color;
+  font-size: 20px;
+}
+
+#topfixed {
+  text-align: right;
+}
+
+#hire {
+  text-align: right;
+  color: #bcbfc0;
+  z-index: 2;
+}
