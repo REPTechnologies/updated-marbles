@@ -88,9 +88,6 @@ section {
   padding-bottom: $padding-size;
 }
 
-section.container {
-  margin-bottom: 50px;
-}
  
 .glyphicon {
   padding-top: $padding-size;
@@ -100,12 +97,12 @@ section.container {
 #pathphoto {
   background: $primary-color image-url('pathusplash.1.png') no-repeat center center;
   @include background-size(cover);
-  height: 800px;
+  height: 500px;
   
   .container {
-    margin-top: 300px;
+    margin-top: 120px;
     
-    h1 {
+    h2 {
       color: $white-color;
     }
   }
@@ -128,7 +125,7 @@ section.container {
   height: 400px;
   
   .container {
-    margin-top: 120px;
+    margin-top: 60px;
     
     h2 {
       color: $white-color;
@@ -149,11 +146,103 @@ section.container {
 }
 
 .name {
+  color: $dark-gray-color;
   text-align: center;
 }
 
 .blurb {
   text-align: center;
+  color: $dark-gray-color;
   margin-top: 30px;
   padding: $padding-size;
+}
+
+.container {
+  text-align: center;
+  
+  #one {
+    height: 150px;
+  }
+  
+  #two {
+    height: 150px;
+  }
+  
+  #three {
+    height: 150px;
+  }
+}
+
+.chakra {
+  display: inline-block; 
+  width: 100px; 
+  height: 100px; 
+  vertical-align: middle; 
+  border-radius: 50px;
+  margin: 0 5px;
+}
+
+.chakras {
+  text-align: center;
+}
+
+#chakra-red {
+  background-color: #e74c3c;
+}
+
+#chakra-orange {
+  background-color: #e67e22;
+}
+
+#chakra-yellow {
+  background-color: #f1c40f;
+}
+
+#chakra-green {
+  background-color: #26a65b;
+}
+
+#chakra-blue {
+  background-color: #3498db;
+}
+
+#chakra-purple {
+  background-color: #9b59b6;
+}
+
+#chakra-gray {
+  background-color: #95a5a6;
+}
+
+.container.row {
+  position: relative;
+  text-align: center;
+}
+
+#features {
+  display: block;
+  text-align: center;
+}
+
+#phonetext {
+  text-align: left;
+}
+
+.col-xs-12 {
+  text-align: left;
+}
+
+#chevrondown {
+  color: $dark-gray-color;
+  font-size: 20px;
+}
+
+#topfixed {
+  text-align: right;
+}
+
+#hire {
+  text-align: right;
+  color: #bcbfc0;
+  z-index: 2;
 }
