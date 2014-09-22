@@ -133,12 +133,6 @@ section {
   }
 }
 
-#signup {
-  text-align: center;
-  position: relative;
-  padding: $padding-size;
-}
-
 .position {
   color: $dark-gray-color;
   margin-top: 25px;
@@ -233,7 +227,7 @@ section {
 }
 
 #chevrondown {
-  color: $dark-gray-color;
+  color: #fff;
   font-size: 20px;
 }
 
@@ -245,4 +239,81 @@ section {
   text-align: right;
   color: #bcbfc0;
   z-index: 2;
+}
+
+.introduction {
+  background: #e74c3c;
+  @include background-size(cover);
+  
+  .container {
+    color: #fff;
+  }
+}
+
+.introduction2 {
+  background: #e67e22;
+  @include background-size(cover);
+
+  .row {
+    color: $light-gray-color;
+  }
+}
+
+.introduction3 {
+  background: #f1c40f;
+  @include background-size(cover);
+  height: 475px;
+
+  .row {
+    color: $dark-gray-color;
+  }
+}
+
+#mobilefind {
+  position: absolute;
+  left: 80px;
+  top: 150px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter:         drop-shadow(5px 5px 5px #222); 
+}
+
+.introduction4 {
+  background: #26A65B;
+  @include background-size(cover);
+  color: #fff;
+  
+  .h3 {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+  }
+}
+
+.introduction5 {
+  background: #3498db;
+  @include background-size(cover);
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.introduction6 {
+  background: #9b59b6;
+  @include background-size(cover);
+  height: 200px;
+  
+  #signup {
+    color: #fff;
+    text-align: center;
+    padding: $padding-size;
+  }
+}
+.introduction7 {
+  background: #ecf0f1;
+  @include background-size(cover);
+  color: $dark-gray-color;
+}
+
+#carousel-example-generic {
+  @include background-size(cover)
 }

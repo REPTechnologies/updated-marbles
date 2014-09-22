@@ -1,152 +1,156 @@
-<div class="container">
-  <div class="row" style="margin-top: 1vh;">
-    <div class="col-md-12 text-centered">
-      <span  id="chevrondown" class="glyphicon glyphicon-chevron-down">
-      </span>
+<div class="introduction">
+  <div class="container" style="margin-top: 0vh">
+    <div class="row">
+      <div class="col-md-12 text-centered">
+          <span  id="chevrondown" class="glyphicon glyphicon-chevron-down">
+        </span>
+      </div>
     </div>
-  </div>
+  </div>  
 </div>
 
-<div class="container">
-  <div class="row" style="margin-top: 100px;">
-    <div id="one" class="col-md-4 col-sm-4">
-      <%= image_tag "tv.png" %>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+
+<!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag "sitting.jpg" %>
+      <div class="carousel-caption">
+        <h3>Hello this slide 1</h3>
+      </div>
     </div>
-    <div id="two" class="col-md-4 col-sm-4">  
-        <%= image_tag "phone.png" %>
+    
+    <div class="item">
+      <%= image_tag "phone.jpg" %>
+      <div class="carousel-caption">
+        <h3>Hello this slide 2</h3>
+      </div>
     </div>
-    <div id="three" class="col-md-4 col-sm-4">
-        <%= image_tag "comp.png" %>
+    
+    <div class="item">
+      <%= image_tag "hands.jpg" %>
+      <div class="carousel-caption">
+        <h3>Hello this slide 3</h3>
+      </div>
+    </div>
+    
+    <div class="item">
+      <%= image_tag "couple.jpg" %>
+      <div class="carousel-caption">
+        <h3>Hello this slide 3</h3>
+      </div>
     </div>
   </div>
+
+<!--Controls-->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"> </span>
+  </a>
 </div>
 
-<section class="chakras">
-  <span id="chakra-red" class="chakra" alt="Red Chakra"></span>
-  <span id="chakra-orange" class="chakra" alt="Green Chakra"></span>
-  <span id="chakra-yellow" class="chakra" alt="Red Chakra"></span>
-  <span id="chakra-green" class="chakra" alt="Green Chakra"></span>
-  <span id="chakra-blue" class="chakra" alt="Red Chakra"></span>
-  <span id="chakra-purple" class="chakra" alt="Green Chakra"></span>
-  <span id="chakra-gray" class="chakra" alt="Green Chakra"></span>
+<section class="introduction2">
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1 text-center" style="margin-top: 10px;">
+    <span class="glyphicon glyphicon-pause"></span>
+    <h3>Rate Satisfaction</h3>
+    <p class="lead">in seven essential components of life and get on track to living the way you've dreamed of</p>
+    <span class="glyphicon glyphicon-road"></span>
+    <h3>Record</h3>
+    <p class="lead">take note of your current mindset and turn it into a more beneficial direction</p>
+    
+  </div>
+    <div id="findscreenshot" class="container" style="margin-top: 10px;">
+        <%= image_tag "intro1.png", style: "height:475px" %>
+    </div>
+  </div>
 </section>
 
-<section class="container">
-  <hr/>
-  <div class="row">   
-    <div class="text-center">
-      <h2>restore balance with <span class="accent">marbles.mx</span></h2>
-      <h3>the newest way for young people to develop life skills that matter</h3>
+<section class="introduction3">
+  <div class="container" style="margin-top: 10px;">
+      <div class="col-md-8">
+        <div id="macbook">
+          <%= image_tag "MacBook-Pro-mockup.png", style: "height: 375px" %> 
+        </div>
+        <div id="mobilefind" class="container">
+          <%= image_tag "mobile screenshot for banner.1.png", style: "height: 300px" %>
+      </div>
+    </div>
+    <div class="col-md-4" style="margin-top: 40px;">
+      <span class="glyphicon glyphicon-search"></span>
+    <h3>Get Recommended Activities</h3>
+    <p class="lead">personalized based on your responses and discover new groups and people. Start blazing trails, not just following tracks...</p> 
+      </div>
     </div>
   </div>
-  <hr/>
+</section>
+
+<section class="introduction4">
+  <div class="container" style="margin-top: 10px;">
+    <div class="row text-center">
+      <h2>Track Trends</h2>
+      <%= image_tag "mobiletrends.png" %>
+    </div>
+    <div class="col-sm-5 text-left">
+      <div class="col-sm-3">
+        <span class="glyphicon glyphicon-stats"></span>
+      </div>
+      <h3>understand what activities bring <i>you</i> satisfaction and make more informed decisions</h3>
+    </div>
+    <div class="col-sm-5 col-sm-offset-1 text-left">
+      <%= image_tag "sprites.png", style:"height: 45px" %><h3>watch your satisfaction trending up each time you visit marbles</h3>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="introduction5">
+  <div class="container">
+    <div class="container col-sm-10 col-sm-offset-1 text-center">
+      <h3 style="margin-top: 60px">start a healthy relationships with your phone
+       <hr/><h2 style="margin-top: 20px">restore balance</h2><hr/>
+      <h3 style="margin-bottom: 80px">and say goodbye to awkward interactions and wasted downtime</h3>
+    </div>
+  </div>
+</section>
+
+<section class="introduction6">
+  <div class="row text-center">
+    <div id="signup">
+      <h2>Don't miss out!<br><br><br>Sign up for beta launch now.</h2>
+    </div>
+  </div>
 </section>
   
-<section id="features" class="container">
-  <div class="col-md-4 col-xs-6 text-center">
-      <span class="glyphicon glyphicon-check"></span>
-      <h2>Identify</h2>
-      <p class="lead">satisfaction in 6 essential components of life</p>
-    </div>
-  <div class="col-md-4 col-xs-6 text-center">
-      <span class="glyphicon glyphicon-search"></span>
-      <h2>Discover</h2>
-      <p class="lead">the best ways to explore and develop beyond boundaries</p>
-    </div>
-  <div class="col-md-4 col-xs-6 text-center">
-      <span class="glyphicon glyphicon-stats"></span>
-      <h2>Track</h2>
-      <p class="lead">trends and activity, learn what helps you thrive</p>
-    </div>
-  <div class="col-md-4 col-xs-6 text-center">
-      <span class="glyphicon glyphicon-globe"></span>
-      <h2>Connect</h2>
-      <p class="lead">with influencial peers who care about the bigger picture</p>
-    </div>
-    <div class="col-md-4 col-xs-6 text-center">
-      <span class="glyphicon glyphicon-plus"></span>
-      <h2>Share</h2>
-      <p class="lead">your group's events and activities...no more blitzing fb or posterizing the mall</p>
-    </div>
-    <div class="col-md-4 col-xs-6 text-center">
-      <span class="glyphicon glyphicon-calendar"></span>
-      <h2>Join</h2>
-      <p class="lead">the best opportunities to expand your mind and network</p>
-    </div>
-  </div> 
-</section>
-
-<section class="jumbotron" id="pathphoto">
-  <div class="container text-center">
-    <h2><i>"One of the strongest characteristics of genius is the power of lighting one's own fire." <br>-John W. Foster </i></h2>
-  </div>
-</section>
-
-<section class="container" style="margin-top: 80px;">
-  <div class="row">
-    <div class="col-sm-5 col-md-4">
-      <div id="findscreenshot">
-        <%= image_tag "mobile screenshot for banner.1.png" %>
-      </div>
-    </div>
-    <div class="col-sm-7 text-left" style="margin-top: 25px;">
-      <h3>A Personal Guide for Your Life Beyond the Boundaries</h3>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="featuressubheading">A completely new way to engage.</div>
-        </div>
-      </div>
-    </div>
-    <div id="phonetext" class="row text-left"> 
-      <div class="col-sm-3 text-left" style="margin-top: 15px;">
-        <h4>Filter Out the Noise</h4>
-        <p>Unpack all of the chatter, <span class="accent">marbles.mx</span> lets you quickly see what's going on in your life and shows you options to help get on track.</p>
-      </div>
-      <div class="col-sm-3" style="margin-top: 15px;">
-        <h4>Personalized Access</h4>
-        <p>Use real-time data to find the optimal ways to engage with an invigorating community where you can explore, meet people, and learn new leadership, life, and social skills.</p>
-      </div>
-      <div class="col-sm-3" style="margin-top: 15px;">
-        <h4>Engage Quality Groups</h4>
-        <p>Trust your community, use information about reputations and previous events to learn what a group is all about.</p>
-      </div>
-      <div class="col-sm-3" style="margin-top: 15px;">
-        <h4>Spend Time Wisely</h4>
-        <p>Focus on yourself in a positive way. Start using the best tool to explore events and activities and make the decisions you know will help you. Sign up today for <span class="accent">marbles.mx</span>!</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="jumbotron" id="steps">
-  <div class="container col-md-12 text-center">
-    <h2><i>“There are two primary choices in life; to accept conditions as they exist, or accept the responsibility for changing them.” <br>– Denis Waitley</i></h2>
-  </div>
-</section>
-
-<section id="photos" class="container">
-  <div class="row" style="margin-top: 130px;">
-    <div class="col-md-4 text-centered">
+<section class="introduction7">
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-3 col-md-offset-1 text-centered">
       <%= image_tag "adam.png", style: "height: 275px" %>
       <h3 class="name">Adam</h3>
       <h3 class="position">Business Development</h3>
       <h3 class="name"><%= link_to('@thatmhg', 'https://twitter.com/thatmhg') %></h3>
-      <h4 class="blurb">"excited to help improve and offer solutions to common problems for the place and people I love"</h4>
+      <h4 class="blurb" style="margin-bottom: 50px;">"excited to help improve and offer solutions to common problems for the place and people I love"</h4>
       </div>
-      <div id="signup" class="col-md-4">
-        <h2>Don't miss out!<br>Sign up for beta launch now.</h2>
-        <div style="margin-top: 100px;">
-          <h3>Questions?</h3>
-          <h3>marbles@reptech.io</h3>
-        </div>
+      <div class="col-md-3 text-center" style="margin-top: 100px;">
+        <h3>Questions or Comments?<br><br>Email marbles@reptech.io</h3>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
       <%= image_tag "donovan.png", style: "height: 275px" %>
         <div class="text-centered">
           <h3 class="name">Donovan</h3>
           <h3 class="position">Product Development</h3>
           <h3 class="name"><%= link_to('@Donovan_MN', 'https://twitter.com/Donovan_MN') %></h3>
-          <h4 class="blurb">"understand the need for innovative solutions and enjoy making ideas a reality to help students live better"</h4>
+          <h4 class="blurb" style="margin-bottom: 50px;">"understand the need for innovative solutions and enjoy making ideas a reality to help students live better"</h4>
         </div>
       </div>
     </div>
