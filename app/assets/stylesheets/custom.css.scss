@@ -6,7 +6,6 @@ body {
 
 #page {
   min-height: 500px;
-  padding-bottom: $footer-height;
 }
 
 header, footer {
@@ -250,6 +249,17 @@ section {
   }
 }
 
+
+.introduction1 {
+  background: #e67e22;
+  @include background-size(cover);
+
+  .row {
+    color: $light-gray-color;
+  }
+}
+
+
 .introduction2 {
   background: #e67e22;
   @include background-size(cover);
@@ -262,7 +272,6 @@ section {
 .introduction3 {
   background: #f1c40f;
   @include background-size(cover);
-  height: 475px;
 
   .row {
     color: $dark-gray-color;
@@ -293,14 +302,11 @@ section {
   background: #3498db;
   @include background-size(cover);
   color: #fff;
-  margin-top: 40px;
-  margin-bottom: 80px;
 }
 
 .introduction6 {
   background: #9b59b6;
   @include background-size(cover);
-  height: 200px;
   
   #signup {
     color: #fff;
@@ -316,4 +322,8 @@ section {
 
 #carousel-example-generic {
   @include background-size(cover)
+}
+
+#alignleft {
+  display: inline-block;
 }
