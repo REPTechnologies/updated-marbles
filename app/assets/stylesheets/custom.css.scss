@@ -6,7 +6,6 @@ body {
 
 #page {
   min-height: 500px;
-  padding-bottom: $footer-height;
 }
 
 header, footer {
@@ -27,7 +26,7 @@ header.main, footer {
 header.main {
   background: $primary-color image-url('banner1.png') no-repeat center center;
   @include background-size(cover);
-  height: 80vh;
+  height: 100vh;
   min-height: 460px;
   z-index: 10;
 
@@ -133,12 +132,6 @@ section {
   }
 }
 
-#signup {
-  text-align: center;
-  position: relative;
-  padding: $padding-size;
-}
-
 .position {
   color: $dark-gray-color;
   margin-top: 25px;
@@ -173,47 +166,6 @@ section {
   }
 }
 
-.chakra {
-  display: inline-block; 
-  width: 100px; 
-  height: 100px; 
-  vertical-align: middle; 
-  border-radius: 50px;
-  margin: 0 5px;
-}
-
-.chakras {
-  text-align: center;
-}
-
-#chakra-red {
-  background-color: #e74c3c;
-}
-
-#chakra-orange {
-  background-color: #e67e22;
-}
-
-#chakra-yellow {
-  background-color: #f1c40f;
-}
-
-#chakra-green {
-  background-color: #26a65b;
-}
-
-#chakra-blue {
-  background-color: #3498db;
-}
-
-#chakra-purple {
-  background-color: #9b59b6;
-}
-
-#chakra-gray {
-  background-color: #95a5a6;
-}
-
 .container.row {
   position: relative;
   text-align: center;
@@ -233,8 +185,12 @@ section {
 }
 
 #chevrondown {
-  color: $dark-gray-color;
-  font-size: 20px;
+  color: #fff;
+  font-size: 24px;
+  position: absolute; 
+  height: 100px; 
+  top: 100%; 
+  margin-top:-100px; 
 }
 
 #topfixed {
@@ -245,4 +201,77 @@ section {
   text-align: right;
   color: #bcbfc0;
   z-index: 2;
+}
+
+.introduction {
+  background: #e74c3c;
+  
+  .container {
+    color: #fff;
+  }
+}
+
+
+#welcometext {
+  background: #e74c3c;
+  
+  .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+
+.introduction2 {
+  background: #e67e22;
+
+  .row {
+    color: $light-gray-color;
+  }
+}
+
+#recommended {
+  background: #f1c40f;
+
+  .row {
+    color: $dark-gray-color;
+  }
+}
+
+.introduction4 {
+  background: #26A65B;
+  color: #fff;
+  
+  .h3 {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+  }
+}
+
+.introduction5 {
+  background: #3498db;
+  color: #fff;
+}
+
+.introduction6 {
+  background: #9b59b6;
+  
+  #signup {
+    color: #fff;
+    text-align: center;
+    padding: $padding-size;
+  }
+}
+.introduction7 {
+  background: #ecf0f1;
+  color: $dark-gray-color;
+}
+
+#carousel-example-generic {
+  @include background-size(cover)
+}
+
+#alignleft {
+  display: inline-block;
 }
