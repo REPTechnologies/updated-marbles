@@ -115,6 +115,8 @@ section {
 
 .findscreenshot {
   max-width: 400px;
+  margin-top: 35px;
+  align-content: center;
 }
 
 .featuressubheading {
@@ -189,6 +191,7 @@ section {
   
   .container {
     color: #fff;
+    margin-top: 40px;
   }
 }
 
@@ -197,51 +200,63 @@ section {
   background: #e74c3c;
   
   .container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 }
 
 
-.introduction2 {
+#pollscreenshot {
   background: #e67e22;
-
-  .row {
-    color: $light-gray-color;
-  }
 }
 
 #recommended {
   background: #f1c40f;
+  align-content: center;
+  text-align: center;
 
   .row {
     color: $dark-gray-color;
   }
 }
 
-.introduction4 {
+#trends {
   background: #26A65B;
   color: #fff;
-  
-  .h3 {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 30px;
+
+  .container {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    
+    .row {
+      margin-top: 100px;
+
+      .h3 {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 100px;
+      }
+    }
   }
 }
 
-.introduction5 {
+#threesentances {
   background: #3498db;
   color: #fff;
 }
 
-.introduction6 {
+#calltoaction {
   background: #9b59b6;
+  text-align: right;
+  color: #fff;
   
-  #signup {
-    color: #fff;
-    text-align: center;
-    padding: $padding-size;
+  .container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+    #submitformthree {
+      float: left;
+    }
   }
 }
 .introduction7 {
