@@ -143,7 +143,7 @@ describe 'Landing page' do
 
   it 'has description' do
     should have_content <<-DESC
-    a lifestyle web app that helps you know yourself so you can make better decisions for your mental health every day
+    a lifestyle web app that help you know yourself and make great decisions for mental health
     DESC
   end
 
