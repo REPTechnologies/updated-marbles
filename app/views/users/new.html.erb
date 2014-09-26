@@ -9,43 +9,39 @@
   </div>  
 </div>
 
-<section class="introduction1">
+<section id="welcometext" class="introduction">
   <div class="container">
+    <h2>the first web application designed to<br> help you notice your reactions to life,<br>the good, bad, and the ugly,<br>so you can live the best life possible... <br><br>every day.</h2>
   </div>
 </section>
 
 <section class="introduction2">
-  <div class="row">
-    <div class="col-sm-5 col-sm-offset-1 text-center" style="margin-top: 10px;">
-    <span class="glyphicon glyphicon-pause"></span>
-    <h3>Rate Satisfaction</h3>
-    <p class="lead">in seven essential components of life and get on track to living the way you've dreamed of</p>
-    <span class="glyphicon glyphicon-road"></span>
-    <h3>Record</h3>
-    <p class="lead">take note of your current mindset and turn it into a more beneficial direction</p>
-    
-  </div>
-    <div id="findscreenshot" class="container" style="margin-top: 10px;">
-        <%= image_tag "intro1.png", style: "height:475px" %>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-1 text-center" style="margin-top: 10px;">
+        <span class="text-large glyphicon glyphicon-pause"></span>
+        <h3>Rate Satisfaction</h3>
+        <p class="lead">in seven essential components of life and get on track to living the way you've dreamed of</p>
+        <span class="glyphicon glyphicon-road"></span>
+        <h3>Record</h3>
+        <p class="lead">take note of your current mindset and never miss a thought, feeling, or emotion</p>
+      </div>
+      <div id="findscreenshot" style="margin-top: 10px;">
+          <%= image_tag "intro1.png", style: "height:475px" %>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="introduction3">
-  <div class="container" style="margin-top: 10px;">
-      <div class="col-md-8">
-        <div id="macbook">
-          <%= image_tag "MacBook-Pro-mockup.png", style: "height: 375px" %> 
-        </div>
-        <div id="mobilefind" class="container">
-          <%= image_tag "mobile screenshot for banner.1.png", style: "height: 300px" %>
-      </div>
+<section id="recommended" class="introduction">
+  <div class="container">
+    <div id="macbook" class="col-md-8" style="margin-top: 10px;" >
+      <%= image_tag "MacBook-Pro-mockup.png", style: "height: 375px" %> 
     </div>
-    <div class="col-md-4" style="margin-top: 40px;">
-      <span class="glyphicon glyphicon-search"></span>
+  <div class="col-md-4" style="margin-top: 40px;">
+    <span class="glyphicon glyphicon-search"></span>
     <h3>Get Recommended Activities</h3>
     <p class="lead" style="margin-bottom: 130px">personalized based on your responses and discover new groups and people. Start blazing trails, not just following tracks...</p> 
-      </div>
     </div>
   </div>
 </section>
@@ -55,7 +51,7 @@
     <div class="row">
       <div class="text-center">
         <h2>Track Trends</h2>
-        <%= image_tag "mobiletrends.png" %>
+<!--        <%= image_tag "mobiletrends.png" %> -->
       </div>
       <div class="col-sm-1 inline">
         <span class="glyphicon glyphicon-stats col-md-1"></span>
@@ -72,38 +68,39 @@
 </section>
 
 <section class="introduction5">
-  <div class="row">
-    <div class="container col-sm-10 col-sm-offset-1 text-center">
-      <h3 style="margin-top: 60px">start a healthy relationships with your phone
-       <hr/><h2 style="margin-top: 20px">restore balance</h2><hr/>
-      <h3 style="margin-bottom: 80px">and say goodbye to awkward interactions and wasted downtime</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 text-center">
+        <h3 style="margin-top: 60px">turn off autopilot
+         <hr/><h2 style="margin-top: 20px">notice what's going on</h2><hr/>
+        <h3 style="margin-bottom: 80px">and start making decisions that help you</h3>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="introduction6">
   <div class="container">
-    <div class="row">
-      <div id="signup" class="text-center">
-        <h2>Don't miss out...<br><br><%= image_tag "logo.png", height: "70px" %><br><br>Sign up for beta launch now.</h2>
-      </div>
-      <div class="row" style="margin-bottom: 50px">
-        <div class="col-md-12 text-center">
-          <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
-            <input name="utf8" type="hidden" value="✓">
-            <div id="email_group" class="form-group">
-              <input id="user-email-main" name="user[email]" type="text" class="form-control" placeholder="Enter email address">
-            </div>
-            <input id="submit-main" class="btn btn-large btn-info" name="commit" type="submit" value="Get Early Access">
-          </form>
-        </div>
+    <div id="signup" class="text-center">
+      <%= image_tag "marbles icon 4.nodisc.png", height: "100px" %>
+      <h2><br>Sign up for beta launch now.</h2>
+    </div>
+    <div class="row" style="margin-bottom: 50px">
+      <div class="col-md-12 text-center">
+        <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+          <input name="utf8" type="hidden" value="✓">
+          <div id="email_group" class="form-group">
+            <input id="user-email-secondary" name="user[email]" type="text" class="form-control" placeholder="Enter email address">
+          </div>
+          <input id="submit-secondary" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
+        </form>
       </div>
     </div>
   </div>
 </section>
   
 <section class="introduction7">
-  <div class="row" style="margin-top: 30px;">
+  <div class="container" style="margin-top: 30px;">
     <div class="col-md-3 col-md-offset-1 text-center">
       <%= image_tag "adam.png", style: "height: 275px" %>
       <h3 class="name">Adam</h3>
