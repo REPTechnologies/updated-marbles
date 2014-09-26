@@ -35,9 +35,15 @@ header.main {
     left: 50%;
     top: 50%;
     @include translate(-50%,-50%);
-
-    .row {
-      padding: $padding-size;
+    @media all and (max-device-width: 480px) {
+   
+      .h2 {
+        font-size: 0.5em;
+      
+        .row {
+          padding: $padding-size;
+        }
+      }
     }
   }
 }
@@ -150,34 +156,9 @@ section {
   padding: $padding-size;
 }
 
-.container {
-  text-align: center;
-  
-  #one {
-    height: 150px;
-  }
-  
-  #two {
-    height: 150px;
-  }
-  
-  #three {
-    height: 150px;
-  }
-}
-
 .container.row {
   position: relative;
   text-align: center;
-}
-
-#features {
-  display: block;
-  text-align: center;
-}
-
-#phonetext {
-  text-align: left;
 }
 
 .col-xs-12 {
