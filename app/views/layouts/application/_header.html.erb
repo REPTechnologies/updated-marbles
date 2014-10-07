@@ -1,25 +1,12 @@
-<header class="main">
-  <div class="text-center">
-    <%= image_tag "marbles icon 4.nodisc.png", height: "150px" %>
-    <h1 class="text-center"><span class="accent">marbles</span></h1>
-      <h2>a lifestyle web app that helps you reflect and bring your life into focus</h2><br>
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
-          <input name="utf8" type="hidden" value="✓">
-          <div id="email_group" class="form-group">
-            <input id="user-email-main" name="user[email]" type="text" class="form-control" placeholder="Enter email address">
-          </div>
-          <input id="submit-main" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
-        </form>
-      </div>
-    </div>
+
+<form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+  <input name="utf8" type="hidden" value="✓">
+  <div id="email_group" class="form-group">
+    <input id="user-email-main" name="user[email]" type="text" class="form-control" placeholder="Enter email address">
   </div>
-  <div class="text-center">
-    <span  id="chevrondown" class="glyphicon glyphicon-chevron-down">
-    </span>
-  </div>
-</header>
+  <input id="submit-main" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
+</form>
+
 <header class="fixed">
   <div class="container">
     <div class="row">
