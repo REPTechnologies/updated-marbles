@@ -1,0 +1,752 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+	font-family: 'Source Sans Pro';
+	font-weight:300;
+	font-size: 300%;
+}
+
+body{
+	font-family: 'Source Sans Pro';
+	font-weight:300;
+}
+
+p {
+	font-size: 150%;
+}
+
+/*Red - #e74c3c
+
+Orange - #ff8c05
+
+Yellow - #f1c40f
+
+Green - #26a65b
+
+Blue - #3498db
+
+Purple - #9b59b6
+
+Gray - #95a5a6
+
+Clouds - #ecf0f1
+
+Light Black - #34495e
+
+Dark Black - #2c3e50
+
+/**************************************************/
+
+#phone, #monitor, #bannerphoto, #discovertext{
+	opacity: 0;
+}
+
+section0{
+    background: #ff8c05;
+}
+
+header.main {
+  background: #ff8c05;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  @include background-size(cover);
+  z-index: 10;
+}
+
+#dropdownphoto{
+    width: 85px;
+}
+
+#emailbox{
+    padding-top: 5%;
+}
+
+#banner{
+    text-align: center;
+    min-height: 100px;
+    background: #3498db;
+    width: 100%;
+    @include background-size(cover);
+    z-index: 10;
+    padding: 20px;
+}
+
+#discovertext{
+    color: white;
+    padding-left: 10%;
+    padding-top: 1%;
+    float: left;
+    text-align: center;
+}
+
+#discoverheader{
+    padding-bottom: 5%;
+}
+#discoverparagraph,#discoverheader{
+    color: white;
+    text-align-last: center;
+}
+
+#emailbox{
+}
+
+#monitor{
+    margin-top: 7%;
+    width: 100%;
+}
+
+#phone{
+	margin-top: 20%;
+}
+
+#monitor{
+	width: 40%;
+	float: left;
+	margin-left: 0%;
+}
+#phone.fastanimate{
+}
+#monitor.fastanimate{
+	-webkit-transform: translate(4em,0); /*left number is horizontal, right number is vertical*/
+	-moz-transform: translate(4em,0);
+	transform: translate(4em,0);
+}
+
+/********   Responsive code for banner ************/
+
+@media only screen and (max-width: 1000px) { 
+    #monitor{
+    width: 40%;}
+    #phone{
+    left: 88%;
+    position: absolute;
+    }
+    #phone.fastanimate{
+    -webkit-transform: translate(0em,0); /*3 is horizontal, 0 is vertical*/
+	-moz-transform: translate(0em,0);
+	transform: translate(0em,0);
+    }  
+}
+@media only screen and (max-width: 993px) { 
+    #discovertext{
+        text-align: center;
+        width: 100%;
+    }
+    
+    #phone{
+        padding-top: 41%;
+        padding-left: 0px;
+    }
+    
+    #monitor{
+        position: relative;
+        padding-bottom: 5%;
+        width: 80%;
+    }
+    #phone.fastanimate{
+    -webkit-transform: translate(-10em,0); /*3 is horizontal, 0 is vertical*/
+	-moz-transform: translate(-10em,0);
+	transform: translate(-10em,0);
+    }
+    #monitor.fastanimate{
+	-webkit-transform: translate(10em,0); /*3 is horizontal, 0 is vertical*/
+	-moz-transform: translate(10em,0);
+	transform: translate(10em,0);
+    }
+}
+@media only screen and (max-width: 920px){
+     #phone{
+         padding-top: 40%;
+    }
+    #monitor{
+        width: 65%;
+    }
+    #discoverparagraph{
+        font-size: 150%;
+    }
+}
+@media only screen and (max-width: 780px){
+     #phone{
+         padding-top: 50%;
+    }
+}
+@media only screen and (max-width: 710px){
+     #phone{
+         padding-top: 60%;
+    }
+    
+     #monitor{
+        width: 100%;
+    }
+    
+    #monitor.fastanimate{
+	-webkit-transform: translate(0em,0); /*3 is horizontal, 0 is vertical*/
+	-moz-transform: translate(0em,0);
+	transform: translate(0em,0);
+    }
+}
+@media only screen and (max-width: 650px){
+     #phone{
+         padding-top: 70%;
+    }
+}
+@media only screen and (max-width: 585px){
+     #phone{
+         padding-top: 85%;
+    }
+        #phone.fastanimate{
+    -webkit-transform: translate(-2em,0); /*3 is horizontal, 0 is vertical*/
+	-moz-transform: translate(-2em,0);
+	transform: translate(-2em,0);
+    }
+}
+@media only screen and (max-width: 485px){
+     #phone{
+         padding-top: 100%;
+    }
+}
+@media only screen and (max-width: 400px){
+     #phone{
+         padding-top: 120%;
+    }
+}
+@media only screen and (max-width: 360px){
+     #phone{
+         padding-top: 135%;
+    }
+    #phone.fastanimate{
+    -webkit-transform: translate(-4em,0); /*3 is horizontal, 0 is vertical*/
+	-moz-transform: translate(-4em,0);
+	transform: translate(-4em,0);
+    }
+    #monitor{
+        width: 100%;
+    }
+    #monitor.fastanimate{
+	-webkit-transform: translate(0em,0); /*3 is horizontal, 0 is vertical*/
+	-moz-transform: translate(0em,0);
+	transform: translate(0em,0);
+    }
+}
+/**************************************************/
+/**************************************************/
+#light, #scale, #tracks{
+	opacity: 0;
+}
+#thesis{
+    background: #ff3b2c;
+}
+#orbs { 
+	background: #ff3b2c;
+	text-align: center; 
+	color: white;
+	padding-bottom: 3%;
+	font-size: 250%;
+}
+
+#light{
+    width: 35%;
+    margin-left: 33%;
+}
+
+#scale{
+    width: 35%;
+    margin-left: 33%;
+}
+
+#tracks{
+    width: 35%;
+    margin-left: 33%;
+}
+
+span{
+	text-align: center;
+	display: block;
+	color: white;
+	padding-top: 8%;
+	font-size: 100%;
+}
+
+/**************************************************/
+/**************************************************/
+/*
+#section1.fastanimate{
+	-webkit-transform: translate(50px;,0em);
+	-moz-transform: translate(150px,0em);
+	transform: translate(0px,0em);
+}*/
+
+#section1{
+    background: #95a5a6;
+    min-height: 600px;
+    opacity: 0;
+}
+
+#section1header{
+    text-align-last: center;
+    margin-left: 37%;
+    padding-top: 5%;
+    color: white;
+}
+
+#ratingsystemphoto{
+    position: absolute;
+    padding-top: 5%;
+}
+
+#ratingparagraph{
+    color: white;
+    margin-left: 60%;
+    margin-top: 15%;
+    font-size: 130%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px){
+    
+    #section1{
+    min-height: 580px;
+    }
+
+    #ratingsystemphoto{
+        width: 45%;
+        margin-left: 1%;
+    }
+    
+    #ratingparagraph{
+        padding-left: 3%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    
+    #section1{
+    min-height: 450px;
+    }
+
+    #ratingsystemphoto{
+        width: 45%;
+        margin-top: 4%;
+        padding-right: 3%;
+    }
+    
+    #ratingparagraph{
+        font-size: 100%;
+        widows: 45%;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    #section1{
+        min-height: 850px;
+    }
+    #ratingsystemphoto{
+        width: 90%;
+        margin-top: 4%;
+        padding-left: 5%;
+        position: absolute;
+    }
+    
+    #ratingparagraph{
+        margin-top: 70%;
+        font-size: 140%;
+        text-align: center;
+        margin-left: -3%;
+    }
+    #section1header{
+        margin-left: 8%;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 670px){
+    #section1{
+        min-height: 700px;    
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #section1{
+        min-height: 620px;
+    }
+    
+    #ratingparagraph{
+        padding-top: 5%;
+        font-size: 100%;
+    }
+    
+    #section1header{
+        padding-bottom: 8%;
+        padding-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    #section1{
+        min-height: 620px;
+    }
+    #ratingsystemphoto{
+    
+    }
+    #ratingparagraph{
+        padding-top: 10%;
+        font-size: 100%;
+    }
+    
+    #section1header{
+        padding-bottom: 8%;
+        padding-top: 10%;
+    }
+    
+}
+
+
+/**************************************************/
+
+#section2 {
+	opacity: 0;
+} /*Really important line, it basically tells the image to START OFF BLANK */
+
+
+#section2{
+    background: #26a65b;
+}
+
+#testimonial{
+    background: #26a65b;
+    color: white;
+    text-align: center;
+    padding: 5% 0;
+    font-size: 120%;
+}
+
+#testimonial.fastanimate {
+    -webkit-transform: translate(0em,0); /*3 is horizontal, 0 is vertical*/
+	-moz-transform: translate(0em,0);
+	transform: translate(0em,0);
+
+}
+/************************************************/
+
+#section3{
+    background: #9b59b6;
+    width: 100%;
+    opacity: 0;
+}
+#lead{
+    background: #9b59b6;
+    width: 100%;
+    padding-bottom: 45%;
+}
+
+#leadphoto{
+    width: 65%;
+    position: absolute;
+    padding-top: 11%;
+    padding-left: 10%;
+}
+#leadheader{
+    padding-bottom: 5%;
+}
+#leadtext{
+    color: white;
+    width: 97%;
+    text-align: center;
+    font-size: 100%;
+    position: relative;
+    padding-top: 10%;
+    padding-left: 50%;
+}
+
+@media only screen and (max-width: 1125px){
+    #leadphoto{
+        width: 50%;
+        
+    }
+    
+    #leadtext{
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    #section3{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+} 
+
+@media only screen and (max-width: 750px){
+    #leadphoto{
+        width: 80%;
+        position: absolute;
+        text-align: left;
+        padding-top: 55%;
+        margin-left: 8%;
+    }
+    
+    #leadtext{    
+        margin-top: -5%;
+        margin-left: -21%;
+        position: absolute;
+        float: left;
+    }
+    
+    
+    #section3{
+        padding-bottom: 65%;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    #section3{
+        padding-bottom: 80%;
+    }
+    #leadtext{    
+        font-size: 80%;
+    }
+    #leadphoto{
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    #section3{
+        padding-bottom: 80%;
+    }
+    #leadphoto{
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    #leadphoto{
+        margin-top: 17%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #leadphoto{
+        margin-top: 27%;
+    }
+    #section3{
+        padding-bottom: 95%;}
+    #leadtext{
+        font-size: 75%;
+    }
+}
+
+@media only screen and (max-width: 424px){
+    #leadphoto{
+        margin-top: 19%;
+    }
+    #section3{
+        padding-bottom: 125%;}
+    #leadtext{
+        font-size: 75%;
+    }
+    #getwordout{
+        margin-top: 120%;
+    }
+    #leadheader{
+        padding-bottom: 12%;
+    }
+}
+
+@media only screen and (max-width: 363px){
+    #section3{
+        padding-bottom: 155%;}
+    #leadheader{
+        font-size: 250%;
+        padding-top: 5%;
+    }
+}
+
+/*****************************************************/
+
+#track{
+    background: #f1c40f;
+    padding-bottom: 10%;
+    min-height: 650px;
+    opacity: 0;
+}
+
+#trackparagraph{
+    color: white;
+    position: absolute;
+    margin-top: 9%;
+    margin-left: 5%;
+    font-size: 110%;
+}
+
+#trackheader{
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#trackphoto{
+    width: 50%;
+    float: right;
+    margin-top: 4%;
+    margin-right: 4%;
+}
+
+@media only screen and (max-width: 1200px) { 
+    #trackparagraph{
+        margin-top: 9%;
+    }
+    
+    #track{
+        min-height: 570px;
+    }
+}
+@media only screen and (max-width: 992px) { 
+    #trackparagraph{
+        margin-left: 3%;
+        margin-top: 6%;
+    }
+    #trackphoto{
+        margin-right: 1%;
+    }
+    #track{
+        min-height: 520px;
+    }
+}
+@media only screen and (max-width: 740px) { 
+    #trackparagraph{
+        padding-top: 65%;
+        text-align: center;
+        width: 95%;
+    }
+    #trackphoto{
+        width: 95%;
+        padding-top: 10px;
+    }
+    #track{
+        min-height: 900px;
+        padding-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 640px) { 
+    #track{
+        min-height: 830px;
+    }
+}
+@media only screen and (max-width: 580px) { 
+
+    #track{
+        min-height: 750px;
+    }
+}
+
+@media only screen and (max-width: 450px) { 
+
+    #track{
+        min-height: 650px;
+    }
+}
+
+/******************** Footer/Call to action ****************/
+
+
+#bottomfixed {
+    text-align: center;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 992px) { 
+
+    #bottomfixed {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px) { 
+    #calltoactiontext{
+        margin-top: -15%;
+    }
+    #bottomfixed {
+        text-align: center;
+    }
+}
+
+
+/*ANIMATION CODE BEGINS HERE- *****************************************/
+.animate-image, .center-icons span {
+	opacity: 0;
+} /*Really important line, it basically tells the image to START OFF BLANK */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to {opacity: 1;} }
+@-moz-keyframes fadeIn { from { opacity:0; } to {opacity: 1;} }
+@keyframes fadeIn { from { opacity:0; } to {opacity: 1;} }
+
+.animate, .animate-down { /*this thing basically does the fade in from nothingness... the actual motion will be coded seperately*/
+	-mox-transition: 2s ease-in-out;
+	-webkit-transition: 2s ease-in-out;
+	transition: 2s ease-in-out;
+
+	-moz-animation: fadeIn ease-in 1;
+	-webkit-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;  /*spelled 'forward' instead of "forwards"... made a huge error, and dissapeared after animation */
+	animation-fill-mode: forwards;
+
+	-webkit-animation-duration: .7s;
+	-moz-animation-duration: .7s;
+	animation-duration: .7s;
+}
+
+.animate-down {
+	-webkit-transform:  .65s ease-in-out;
+	-moz-transform:  .65s ease-in-out;
+	transform:  .65s ease-in-out;
+	height: 450px;  /*ease it in the height to 500 */
+}
+
+.fastanimate {
+	-moz-transition: 1s ease-in-out;   /*Please be careful not to spell "mox". IT'S SPELLED MOZ */
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+
+	-moz-animation: fadeIn ease-in 1;
+	-webkit-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;  /*spelled 'forward' instead of "forwards"... made a huge error, and dissapeared after animation */
+	animation-fill-mode: forwards;
+
+	-webkit-animation-duration: .7s;
+	-moz-animation-duration: .7s;
+	animation-duration: .7s;
+}
+
+.fasteranimate {
+	-moz-transition: 1s ease-in-out;   /*Please be careful not to spell "mox". IT'S SPELLED MOZ */
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+
+	-moz-animation: fadeIn ease-in 1;
+	-webkit-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;  /*spelled 'forward' instead of "forwards"... made a huge error, and dissapeared after animation */
+	animation-fill-mode: forwards;
+
+	-webkit-animation-duration: .5s;
+	-moz-animation-duration: .5s;
+	animation-duration: .5s;
+}
+
+
+

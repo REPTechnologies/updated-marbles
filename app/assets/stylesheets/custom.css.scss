@@ -1,4 +1,26 @@
 @import 'defs';
+/*************************************************************/
+/*Red - #e74c3c
+
+Orange - #ff8c05
+
+Yellow - #f1c40f
+
+Green - #26a65b
+
+Blue - #3498db
+
+Purple - #9b59b6
+
+Gray - #95a5a6
+
+Clouds - #ecf0f1
+
+Light Black - #34495e
+
+Dark Black - #2c3e50
+*/
+/***************************************************************/
 
 body {
   background-color: $white-color;
@@ -7,7 +29,9 @@ body {
 #page {
   min-height: 500px;
 }
-
+#headercontainer{
+    padding-top: 7px;
+}
 header, footer {
   background-color: $primary-color;
   color: $light-text-color;
@@ -23,30 +47,7 @@ header.main, footer {
   padding: $padding-size;
 }
 
-header.main {
-  background: $primary-color image-url('banner1.png') no-repeat center center;
-  @include background-size(cover);
-  height: 100vh;
-  min-height: 460px;
-  z-index: 10;
 
-  .container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    @include translate(-50%,-50%);
-    @media all and (max-device-width: 480px) {
-   
-      .h2 {
-        font-size: 0.5em;
-      
-        .row {
-          padding: $padding-size;
-        }
-      }
-    }
-  }
-}
 
 .fixed {
   @include border-box;
@@ -58,7 +59,8 @@ header.main {
 
 header.fixed {
   z-index: 5;
-  padding: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 div.fixed {
@@ -99,15 +101,15 @@ section {
   font-size: 48px;
 }
 
-#pathphoto {
-  background: $primary-color image-url('pathusplash.1.png') no-repeat center center;
+#calltoaction {
+  background: image-url('University-of-Minnesota.png') no-repeat center center;
   @include background-size(cover);
   height: 500px;
   
   .container {
     margin-top: 120px;
     
-    h2 {
+    h1 {
       color: $white-color;
     }
   }
@@ -176,10 +178,6 @@ section {
   margin-top:-100px; 
 }
 
-#topfixed {
-  text-align: right;
-}
-
 #hire {
   text-align: right;
   color: #bcbfc0;
@@ -196,6 +194,7 @@ section {
   
 #welcometext {
   background: #e74c3c;
+    width: 100%;
   
   .container {
     margin-top: 70px;
@@ -243,15 +242,6 @@ section {
   color: #fff;
 }
 
-#calltoaction {
-  background: #9b59b6;
-  color: #fff;
-  
-  .container {
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
-}
 .introduction7 {
   background: #ecf0f1;
   color: $dark-gray-color;
@@ -263,4 +253,8 @@ section {
 
 #alignleft {
   display: inline-block;
+}
+
+#headercontainer {
+  text-align: right;
 }

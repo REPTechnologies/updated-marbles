@@ -1,42 +1,65 @@
-<header class="main">
-  <div class="text-center">
-    <%= image_tag "marbles icon 4.nodisc.png", height: "150px" %>
-    <h1 class="text-center"><span class="accent">marbles</span></h1>
-      <h2>a lifestyle web app that helps you reflect and bring your life into focus</h2><br>
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
-          <input name="utf8" type="hidden" value="✓">
-          <div id="email_group" class="form-group">
-            <input id="user-email-main" name="user[email]" type="text" class="form-control" placeholder="Enter email address">
-          </div>
-          <input id="submit-main" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
-        </form>
-      </div>
+<header id="banner">
+    <div class="container" id="bannerphoto">
+        <%= image_tag "banner.png"%>
     </div>
-  </div>
-  <div class="text-center">
-    <span  id="chevrondown" class="glyphicon glyphicon-chevron-down">
-    </span>
-  </div>
 </header>
-<header class="fixed">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-5 hidden-xs">
-        <%= image_tag "marbles icon 4.nodisc.png", height: "40"%>
-        <span class="accent"> marbles</span>
-      </div>
-      <div class="col-xs-12 col-sm-7 text-right">
-        <form id="topfixed" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
-          <input name="utf8" type="hidden" value="✓">
-          <div id="email_group" class="form-group">
-            <input id="user-email-fixed" name="user[email]" type="text" class="form-control" placeholder="Email">
-          </div>
-          <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
-        </form>
-      </div>
+
+<header class="main" id="section0">
+    <div class="container" id="section0container">
+        
+        <div>
+            
+            <div class="row col-md-6" id="discovertext">
+                <h1 id="discoverheader">Harmonize your lifestyle</h1>
+                <p id=discoverparagraph>A web app that helps you organize<br>
+                    thoughts, feelings, and emotions.<br><br>Live a more meaningful life.
+                </p>
+                
+            <div class="row">
+              <div class="col-md-12 text-center" id="emailbox">
+                <form class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+                  <input name="utf8" type="hidden" value="✓"> 
+                  <div id="email_group" class="form-group">
+                    <input id="user-email-main" name="user[email]" type="text" class="form-control" placeholder="Enter email address">
+                  </div>
+                  <input id="submit-main" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
+                </form>
+              </div>
+            </div>
+                
+        </div>
+            
+        </div>
+        
+               <div id="monitor">
+                    <%= image_tag "ratingsystem.png"%>
+                </div>
     </div>
+</header>
+
+
+<!-- --------------DROPDOWN HEADER------------ -->
+<header class="fixed" style="overflow: hidden; margin:0px">
+  <div class="container" id="dropdowncontainer">      
+    <div class="col-sm-3 hidden-xs" id="dropdownphoto">
+      <%= image_tag "marbles icon 4.nodisc.png"%>
+    </div>
+
+    <div class="col-lg-11 col-md-10 col-sm-9 col-xs-12" id="headercontainer">
+
+      <form id="topfixed" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+            <input name="utf8" type="hidden" value="✓">
+
+            <div id="email_group" class="form-group">
+              <input id="user-email-fixed" name="user[email]" type="text" class="form-control" placeholder="Email">
+            </div>
+
+            <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
+      </form>
+        
+        
+    </div>
+      
   </div>
 </header>
 <%= render "layouts/application/error_messages" %>
