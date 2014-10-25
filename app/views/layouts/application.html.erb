@@ -9,20 +9,8 @@
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= favicon_link_tag "icon.ico" %>
   <%= csrf_meta_tags %>
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700' rel='stylesheet' type='text/css'>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--these lines above are apparently -->
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700' rel='stylesheet' type='text/css'> <!--links font-->
-
-		<script src="js/jquery.js"></script> <!--linking jquery file-->
-		<script src="js/script.js"></script> <!--linking script file-->
-
-		<link rel="stylesheet" href="css/1140.css"> <!--linking stylesheet.  1140.css is the file we downloaded... Will have to do more research on this later-->
-		<link rel="stylesheet" href="css/style.css"> <!--linking style.css which we'll have to write on our own. -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-    
 <body>
   <div id="page" class="<%= params[:controller] %>">
     <%= render "layouts/application/header" %>

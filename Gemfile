@@ -4,7 +4,7 @@ ruby '1.9.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 gem 'sprockets', '2.11.0'
-gem 'bootstrap-sass', '3.0.3.0'
+gem 'bootstrap-sass', '~> 3.2'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
@@ -33,6 +33,7 @@ end
 
 # Use SCSS for stylesheets
 gem 'sass-rails',  '4.0.1'
+gem 'compass-rails', '~> 2.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier',  '2.1.1'
