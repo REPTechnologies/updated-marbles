@@ -44,7 +44,7 @@ header, footer {
 
 header.main, footer {
   z-index: 10;
-  padding: $padding-size;
+  padding: 5px;
 }
 
 
@@ -548,7 +548,7 @@ span{
 
 #section1header{
     text-align-last: center;
-    margin-left: 37%;
+    margin-left: 36%;
     padding-top: 5%;
     color: white;
 }
@@ -739,6 +739,10 @@ span{
         padding-top: 5%;
         padding-bottom: 5%;
     }
+    
+    #leadtext{
+      padding-top: 4%;
+    }
 } 
 
 @media only screen and (max-width: 750px){
@@ -792,10 +796,12 @@ span{
 
 @media only screen and (max-width: 480px){
     #leadphoto{
-        margin-top: 27%;
+        margin-top: 35%;
     }
     #section3{
-        padding-bottom: 95%;}
+        padding-bottom: 95%;
+    }
+  
     #leadtext{
         font-size: 75%;
     }
@@ -803,7 +809,7 @@ span{
 
 @media only screen and (max-width: 424px){
     #leadphoto{
-        margin-top: 19%;
+        margin-top: 39%;
     }
     #section3{
         padding-bottom: 125%;}
@@ -811,7 +817,7 @@ span{
         font-size: 75%;
     }
     #getwordout{
-        margin-top: 120%;
+        margin-top: 112%;
     }
     #leadheader{
         padding-bottom: 12%;
@@ -824,6 +830,10 @@ span{
     #leadheader{
         font-size: 250%;
         padding-top: 5%;
+    }
+   
+    #leadtext{
+      padding-bottom: 20%;
     }
 }
 
@@ -1008,5 +1018,4 @@ span{
 	-moz-animation-duration: .5s;
 	animation-duration: .5s;
 }
-
 

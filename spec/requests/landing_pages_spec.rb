@@ -55,7 +55,7 @@ describe 'Landing page' do
     
     before do
       page.driver.resize_window(500, 500)
-      page.execute_script "window.scrollBy(0, window.innerHeight)"
+      page.execute_script "window.scrollBy(0, window.innerHeight + 500)"
     end
 
     describe 'with invalid information' do
@@ -99,7 +99,7 @@ describe 'Landing page' do
     
     before do
       page.driver.resize_window(500, 500)
-      page.execute_script "window.scrollBy(0, window.innerHeight)"
+      page.execute_script "window.scrollBy(0, window.innerHeight + 1000)"
     end
 
     describe 'with invalid information' do
