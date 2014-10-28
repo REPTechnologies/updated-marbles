@@ -32,7 +32,7 @@ group :test do
 end
 
 # Use SCSS for stylesheets
-gem 'sass-rails',  '4.0.1'
+gem 'sass-rails',  '4.0.3'
 gem 'compass-rails', '~> 2.0'
 
 # Use Uglifier as compressor for JavaScript assets
