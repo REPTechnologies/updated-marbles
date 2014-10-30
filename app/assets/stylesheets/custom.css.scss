@@ -784,7 +784,7 @@ span{
         padding-bottom: 80%;
     }
     #leadphoto{
-        margin-top: 10%;
+        margin-top: 30%;
     }
 }
 
@@ -809,15 +809,12 @@ span{
 
 @media only screen and (max-width: 424px){
     #leadphoto{
-        margin-top: 39%;
+        margin-top: 52%;
     }
     #section3{
         padding-bottom: 125%;}
     #leadtext{
         font-size: 75%;
-    }
-    #getwordout{
-        margin-top: 11s%;
     }
     #leadheader{
         padding-bottom: 12%;
@@ -827,6 +824,11 @@ span{
 @media only screen and (max-width: 363px){
     #section3{
         padding-bottom: 155%;}
+  
+    #leadphoto {
+      margin-top: 80%;
+    }
+  
     #leadheader{
         font-size: 250%;
         padding-top: 5%;
