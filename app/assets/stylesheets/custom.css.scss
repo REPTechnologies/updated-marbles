@@ -710,16 +710,14 @@ span{
     padding-top: 11%;
     padding-left: 10%;
 }
-#leadheader{
-    padding-bottom: 5%;
-}
+
 #leadtext{
     color: white;
     width: 97%;
     text-align: center;
     font-size: 100%;
     position: relative;
-    padding-top: 14%;
+    padding-top: 10%;
     padding-left: 55%;
 }
 
@@ -731,6 +729,9 @@ span{
     
     #leadtext{
         font-size: 90%;
+    }
+    #leadbottomtext {
+      padding-bottom: 5%;
     }
 }
 
@@ -750,7 +751,7 @@ span{
         width: 80%;
         position: absolute;
         text-align: left;
-        padding-top: 55%;
+        padding-top: 5%;
         margin-left: 8%;
     }
     
@@ -759,11 +760,6 @@ span{
         margin-left: -21%;
         position: absolute;
         float: left;
-    }
-    
-    
-    #section3{
-        padding-bottom: 65%;
     }
 }
 
@@ -775,7 +771,7 @@ span{
         font-size: 80%;
     }
     #leadphoto{
-        margin-top: 5%;
+        margin-top: 15%;
     }
 }
 
@@ -784,7 +780,7 @@ span{
         padding-bottom: 80%;
     }
     #leadphoto{
-        margin-top: 30%;
+        margin-top: 60%;
     }
 }
 
@@ -796,10 +792,10 @@ span{
 
 @media only screen and (max-width: 480px){
     #leadphoto{
-        margin-top: 35%;
+        margin-top: 45%;
     }
     #section3{
-        padding-bottom: 95%;
+        padding-bottom: 115%;
     }
   
     #leadtext{
@@ -808,25 +804,29 @@ span{
 }
 
 @media only screen and (max-width: 424px){
-    #leadphoto{
-        margin-top: 52%;
+   #section3{
+        padding-bottom: 85%;
+   }  
+  
+  #leadphoto{
+      margin-top: 10%;
+      margin-bottom: 10%;
     }
-    #section3{
-        padding-bottom: 125%;}
     #leadtext{
-        font-size: 75%;
+        font-size: 65%;
     }
-    #leadheader{
-        padding-bottom: 12%;
+    #leadbottomtext{
+        font-size: 135%;
     }
+    
 }
 
 @media only screen and (max-width: 363px){
     #section3{
-        padding-bottom: 155%;}
+        padding-bottom: 105%;}
   
     #leadphoto {
-      margin-top: 80%;
+      margin-top: 30%;
     }
   
     #leadheader{
