@@ -19,20 +19,19 @@ $(document).ready(function(){
 		}
 
 
-		if (y >= 580) {
+		if (y >= 380) {
 			$('#section1').addClass('fastanimate');
 		}
         
-        if (y >= 1100) {
+        if (y >= 900) {
 			$('#section2').addClass('fastanimate');
 		}
 
-        
-        if (y >= 1250) {
+        if (y >= 1050) {
 			$('#section3').addClass('fastanimate');
 		}
         
-        if (y >= 1800) {
+        if (y >= 1400) {
 			$('#track').addClass('fastanimate');
 		}
 

@@ -590,7 +590,7 @@ span{
 
     #ratingsystemphoto{
         width: 45%;
-        margin-top: 4%;
+        margin-top: 5.5%;
         padding-right: 3%;
     }
     
@@ -700,144 +700,20 @@ span{
 }
 #lead{
     background: #9b59b6;
-    width: 100%;
-    padding-bottom: 45%;
 }
 
-#leadphoto{
-    width: 65%;
-    position: absolute;
-    padding-top: 11%;
-    padding-left: 10%;
+#leadphoto {
+  padding: 5%;
+  text-align: center;
 }
 
 #leadtext{
     color: white;
-    width: 97%;
     text-align: center;
-    font-size: 100%;
-    position: relative;
-    padding-top: 10%;
-    padding-left: 55%;
+  margin-top: 7%;
 }
 
-@media only screen and (max-width: 1125px){
-    #leadphoto{
-        width: 50%;
-        
-    }
-    
-    #leadtext{
-        font-size: 90%;
-    }
-    #leadbottomtext {
-      padding-bottom: 5%;
-    }
-}
 
-@media only screen and (max-width: 850px){
-    #section3{
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    
-    #leadtext{
-      padding-top: 4%;
-    }
-} 
-
-@media only screen and (max-width: 750px){
-    #leadphoto{
-        width: 80%;
-        position: absolute;
-        text-align: left;
-        padding-top: 5%;
-        margin-left: 8%;
-    }
-    
-    #leadtext{    
-        margin-top: -5%;
-        margin-left: -21%;
-        position: absolute;
-        float: left;
-    }
-}
-
-@media only screen and (max-width: 640px){
-    #section3{
-        padding-bottom: 80%;
-    }
-    #leadtext{    
-        font-size: 80%;
-    }
-    #leadphoto{
-        margin-top: 15%;
-    }
-}
-
-@media only screen and (max-width: 580px){
-    #section3{
-        padding-bottom: 80%;
-    }
-    #leadphoto{
-        margin-top: 60%;
-    }
-}
-
-@media only screen and (max-width: 540px){
-    #leadphoto{
-        margin-top: 17%;
-    }
-}
-
-@media only screen and (max-width: 480px){
-    #leadphoto{
-        margin-top: 45%;
-    }
-    #section3{
-        padding-bottom: 115%;
-    }
-  
-    #leadtext{
-        font-size: 75%;
-    }
-}
-
-@media only screen and (max-width: 424px){
-   #section3{
-        padding-bottom: 85%;
-   }  
-  
-  #leadphoto{
-      margin-top: 10%;
-      margin-bottom: 10%;
-    }
-    #leadtext{
-        font-size: 65%;
-    }
-    #leadbottomtext{
-        font-size: 135%;
-    }
-    
-}
-
-@media only screen and (max-width: 363px){
-    #section3{
-        padding-bottom: 105%;}
-  
-    #leadphoto {
-      margin-top: 30%;
-    }
-  
-    #leadheader{
-        font-size: 250%;
-        padding-top: 5%;
-    }
-   
-    #leadtext{
-      padding-bottom: 20%;
-    }
-}
 
 /*****************************************************/
 
@@ -846,14 +722,14 @@ span{
     padding-bottom: 10%;
     min-height: 650px;
     opacity: 0;
+  width: 100%;
 }
 
 #trackparagraph{
     color: white;
-    position: absolute;
-    margin-top: 9%;
-    margin-left: 5%;
+    position: relative;
     font-size: 110%;
+  text-align: center;
 }
 
 #trackheader{
@@ -863,67 +739,9 @@ span{
 }
 
 #trackphoto{
-    width: 50%;
-    float: right;
-    margin-top: 4%;
-    margin-right: 4%;
-}
-
-@media only screen and (max-width: 1200px) { 
-    #trackparagraph{
-        margin-top: 9%;
-    }
-    
-    #track{
-        min-height: 570px;
-    }
-}
-@media only screen and (max-width: 992px) { 
-    #trackparagraph{
-        margin-left: 1%;
-        margin-top: 6%;
-    }
-    #trackphoto{
-        margin-right: 0.5%;
-    }
-    #track{
-        min-height: 520px;
-    }
-}
-@media only screen and (max-width: 740px) { 
-    #trackparagraph{
-        padding-top: 65%;
-        text-align: center;
-        width: 95%;
-    }
-    #trackphoto{
-        width: 95%;
-        padding-top: 10px;
-    }
-    #track{
-        min-height: 900px;
-        padding-top: 20px;
-    }
-
-}
-
-@media only screen and (max-width: 640px) { 
-    #track{
-        min-height: 830px;
-    }
-}
-@media only screen and (max-width: 580px) { 
-
-    #track{
-        min-height: 750px;
-    }
-}
-
-@media only screen and (max-width: 450px) { 
-
-    #track{
-        min-height: 650px;
-    }
+  position: relative;
+  margin-bottom: 3%;
+  
 }
 
 /******************** Footer/Call to action ****************/
