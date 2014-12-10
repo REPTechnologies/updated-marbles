@@ -355,7 +355,7 @@ header.main {
 }
 
 #monitor{
-    margin-top: 7%;
+    margin-top: 2%;
     width: 100%;
 }
 
@@ -547,22 +547,20 @@ span{
 }
 
 #section1header{
-    text-align-last: center;
-    margin-left: 36%;
+    text-align: center;
     padding-top: 5%;
+	  padding-bottom: 5%;
     color: white;
 }
 
 #ratingsystemphoto{
-    position: absolute;
-    padding-top: 5%;
+    position: relative;
 }
 
 #ratingparagraph{
     color: white;
-    margin-left: 60%;
-    margin-top: 15%;
     font-size: 130%;
+		padding-top: 20px;
     text-align: center;
 }
 
