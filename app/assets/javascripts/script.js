@@ -1,5 +1,23 @@
 $(document).ready(function(){
+    
+	// hide .navbar first
+	$("header.fixed").hide();
+	
+	// fade in .navbar
+	$(function () {
+		$(window).scroll(function () {
+            // set distance user needs to scroll before we fadeIn navbar
+			if ($(this).scrollTop() > 150) {
+				$('header.fixed').fadeIn();
+			} else {
+				$('.navbar').fadeOut();
+			}
+		});
 
+	
+	});
+	
+	
 
 	$('#bannerphoto').addClass('fastanimate');
     setTimeout( function() { $('#discovertext').addClass('fastanimate'); }, 300)
@@ -36,7 +54,5 @@ $(document).ready(function(){
 		}
 
 	});
-
-
 
 });

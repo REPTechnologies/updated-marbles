@@ -33,7 +33,6 @@ body {
     padding-top: 7px;
 }
 header, footer {
-  background-color: $primary-color;
   color: $light-text-color;
   position: relative;
 }
@@ -45,9 +44,13 @@ header, footer {
 header.main, footer {
   z-index: 1;
   padding: 5px;
+	background: #666;
+	opacity: .95;
 }
 
-
+#topfixed2 {
+	display: none;
+}
 
 .fixed {
   @include border-box;
@@ -55,6 +58,25 @@ header.main, footer {
   top: 0;
   width: 100%;
   left: 0;
+	background: #666;
+	opacity: .87;
+
+}
+
+.fixedheader {
+  z-index: 10;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.fixedheader {
+  @include border-box;
+	position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+	opacity: .87;
+
 }
 
 header.fixed {
@@ -114,6 +136,18 @@ section {
     }
   }
 }
+	
+#homebanner {
+	background: image-url('University-of-Minnesota.png') no-repeat center center;
+  @include background-size(cover);
+  height: 93vh;
+    
+   h2 {
+		color: $white-color;
+	}
+}
+
+
 
 .findscreenshot {
   max-width: 400px;
@@ -321,6 +355,10 @@ header.main {
     width: 85px;
 }
 
+#dropdowncontainer {
+	opacity: .9;
+}
+
 #emailbox{
     padding-top: 5%;
 }
@@ -523,13 +561,6 @@ header.main {
     margin-left: 33%;
 }
 
-span{
-	text-align: center;
-	display: block;
-	color: white;
-	padding-top: 8%;
-	font-size: 100%;
-}
 
 /**************************************************/
 /**************************************************/
