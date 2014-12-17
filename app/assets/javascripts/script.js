@@ -16,8 +16,7 @@ $(document).ready(function(){
 
 	
 	});
-	
-	
+
 
 	$('#bannerphoto').addClass('fastanimate');
     setTimeout( function() { $('#discovertext').addClass('fastanimate'); }, 300)
@@ -28,6 +27,14 @@ $(document).ready(function(){
 
 		var y = $(this).scrollTop();
 
+ 
+		if (y >= 260) {
+            $('.center-icons span').addClass('animate');
+			setTimeout( function() { $('#balance').addClass('animate'); }, 350)
+            setTimeout( function() { $('#find').addClass('animate'); }, 550)
+            setTimeout( function() { $('#share').addClass('animate'); }, 750)
+            setTimeout( function() { $('#dial').addClass('animate'); }, 850)
+		}
  
 		if (y >= 260) {
             $('.center-icons span').addClass('animate');

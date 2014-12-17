@@ -868,3 +868,57 @@ header.main {
 	animation-duration: .5s;
 }
 
+/***************************************section2*******************************************************************************************/
+#personalGuide{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+#balance, #find, #share, #dial{
+	opacity: 0;
+}
+#thesis{
+    background: #e74c3c;
+}
+#orbs { 
+	background: #e74c3c;
+	text-align: center; 
+	color: white;
+	padding-bottom: 3%;
+	font-size: 250%;
+}
+
+#balance{
+    width: 35%;
+    margin-left: 33%;
+}
+
+#find{
+    width: 35%;
+    margin-left: 33%;
+}
+
+#share{
+    width: 35%;
+    margin-left: 33%;
+}
+
+#dial{
+    width: 35%;
+    margin-left: 33%;
+}
+
+span{
+	text-align: center;
+	display: block;
+	color: #fff;
+	padding-top: 8%;
+	font-size: 100%;
+}
+
+#span1, #span2, #span3, #span4{
+    color: #fff;
+    font-size: 60%;
+}
