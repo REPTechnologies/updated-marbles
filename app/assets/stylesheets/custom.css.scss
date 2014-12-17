@@ -52,6 +52,44 @@ header.main, footer {
 	display: none;
 }
 
+
+@media only screen and (max-width: 1500px) { 
+
+    #toptext {
+        font-size: 300%;
+    }
+}
+	
+@media only screen and (max-width: 1000px) { 
+
+    #toptext {
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 800px) { 
+
+    #toptext {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+
+    #toptext {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px) { 
+
+    #toptext {
+        font-size: 50%;
+			margin-top: 50%;
+    }
+}
+
+
 .fixed {
   @include border-box;
   position: fixed;
