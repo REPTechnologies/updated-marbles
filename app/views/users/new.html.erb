@@ -26,8 +26,8 @@
 
 <section id="homebanner">
     <div class="container">
-        <div class="col-md-12 text-center" id="toptext" style="margin-top: 20vh">
-            <h2>feel good about yourself<br><br>have healthy thoughts, relationships, and experiences that build you up<br><br>simply increase awareness and record everyday perceptions with marbles.mx</h2>
+        <div id="toptext" class="col-md-12 text-center" style="margin-top: 20vh">
+            <h2>feel good about yourself<br><br>have thoughts, relationships, and experiences that build you up<br><br>simply check-in and increase awareness with marbles.mx</h2>
             <form id="bottomfixed" class="form-inline text-center" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
               <input name="utf8" type="hidden" value="✓">
             
@@ -35,43 +35,61 @@
                 <input id="user-email-main" name="user[email]" type="text" class="form-control" placeholder="Email">
               </div>
             
-              <input id="submit-main" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
+              <input id="submit-main" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access" style="margin-top:7.5px">
         </form>
  
         </div>
     </div>
 </section>
-
+<!--Section2------------------------------------------------ -->
 <section id="thesis" style="overflow: hidden; margin:0px">
-		<div id="orbs">
-			<div class="container12">
-				<div class="row" id="circles">
-                    
-					<div class="column4 center-icons">
-					<span>Discover</span>
-                        <div id="light">
-                            <%= image_tag "light.png"%>
-                        </div>
+  <div>
+    <h1 id="personalGuide">Your personal guide to mental health and wellbeing</h1>
+  </div>
+  <div id="orbs">
+		<div class="container12">
+		  <div class="row" id="circles">                    
+				<div class="column3 center-icons">
+          <div id="balance">
+            <%= image_tag "balance.svg"%>
+          </div>
+          <span>Balance</span>
+          <p id="span1">Organize your thoughts, feelings, and emotions to live optimally</p>
+					</div>           
+					<div class="column3 center-icons">
+            <div id="find">
+              <%= image_tag "find.svg"%>
+            </div>
+					  <span>Find</span>
+            <p id="span2">Discover things to do in your community based on what will help you the most</p>
 					</div>
                     
-					<div class="column4 center-icons">
-					<span>Balance</span>
-                        <div id="scale">
-                            <%= image_tag "scale.png"%>
+					<div class="column3 center-icons">
+                        <div id="share">
+                            <%= image_tag "share.svg"%>
                         </div>
+					    <span>Share</span>
+                        <p id="span3">
+                        
+                          
+                          Add diversity to your events by sharing them across campus
+                          
+                          
+                        </p>
 					</div>
                     
-					<div class="column4 center-icons">
-					<span>Lead</span>
-                        <div id="tracks">
-                            <%= image_tag "tracks.png"%>
+                    <div class="column3 center-icons">
+                        <div id="dial">
+                            <%= image_tag "track.svg"%>
                         </div>
+					    <span>Track</span>
+                        <p id="span4">Identify and track how you and your community are growing </p>
 					</div>
-                    
 				</div>
 			</div>
 		</div>
 </section>
+
 
 <!-- ------------------------------- -->
 
