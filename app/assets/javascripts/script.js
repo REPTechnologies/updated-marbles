@@ -10,7 +10,7 @@ $(document).ready(function(){
 			if ($(this).scrollTop() > 150) {
 				$('header.fixed').fadeIn();
 			} else {
-				$('.navbar').fadeOut();
+				$('header.fixed').fadeOut();
 			}
 		});
 
