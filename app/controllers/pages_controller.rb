@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def blog
+  def contact
   end
 
   def faqs
