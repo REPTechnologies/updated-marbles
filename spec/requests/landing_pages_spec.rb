@@ -143,7 +143,7 @@ describe 'Landing page' do
 
   it 'has description' do
     should have_content <<-DESC
-feel good about yourself
+live skillfully.
     DESC
   end
 

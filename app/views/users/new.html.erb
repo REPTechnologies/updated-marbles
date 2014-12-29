@@ -23,11 +23,10 @@
 </header>
 <%= render "layouts/application/error_messages" %>
 
-
 <section id="homebanner">
     <div class="container">
         <div id="toptext" class="col-md-12 text-center" style="margin-top: 20vh">
-            <h2>feel good about yourself<br><br>have thoughts, relationships, and experiences that build you up<br><br>simply check-in and increase awareness with marbles.mx</h2>
+            <h1>live skillfully.<br><br>navigate thoughts, relationships, and experiences with ease<br><br>develop momentary awareness, intuition, and confidence with marbles.mx</h1>
             <form id="bottomfixed" class="form-inline text-center" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
               <input name="utf8" type="hidden" value="✓">
             
@@ -35,7 +34,7 @@
                 <input id="user-email-main" name="user[email]" type="text" class="form-control" placeholder="Email">
               </div>
             
-              <input id="submit-main" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access" style="margin-top:7.5px">
+              <input id="submit-main" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access" >
         </form>
  
         </div>
@@ -72,7 +71,7 @@
                         <p id="span3">
                         
                           
-                          Add diversity to your events by sharing them across campus
+                          Add spontaneity and excitement to your events by sharing them across campus
                           
                           
                         </p>
@@ -95,24 +94,41 @@
 
 <section id="section1">
     
-    <div>
+     <div class="container">
         <div> <!-- refers to the fact that it takes up 4 colums -->
-            <h1 id="section1header">Eliminate the clutter</h1>
+            <h1 id="section1header" class="text-center">Get Organized</h1>
         </div>
-        <div class="container">
-
-            <div id="ratingsystemphoto" class="row col-sm-5 col-sm-offset-1" >
+            <div class="col-sm-6 text-center" id="ratingparagraph">
+                        <p>Our simple rating system helps you track your mental health and understand how and where to improve so that you can live well. Find things to do in your local community based on what will help you the most in all areas of life.</p>
+            </div>
+						
+						<div id="ratingsystemphoto" class="col-sm-6 text-center" >
                 <%= image_tag "chaos.png"%>
             </div>
-
-            <div class="row col-sm-5 col-sm-offset-1" id="ratingparagraph">
-                        <p>Our simple rating system helps you understand your mental health and make informed decisions to live well. Find things to do in your local community based on what will help you the most. </p>
-            </div>
+					
         </div>
-    </div>
+        </div>
     
 </section>
 
+<!-- ------------------------------------------------ -->
+<section id="track" class="container">
+    <div id="trackheader" class="row" style="margin-bottom:60px"> 
+        <h1>Track Trends</h1>
+    </div>
+    
+    <div id="trackparagraphcontainer" class="col-md-6" >
+        <div id="trackparagraph" class="text-centered">
+            <p>Customizeable dashboard to see<br> your change in mental health<br><br><br>Know how you and your community<br>are growing and changing<br>all in one place</p>
+        </div>
+    </div>
+    
+        
+            <div id="trackphoto" class="col-md-6">
+                 <%= image_tag "trackhorizontal.png"%>
+            </div>
+  
+</section>
 <!-- ------------------------------- -->
 <section id="section2">
 		<div class="testimonial" id="testimonial">
@@ -135,25 +151,6 @@
               <h3 id="leadbottomtext"><br>Connect with the students who will get the most from your activities <br><br>Record your impact on campus</h3>
             </div>
 		</div>
-</section>
-
-<!-- ------------------------------------------------ -->
-<section id="track" class="container">
-    <div id="trackheader" class="row" style="margin-bottom:60px"> 
-        <h1>Track Trends</h1>
-    </div>
-    
-    <div id="trackparagraphcontainer" class="col-md-6" >
-        <div id="trackparagraph" class="text-centered">
-            <h2>Customizeable dashboard to see<br> your change in mental health<br><br><br>Know how you and your community<br>are growing and changing<br>all in one place</h2>
-        </div>
-    </div>
-    
-        
-            <div id="trackphoto" class="col-md-6">
-                 <%= image_tag "trackhorizontal.png"%>
-            </div>
-  
 </section>
 
 <!-- ------------------------------------------------ -->
