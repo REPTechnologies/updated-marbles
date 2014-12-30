@@ -138,7 +138,7 @@ describe 'Landing page' do
   end
   
   it 'has title' do
-    should have_title 'marbles.mx | get in the mix'
+    should have_title 'marbles.mx | live skillfully.'
   end
 
   it 'has description' do
