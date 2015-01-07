@@ -1,26 +1,28 @@
-
 <!-- --------------DROPDOWN HEADER------------ -->
 <header class="fixed" style="overflow: hidden; margin:0px">
   <div class="container" id="dropdowncontainer">      
     <div class="col-sm-3 hidden-xs" id="dropdownphoto">
-      <%= image_tag "Orange Logo48.svg"%>
+      <%= link_to image_tag("Orange Logo48.svg"), root_path  %>
     </div>
-
-    <div class="col-lg-11 col-md-10 col-sm-9 col-xs-12" id="headercontainer">
-
-      <form id="topfixed" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
-            <input name="utf8" type="hidden" value="✓">
-
-            <div id="email_group" class="form-group">
-              <input id="user-email-fixed" name="user[email]" type="text" class="form-control" placeholder="Email">
-            </div>
-
-            <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
-      </form>
-        
-        
-    </div>
+    <div>
       
+      <div class="col-lg-7 col-md-8 col-sm-10 col-xs-12" id="headercontainer">
+				<div class="links">
+					<%= link_to "About", about_path %>&nbsp;&nbsp;&nbsp;
+					<%= link_to "Blog", "https://reptech.tumblr.com" %>&nbsp;&nbsp;&nbsp;
+					<%= link_to "Contact", contact_path %>&nbsp;&nbsp;&nbsp;
+				</div>
+        <form id="topfixed" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+              <input name="utf8" type="hidden" value="✓">
+
+              <div id="email_group" class="form-group">
+                <input id="user-email-fixed" name="user[email]" type="text" class="form-control" placeholder="Email">
+              </div>
+
+              <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
+        </form>
+      </div>
+    </div>
   </div>
 </header>
 <%= render "layouts/application/error_messages" %>

@@ -3,10 +3,8 @@
     <div class="col-sm-3 hidden-xs" id="dropdownphoto">
       <%= image_tag "Orange Logo48.svg"%>
     </div>
-
-    <div class="col-lg-11 col-md-10 col-sm-9 col-xs-12" id="headercontainer">
-
-      <form id="topfixed2" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+			 <div class="col-lg-7 col-md-8 col-sm-10 col-xs-12" id="headercontainer">
+      <form id="topfixed2" class="form-inline hidden" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
             <input name="utf8" type="hidden" value="✓">
 
             <div id="email_group" class="form-group">
@@ -21,6 +19,7 @@
       
   </div>
 </header>
+<%= render "layouts/application/error_messages" %>
 <%= render "layouts/application/error_messages" %>
 
 <section id="homebanner">
