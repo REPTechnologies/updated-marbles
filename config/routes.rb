@@ -1,6 +1,12 @@
 MarblesLandingpage::Application.routes.draw do
+ 
 resources :users, only: [:create]
 root 'users#new'
+get '/faq' => 'pages#faqs'
+get '/about' => 'pages#about'
+get '/contact' => 'pages#contact'
+get "/blog" => redirect("http://reptech.tumblr.com")
+	
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
