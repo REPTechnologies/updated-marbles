@@ -5,6 +5,9 @@ class PagesController < ApplicationController
   def blog
   end
 
-  def faqs
+  def faq
+  end
+	
+	def contact
   end
 end

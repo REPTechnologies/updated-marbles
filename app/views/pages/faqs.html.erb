@@ -1,66 +1,55 @@
-<h1>Pages#faqs</h1>
-<body>   
-    
-<!-- content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-push-2", style="margin-top: 40px">
-                <h1 id="faq_title" class="mtl mbl">Frequently Asked Questions</h1>
-            </div>
-        </div>
-
-        <div class="row lead mbx" id="faq_content" >
-            <div class="col-md-2 mbl" id="faq_nav_wrapper" >
-                <div id="faq_nav"></div>
-            </div>
-
-            <div class="col-md-10"> 
-                <div class="faq-section show" data-section="general">
-                    <div class="faq-question">What is Marbles?</div>
-                        <div class="faq-answer">Marbles is a web app that helps you live a more balanced and meaningful life</div>
-                    
-                    <div class="faq-question">How does Marbles work</div>
-                    <div class="faq-answer">Marbles is an all inclusive app where you can find our rating system that will help you understand your current mental health, find things to do in your community based on what will help you most, and track your progress. </div>
-                    
-                    <div class="faq-question">Why should I use Marbles?</div>
-                        <div class="faq-answer">We know how hard and stressful life can be, and we can't always ensure that we get the most of our time and lives. We thought that since we already use our computers and phones for work and entertainment, why not use them to improve our own lives?</div>
-                    
-                        <div class="faq-question">How much does marbles cost?</div>
-                            <div class="faq-answer">We care for our community, and here at Marbles, we believe that money should not get on the way of people's mental health. Therefore, Marbles will be free of use for all users.</div>
-                        
-                </div>
-             </div>
-        </div>
+<header class="fixedheader" style="overflow: hidden; margin:0px">
+  <div class="container" id="dropdowncontainer">      
+    <div class="col-sm-3 hidden-xs" id="dropdownphoto">
+    <%= link_to image_tag("Orange Logo48.svg"), root_path  %>
     </div>
-</div>      
-<!-- content -->
-       
-            
-            
-<!-- footer -->
-<footer class="container">
-    <div class="text-center social-links mtx mbx">
-        
-        <a target="_blank" href="#">
-            <img class="social-icon" width="28" height="23" data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/twitter%402x.png" src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/twitter%402x.png" alt="Twitter"></img>
-        </a>
-    
-        <a href="https://www.facebook.com/pages/marblesmx/563236917102261?ref=hl" target="_blank">
-            <img alt="Facebook" class="social-icon" src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/facebook%402x.png" data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/facebook%402x.png" width="15" height="30">
-        </a>
-        
-        <a target="_blank" href="#">
-            <img class="social-icon" width="28" height="26" data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/linkedin%402x.png" src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/linkedin%402x.png" alt="LinkedIn"></img>
-        </a>
-            
-        <a href="mailto:adam@reptech.io" target="_blank">
-            <img alt="Email" class="social-icon" src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/email%402x.png" data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/email%402x.png" width="34" height="22">
-        </a>
+       <div class="col-lg-7 col-md-8 col-sm-10 col-xs-12" id="headercontainer">
+				 <div class="links">
+					<%= link_to "About", about_path %>&nbsp;&nbsp;&nbsp;
+					<%= link_to "Blog", blog_path %>&nbsp;&nbsp;&nbsp;
+					<%= link_to "FAQS", faq_path %>&nbsp;&nbsp;&nbsp;
+				</div>
+				<form id="topfixed2" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+           <input name="utf8" type="hidden" value="✓">
 
+           <div id="email_group" class="form-group">
+              <input id="user-email-fake" name="user[email]" type="text" class="form-control" placeholder="Email">
+            </div>
+
+            <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="fake" value="Get Early Access">
+      </form>
+        
+        
     </div>
-</footer>  
-<!-- footer -->
+      
+  </div>
+</header>
 
-
-
-</body>
+<!--core Values------------------------------------------------ -->
+<section id="faqs">
+  <div class="container">
+    <div class="sectionContainer">
+      <div> 
+        <h1 id="ourValuesHeader" style="margin-top:200px">FAQS</h1>
+      </div>
+			<h1 class="col-md-11 col-md-11 col-sm-10 col-xs-9">
+				<div class="faq-question">What is Marbles?
+				</div><br>
+				<div class="faq-answer">Marbles is a web app that helps you live a more balanced and meaningful life.
+				</div><br><br>
+				<div class="faq-question">How does Marbles work?
+				</div><br>
+				<div class="faq-answer">Marbles is an all inclusive app where you can find our rating system that will help you understand your current mental health, find things to do in your community based on what will help you most, and track your progress. 
+				</div><br><br>
+				<div class="faq-question">Why should I use Marbles?
+				</div><br>
+				<div class="faq-answer">We know how hard and stressful life can be, and we can't always ensure that we get the most of our time and lives. We thought that since we already use our computers and phones for work and entertainment, why not use them to improve our own lives?
+				</div><br><br>
+				<div class="faq-question">How much does marbles cost?
+				</div><br>
+				<div class="faq-answer">We care for our community, and here at Marbles, we believe that money should not get on the way of people's mental health. Therefore, Marbles will be free of use for all users.
+				</div><br><br>
+			</div>
+	</div>
+</section>
+            

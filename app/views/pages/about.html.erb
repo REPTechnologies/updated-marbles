@@ -1,20 +1,27 @@
 <header class="fixedheader" style="overflow: hidden; margin:0px">
   <div class="container" id="dropdowncontainer">      
     <div class="col-sm-3 hidden-xs" id="dropdownphoto">
-      <%= link_to image_tag("Orange Logo48.svg"), root_path  %>
+    <%= link_to image_tag("Orange Logo48.svg"), root_path  %>
     </div>
-		<div  id="links"><%= link_to "About", about_path %>
-		</div>
-    <!--------------------------------------------------------------------this section is hidden to keep the spacing the same with the dropdown header---------------------------------------->
-		<div class="col-lg-11 col-md-10 col-sm-9 col-xs-12" id="headercontainer">
-      <form id="topfixed2" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
-        <input name="utf8" type="hidden" value="✓">
-        <div id="email_group" class="form-group">
-          <input id="user-email-fake" name="user[email]" type="text" class="form-control" placeholder="Email">
-        </div>
-        <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="fake" value="Get Early Access">
+       <div class="col-lg-7 col-md-8 col-sm-10 col-xs-12" id="headercontainer">
+				 <div class="links">
+					<%= link_to "About", about_path %>&nbsp;&nbsp;&nbsp;
+					<%= link_to "Blog", blog_path %>&nbsp;&nbsp;&nbsp;
+					<%= link_to "FAQS", faq_path %>&nbsp;&nbsp;&nbsp;
+				</div>
+				<form id="topfixed2" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+           <input name="utf8" type="hidden" value="✓">
+
+           <div id="email_group" class="form-group">
+              <input id="user-email-fake" name="user[email]" type="text" class="form-control" placeholder="Email">
+            </div>
+
+            <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="fake" value="Get Early Access">
       </form>
+        
+        
     </div>
+      
   </div>
 </header>
 
@@ -22,15 +29,21 @@
 <section id="aboutBanner">
   <div class="container">
     <div class="col-md-12 text-center" id="aboutHeader">
-      <h1>Our mission is to help students grow and realize their full potential</h1>
+      <h1>Our mission is to help students realize their full potential</h1>
     </div>
   </div>
 </section>
 
 <!--core Values------------------------------------------------ -->
-<section id="ourValues">
-  <div class="container">
-    <div class="sectionContainer">
+<section id="whoarewe">
+  <div class="container" style="margin-top: 30px">
+			<h1>What are we?</h1><br><br>
+			<p>REPtech designs and builds web and mobile apps to develop awareness and mindfulness. We gather self-reported user perceptions on 7 components of life and connect users to customized traditional and alternative healthcare and lifestyle services that reflect user inputs on a daily basis. The goal is to help users develop and practice more beneficial mental and emotional habits</p>
+		</div>
+</section> 
+		
+<section id="ourValues">		
+		<div class="sectionContainer">
       <div> 
         <h1 id="ourValuesHeader">Our Values</h1>
       </div>
@@ -71,7 +84,7 @@ Nothing is perfect; no action, person, or idea…everything has room to grow and
         </h1>
       </div>
       <p>
-Every person on this planet is capable of so much. We at REP-Tech honestly believe that anyone can reach their full potential if they put their mind to it. It takes practice; nothing works on the first try. Marbles is our first try at creating a tool to help people stay on track in all aspects of live and realize goals. Life is so much more about work, social life, or relationships; to develop a positive and holistic life experience, one must spend energy on all components. Marbles will help you get to where you want to go. We promise: after using marbles for one week, you will see and feel its value.
+Every person on this planet is capable of so much. We at REPtech honestly believe that anyone can reach their full potential if they put their mind to it. It takes practice; nothing works on the first try. Marbles is our first try at creating a tool to help people stay on track in all aspects of live and realize goals. Life is so much more about work, social life, or relationships; to develop a positive and holistic life experience, one must spend energy on all components. Marbles will help you get to where you want to go. We promise: after using marbles for one week, you will see and feel its value.
       </p>
     </div>
     
