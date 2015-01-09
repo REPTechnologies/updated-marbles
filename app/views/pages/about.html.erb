@@ -3,22 +3,169 @@
     <div class="col-sm-3 hidden-xs" id="dropdownphoto">
       <%= link_to image_tag("marbles icon 4.nodisc.png"), root_path  %>
     </div>
-		<div><%= link_to "About", about_path %>
+		<div  id="links"><%= link_to "About", about_path %>
 		</div>
     <!--------------------------------------------------------------------this section is hidden to keep the spacing the same with the dropdown header---------------------------------------->
 		<div class="col-lg-11 col-md-10 col-sm-9 col-xs-12" id="headercontainer">
       <form id="topfixed2" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
-            <input name="utf8" type="hidden" value="✓">
-
-            <div id="email_group" class="form-group">
-              <input id="user-email-fake" name="user[email]" type="text" class="form-control" placeholder="Email">
-            </div>
-
-            <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="fake" value="Get Early Access">
+        <input name="utf8" type="hidden" value="✓">
+        <div id="email_group" class="form-group">
+          <input id="user-email-fake" name="user[email]" type="text" class="form-control" placeholder="Email">
+        </div>
+        <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="fake" value="Get Early Access">
       </form>
-        
-        
     </div>
-      
   </div>
 </header>
+
+<!--about Banner------------------------------------------------ -->
+<section id="aboutBanner">
+  <div class="container">
+    <div class="col-md-12 text-center" id="aboutHeader">
+      <h1>Our mission is to help students grow and realize their full potential</h1>
+    </div>
+  </div>
+</section>
+
+<!--core Values------------------------------------------------ -->
+<section id="ourValues">
+  <div class="container">
+    <div class="sectionContainer">
+      <div> 
+        <h1 id="ourValuesHeader">Our Values</h1>
+      </div>
+      <div>
+        <div class="sectionRow">
+          <div id="eye" class="col-md-1 col-sm-2 col-xs-3">
+            <%= image_tag "eye.svg"%>
+          </div>
+          <h1 class="col-md-11 col-md-11 col-sm-10 col-xs-9">
+            Awareness
+          </h1>
+        </div>
+        <p>
+  We often spend most of our day on autopilot. Doing daily chores, eating, cleaning, bathing, walking to class or on the bus… all these things require very little mental energy. However, these are also really great opportunities to learn more about the world around us and ourselves. If we spend our time buried in technology or our revolving thoughts, we can miss opportunities to try new things and grow. Developing momentary awareness is crucial in our company’s journey to start doing what we love and sharing the knowledge. Simply developing momentary awareness of what we are thinking, doing, and experiencing can help us notice some of the small joys that often go over looked in our busy lives. Take a moment, expand your awareness, and be joyful.
+        </p>
+      </div>
+    </div>
+    <div  class="sectionContainer">
+      <div class="sectionRow">
+        <div id="aboutScales"  class="col-md-1 col-sm-2 col-xs-3">
+          <%= image_tag "balance.svg"%>
+        </div>
+        <h1 class="col-md-11 col-md-11 col-sm-10 col-xs-9">
+          Balance
+        </h1>
+      </div>
+      <p>
+Nothing is perfect; no action, person, or idea…everything has room to grow and expand. Developing balance in our daily lives is paramount to living healthy as well. Whether it’s going to the gym, taking strides towards a career, or mending a relationship, it can be challenging to decide which is more important. Marbles is designed to help take some of the pressure off. By checking in every day, you can literally see when you are out of balance! We also offer the best ways to get back to where you want to be: living well.
+      </p>
+    </div>
+    <div class="sectionContainer">
+      <div class="sectionRow">
+        <div id="enlightened"  class="col-md-1 col-sm-2 col-xs-3">
+          <%= image_tag "enlightened.svg"%>
+        </div>
+        <h1 class="col-md-11 col-md-11 col-sm-10 col-xs-9">
+          Self-Actualization
+        </h1>
+      </div>
+      <p>
+Every person on this planet is capable of so much. We at REP-Tech honestly believe that anyone can reach their full potential if they put their mind to it. It takes practice; nothing works on the first try. Marbles is our first try at creating a tool to help people stay on track in all aspects of live and realize goals. Life is so much more about work, social life, or relationships; to develop a positive and holistic life experience, one must spend energy on all components. Marbles will help you get to where you want to go. We promise: after using marbles for one week, you will see and feel its value.
+      </p>
+    </div>
+    
+
+  </div>
+</section>
+
+
+<!--Our Story------------------------------------------------ -->
+
+<section id="ourStory">
+    <div> 
+      <h1 id="ourStoryHeader">Our Story</h1>
+    </div>
+    <div class="profileRow">
+      <div class="bio col-md-4">
+        <div class="pictureContainer">
+          <div class="profilePic" id="adam">
+            <%= image_tag "adamCircleSmall.png"%>
+          </div>
+        </div>
+        <div class="bioText">
+        <span class="bioName">Adam Moens</span>
+        <p class="bioParagraph">"I am exited to work with marbles because I am passionate about helping people and making better ways to live, especially since I have personal experiences with mental health struggles. We are truly changing the way young people manage mental health and wellbeing using web and mobile apps and I'm grateful to be a part of this team and meaningful cause."</p>
+        </div>
+      </div>
+      <div class="bio col-md-4">
+        <div class="pictureContainer">
+          <div class="profilePic" id="adam">
+            <%= image_tag "audreyCircleSmall.png"%>
+          </div>
+        </div>
+        <div class="bioText">
+        <span class="bioName">Audrey Blankenheim</span>
+        <p class="bioParagraph">"I am so glad to be on Marbles' team to encourage students to take charge of their college experience. As a recent graduate, I know college can be overwhelming with all of the choices. I am honored to be a part of the mission that empowers students to make these decisions with confidence and self-awareness.
+"</p>
+        </div>
+      </div>
+      <div class="bio col-md-4">
+        <div class="pictureContainer">
+          <div class="profilePic" id="adam">
+            <%= image_tag "alanCircleSmall.png"%>
+          </div>
+        </div>
+        <div class="bioText">
+        <span class="bioName">Alan Gi</span>
+        <p class="bioParagraph">"While working with Marbles, I was able to exercise my creative skills, along with my web designing and marketing abilities. The mission has always been about self empowerment, awareness, and helping people to reach their full potential. It's a blast doing something I like and working working with these fantastic individuals!"</p>
+        </div>
+      </div>
+  </div>
+  
+  <div>
+      <div class="bio col-md-4">
+        <div class="pictureContainer">
+          <div class="profilePic" id="adam">
+            <%= image_tag "donovanCircleSmall.png"%>
+          </div>
+        </div>
+        <div class="bioText">
+        <span class="bioName">Donovan</span>
+        <p class="bioParagraph">"marbles is more than just a good idea and service. We are really changing the way people think about wellbeing and health to be more inclusive and accepting. Our new approach to mental health inspires me to do good work and be a part of a terrific team."</p>
+        </div>
+      </div>
+      <div class="bio col-md-4">
+        <div class="pictureContainer">
+          <div class="profilePic" id="adam">
+            <%= image_tag "linusCircleSmall.png"%>
+          </div>
+        </div>
+        <div class="bioText">
+        <span class="bioName">Linus Chan</span>
+        <p class="bioParagraph">"Hey! Chances are if youve sent an email, checkout out our Facebook page or ran into some dude talking about Marbles, youve most likely met me. Marbles is pretty fantastic and I really hope that you give it as shot.  I promise to do my best to answer any and all of your questions about our product! 
+"</p>
+        </div>
+      </div>
+      <div class="bio col-md-4">
+        <div class="pictureContainer">
+          <div class="profilePic" id="adam">
+            <%= image_tag "sandratoCircleSmall.png"%>
+          </div>
+        </div>
+        <div class="bioText">
+        <span class="bioName">Sandrato Adriamsay</span>
+        <p class="bioParagraph">"College is the time when people take on more responsibilities and plan their future. I would have enjoyed an app like marbles to help me better balance my life and live a more healthy life. I'm very thankful to be part of this opportunity, and I hope that  we'll make a positive impact on people's lives."
+</p>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!---- Mission Quote ------------------ -->
+<section id="missionQuoteSection">
+  <div id="missionQuote">
+    <h1>"Our mission is to help students grow and realize their full potential"</h1>
+  </div>
+</section>
+
