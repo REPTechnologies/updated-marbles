@@ -428,11 +428,14 @@ header.main {
 }
 
 #dropdownphoto{
-    width: 85px;
+	width: 85px;
+	position: relative;
+	
 }
 
 #dropdowncontainer {
 	opacity: .9;
+	height: 150px;
 }
 
 #emailbox{
@@ -1032,13 +1035,13 @@ span{
     }
 }
 
-@media only screen and (max-width: 600px) { 
+/**@media only screen and (max-width: 600px) { 
 
     #chevron {
         visibility: hidden;
     }
 }
-
+**/
 
 .scroll-dwn {
  width: 100%;
@@ -1283,3 +1286,19 @@ span{
   height: 1000px;
   color: #FFF;
 }
+
+/*******************dropdown header**************************/
+
+#topfixed {
+	position: absolute;
+	width: 60%;
+	padding-bottom: 10px;
+	float:left;
+}
+
+#submit-fixed {
+	position:absolute;
+	float: right;
+}
+
+	
