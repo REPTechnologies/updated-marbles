@@ -51,8 +51,8 @@ header.main, footer {
 /************Dropdown Nav Bar Links *************/
 
 a:visited { text-decoration: none; color: #FFF; }
-a:hover { text-decoration: none; color: #ff8c05;; }
-a:focus { text-decoration: none; color: #3498db;; }
+a:hover { text-decoration: none; color: #3498db;; }
+a:focus { text-decoration: none; color: #FFF;; }
 a:hover, a:active { text-decoration: none; color: #ff8c05; }
 a{
   -o-transition:.5s;
@@ -272,10 +272,6 @@ section {
 .container.row {
   position: relative;
   text-align: center;
-}
-
-.col-xs-12 {
-  text-align: left;
 }
 
 #chevrondown {
@@ -1008,20 +1004,20 @@ span{
 @media only screen and (max-width: 2900px) { 
 
     #chevron {
-        margin-top: 20%;
+        margin-top: 10%;
     }
 }
 
 @media only screen and (max-width: 1000px) { 
 
     #chevron {
-        margin-top: 7%;
+        margin-top: 5%;
     }
 }
 @media only screen and (max-width: 900px) { 
 
     #chevron {
-        margin-top: 5%;
+        margin-top: 3%;
     }
 }
 
@@ -1035,7 +1031,7 @@ span{
 @media only screen and (max-width: 600px) { 
 
     #chevron {
-        visibility: hidden;
+        
     }
 }
 
@@ -1144,46 +1140,26 @@ span{
 /*********** Core Values ************/
 #ourValues{
   background: #3498db;
-  height: 1000px;
   color: #FFF;
+	position: relative;
+	
+	.container {
+		margin-bottom: 50px;
+	}
 }
+
 #ourValuesHeader{
     text-align: center;
     padding: 50px 0;
     color: white;
 }
+
 .sectionRow{
   width: 100%;
 }
-.sectionContainer{
+#values{
   padding-bottom: 50px;
 }
-@media only screen and (max-width: 991px){
-#ourValues{
-  height: 1300px;
-}
-}
-@media only screen and (max-width: 700px){
-#ourValues{
-  height: 1500px;
-}
-}
-@media only screen and (max-width: 540px){
-#ourValues{
-  height: 1700px;
-}
-}
-@media only screen and (max-width: 480px){
-#ourValues{
-  height: 2000px;
-}
-}
-@media only screen and (max-width: 386px){
-#ourValues{
-  height: 2300px;
-}
-}
-
 
 /*********** Our Story ************/
 #ourStory{
@@ -1203,10 +1179,9 @@ span{
   text-align-last: center;
 }
 
-.profileRow{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  float: left;
+#profiles{
+  margin-top: 50px;
+	position: relative;
 }
 .bio{
   padding-left: 2%;
@@ -1223,7 +1198,7 @@ span{
   text-align: center;
 }
 .bioName{
-  font-size: 35px;
+  font-size: 30px;
 }
 .bioParagraph{
   font-size: 18px;
@@ -1273,13 +1248,11 @@ span{
 
 #whoarewe {
 	background: #ff8c05;
-	height: 400px;
 	color: #FFF;
 	text-align: center;
+	
+	.container {
+		margin-bottom: 50px;
+	}
 }
 
-#ourValues{
-  background: #3498db;
-  height: 1000px;
-  color: #FFF;
-}
