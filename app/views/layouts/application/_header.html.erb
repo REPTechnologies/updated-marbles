@@ -1,25 +1,26 @@
 <!-- --------------DROPDOWN HEADER------------ -->
 <header class="fixed" style="overflow: hidden; margin:0px">
   <div class="container" id="dropdowncontainer">      
-    <div class="col-sm-3 hidden-xs" id="dropdownphoto">
+    <div class="col-sm-2 hidden-xs" id="dropdownphoto">
       <%= link_to image_tag("Orange Logo48.svg"), root_path  %>
+			<span id="logotext" class="links">marbles.mx</span>
     </div>
     <div>
       
-      <div class="col-lg-7 col-md-8 col-sm-10 col-xs-12" id="headercontainer">
-				<div class="links">
+      <div class="col-lg-7 col-md-9 col-sm-10 col-xs-12" id="headercontainer">
+        <form id="topfixed" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+					<div class="links">
 					<%= link_to "About", about_path %>&nbsp;&nbsp;&nbsp;
 					<%= link_to "Blog", blog_path %>&nbsp;&nbsp;&nbsp;
-					<%= link_to "FAQS", faq_path %>&nbsp;&nbsp;&nbsp;
+					<%= link_to "FAQs", faq_path %>&nbsp;&nbsp;&nbsp;
 				</div>
-        <form id="topfixed" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
               <input name="utf8" type="hidden" value="✓">
 
-              <div id="email_group" class="form-group">
+              <div id="email_group" class="form-group" style="margin-bottom: 15px">
                 <input id="user-email-fixed" name="user[email]" type="text" class="form-control" placeholder="Email">
               </div>
 
-              <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
+              <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access" style="margin-bottom: 15px">
         </form>
       </div>
     </div>
