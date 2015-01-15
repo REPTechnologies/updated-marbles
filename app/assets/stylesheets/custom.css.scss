@@ -3,6 +3,7 @@
 /*Red - #e74c3c
 
 Orange - #e67e22
+Bright Orange #ff8c05
 
 Yellow - #f1c40f
 
@@ -21,16 +22,20 @@ Light Black - #34495e
 Dark Black - #2c3e50
 */
 /***************************************************************/
-
 body {
   background-color: $white-color;
 }
 
+
 #page {
   min-height: 500px;
 }
-#headercontainer{
-    padding-top: 7px;
+#emailForm{
+  padding-top: 7px;
+  padding-left: 20px;
+  position: relative;
+  text-align: right;
+	float: right;
 }
 header, footer {
   color: $light-text-color;
@@ -55,20 +60,191 @@ header.main, footer {
 	padding-left: 5px;
 	padding-top: 6px;
 }
-
 @media only screen and (max-width: 992px) { 
-
-    #logotext {
-        visibility: hidden;
+  #logotext {
+    visibility: hidden;
 	}
 }
+@media only screen and (max-width: 766px) { 
+#emailForm{
+  position: absolute;
+  right: 150px;
+}
+}
+
+
+/************ ALAN GI's NAV BAR ***************************/
+/* --------------- Header CODE ----------------- */
+.main_h {
+  position: fixed;
+  top: 0px;
+  max-height: 100px;
+  z-index: 50;
+  width: 100%;
+  padding-top: 8px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s; /*slide down transition as user scrolls*/
+  transition: all 0.3s; /*slide down transition as user scrolls*/
+ /*it must be -100 because it slides down 100 px*/
+  padding-bottom: 6px;
+  opacity: .95; /*it's 'invisible' at start, transition fades in as you scroll */
+}
+
+@media only screen and (max-width: 766px) {
+  .main_h {
+    padding-top: 25px;
+    max-height: 62px;
+  }
+}
+
+.open-nav {
+  max-height: 400px !important;
+  -webkit-transition: all 0.3s; /*fade in white*/
+  transition: all 0.3s; /*fade in white*/
+  background: #666;
+  opacity: 1;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+    opacity: 1;
+}
+
+/* --------------- Dropdown Menu CODE ----------------- */
+.sticky {
+  background-color: #666; /*Dropdown Menu color*/
+  top: 0px;
+  opacity: .95;
+}
+
+nav {
+  float: right;
+  width: 80%;
+  padding-left: 10px;
+  padding-top: 12px;
+}
+@media only screen and (max-width: 766px) {
+  nav {
+    width: 100%;
+  }
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+@media only screen and (max-width: 766px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 766px) {
+  nav ul li {
+    width: 100%;
+    padding: 9px 0;
+    margin: 0;
+  }
+}
+nav ul a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  margin-top: 12px;
+  left: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+    padding-top: 6px;
+  }
+}
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #fff;
+  display: block;
+}
+
+#linksandform{
+  text-align: center;
+  width: 100%;
+}
+
+#navbarrow{
+  max-width: 250px;
+}
+
+@media only screen and (max-width: 767px){
+  #emailForm{
+    position: absolute;
+    margin-top: -24px;
+  }
+  #submit-fixed{
+    position: absolute;
+    margin-top: -49px;
+    margin-left: 3px;
+  }
+  #navbarrow{
+    width: 100%;
+    position: relative;
+    max-width: 767px;
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 430px){
+  #emailForm, #subit-fixed{
+    margin-top: 150px;
+  }
+  #emailForm{
+    margin-left: -20px;
+  }
+  #dropdowncontainer{
+    min-height: 210px;
+  }
+}
+
+
+#dropdownphoto{
+    width: 85px;
+    z-index: -10;
+}
+
+#dropdowncontainer {
+  padding-top: 6px;
+}
+
 
 /************Dropdown Nav Bar Links *************/
 
 a:visited { text-decoration: none; color: #FFF; }
 a:hover { text-decoration: none; color: #FFF;; }
 a:focus { text-decoration: none; color: #FFF;; }
-a:hover, a:active { text-decoration: none; color: #ff8c05; }
+a:hover, a:active { text-decoration: none; color: #e67e22; }
 a{
   -o-transition:.5s;
   -ms-transition:.5s;
@@ -82,15 +258,6 @@ a{
   font-size: 30px;
 	color: #FFF;
 	display:inline-block;
-	
-	#blog {
-	  float: right;
-		color:#fff;
-	}
-	
-	#contact {
-	  float: right;
-	}
 }
 
 @media only screen and (max-width: 767px){
@@ -143,24 +310,10 @@ a{
   width: 100%;
   left: 0;
 	background: #666;
-	opacity: .87;
+	opacity: .95;
 }
 
-.fixedheader {
-  z-index: 10;
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
 
-.fixedheader {
-  @include border-box;
-	position: absolute;
-  top: 0;
-  width: 100%;
-  left: 0;
-	opacity: .87;
-
-}
 
 header.fixed {
   z-index: 5;
@@ -220,10 +373,14 @@ section {
   }
 }
 
-@media only screen and (max-width: 800px) { 
-
+@media only screen and (min-width: 430px) { 
     #bottomfixed {
         visibility: hidden;
+    }
+}
+@media only screen and (max-width: 430px) { 
+    #introQuote{
+      font-size: 25px;
     }
 }
 	
@@ -374,10 +531,6 @@ section {
   display: inline-block;
 }
 
-#headercontainer {
-  text-align: right;
-	float: right;
-}
 
 html, body {
     margin: 0;
@@ -399,263 +552,15 @@ p {
 	font-size: 150%;
 }
 
-/*Red - #e74c3c
-
-Orange - #e67e22
-
-Yellow - #f1c40f
-
-Green - #26a65b
-
-Blue - #3498db
-
-Purple - #9b59b6
-
-Gray - #95a5a6
-
-Clouds - #ecf0f1
-
-Light Black - #34495e
-
-Dark Black - #2c3e50
-
-/**************************************************/
-
-#phone, #monitor, #bannerphoto, #discovertext{
-	opacity: 0;
-}
-
-section0{
-    background: #ff8c05;
-}
 
 header.main {
-  background: #ff8c05;
+  background: #e67e22;
   padding-top: 5%;
   padding-bottom: 5%;
   @include background-size(cover);
   z-index: 10;
 }
 
-#dropdownphoto{
-    width: 85px;
-}
-
-#dropdowncontainer {
-	opacity: .95;
-}
-
-#emailbox{
-    padding-top: 5%;
-}
-
-#banner{
-    text-align: center;
-    min-height: 100px;
-    background: #3498db;
-    width: 100%;
-    @include background-size(cover);
-    z-index: 10;
-    padding: 20px;
-}
-
-#discovertext{
-    color: white;
-    padding-left: 10%;
-    padding-top: 1%;
-    float: left;
-    text-align: center;
-}
-
-#discoverheader{
-    padding-bottom: 5%;
-}
-#discoverparagraph,#discoverheader{
-    color: white;
-    text-align-last: center;
-}
-
-#emailbox{
-}
-
-#monitor{
-    margin-top: 2%;
-    width: 100%;
-}
-
-#phone{
-	margin-top: 20%;
-}
-
-#monitor{
-	width: 40%;
-	float: left;
-	margin-left: 0%;
-}
-#phone.fastanimate{
-}
-#monitor.fastanimate{
-	-webkit-transform: translate(4em,0); /*left number is horizontal, right number is vertical*/
-	-moz-transform: translate(4em,0);
-	transform: translate(4em,0);
-}
-
-/********   Responsive code for banner ************/
-
-@media only screen and (max-width: 1000px) { 
-    #monitor{
-    width: 40%;}
-    #phone{
-    left: 88%;
-    position: absolute;
-    }
-    #phone.fastanimate{
-    -webkit-transform: translate(0em,0); /*3 is horizontal, 0 is vertical*/
-	-moz-transform: translate(0em,0);
-	transform: translate(0em,0);
-    }  
-}
-@media only screen and (max-width: 993px) { 
-    #discovertext{
-        text-align: center;
-        width: 100%;
-    }
-    
-    #phone{
-        padding-top: 41%;
-        padding-left: 0px;
-    }
-    
-    #monitor{
-        position: relative;
-        padding-bottom: 5%;
-        width: 80%;
-    }
-    #phone.fastanimate{
-    -webkit-transform: translate(-10em,0); /*3 is horizontal, 0 is vertical*/
-	-moz-transform: translate(-10em,0);
-	transform: translate(-10em,0);
-    }
-    #monitor.fastanimate{
-	-webkit-transform: translate(10em,0); /*3 is horizontal, 0 is vertical*/
-	-moz-transform: translate(10em,0);
-	transform: translate(10em,0);
-    }
-}
-@media only screen and (max-width: 920px){
-     #phone{
-         padding-top: 40%;
-    }
-    #monitor{
-        width: 65%;
-    }
-    #discoverparagraph{
-        font-size: 150%;
-    }
-}
-@media only screen and (max-width: 780px){
-     #phone{
-         padding-top: 50%;
-    }
-}
-@media only screen and (max-width: 710px){
-     #phone{
-         padding-top: 60%;
-    }
-    
-     #monitor{
-        width: 100%;
-    }
-    
-    #monitor.fastanimate{
-	-webkit-transform: translate(0em,0); /*3 is horizontal, 0 is vertical*/
-	-moz-transform: translate(0em,0);
-	transform: translate(0em,0);
-    }
-}
-@media only screen and (max-width: 650px){
-     #phone{
-         padding-top: 70%;
-    }
-}
-@media only screen and (max-width: 585px){
-     #phone{
-         padding-top: 85%;
-    }
-        #phone.fastanimate{
-    -webkit-transform: translate(-2em,0); /*3 is horizontal, 0 is vertical*/
-	-moz-transform: translate(-2em,0);
-	transform: translate(-2em,0);
-    }
-}
-@media only screen and (max-width: 485px){
-     #phone{
-         padding-top: 100%;
-    }
-}
-@media only screen and (max-width: 400px){
-     #phone{
-         padding-top: 120%;
-    }
-}
-@media only screen and (max-width: 360px){
-     #phone{
-         padding-top: 135%;
-    }
-    #phone.fastanimate{
-    -webkit-transform: translate(-4em,0); /*3 is horizontal, 0 is vertical*/
-	-moz-transform: translate(-4em,0);
-	transform: translate(-4em,0);
-    }
-    #monitor{
-        width: 100%;
-    }
-    #monitor.fastanimate{
-	-webkit-transform: translate(0em,0); /*3 is horizontal, 0 is vertical*/
-	-moz-transform: translate(0em,0);
-	transform: translate(0em,0);
-    }
-}
-/**************************************************/
-/**************************************************/
-#light, #scale, #tracks{
-	opacity: 0;
-}
-#thesis{
-    background: #e67e22;
-}
-#orbs { 
-	background: #ff8c05;
-	text-align: center; 
-	color: white;
-	padding-bottom: 3%;
-	font-size: 250%;
-}
-
-#light{
-    width: 35%;
-    margin-left: 33%;
-}
-
-#scale{
-    width: 35%;
-    margin-left: 33%;
-}
-
-#tracks{
-    width: 35%;
-    margin-left: 33%;
-}
-
-
-/**************************************************/
-/**************************************************/
-/*
-#section1.fastanimate{
-	-webkit-transform: translate(50px;,0em);
-	-moz-transform: translate(150px,0em);
-	transform: translate(0px,0em);
-}*/
 
 #section1{
     background: image-url('road.png') no-repeat center center;
@@ -1140,7 +1045,7 @@ span{
 
 /*********** Our Story ************/
 #ourStory{
-  background: #ff8c05;
+  background: #e67e22;
   height: 1500px;
 }
 #ourStoryHeader{
@@ -1202,7 +1107,11 @@ span{
   height: 3550px;
 }
 }
-
+@media only screen and (max-width: 430px){
+#ourStory{
+  height: 3650px;
+}
+}
 
 
 /*********** Misison Quote Section************/
@@ -1215,6 +1124,22 @@ span{
   color: white;
   text-align: center;
   margin-top: 100px;
+}
+@media only screen and (max-width: 992px){
+#missionQuoteSection{
+  height: 500px;
+}
+#missionQuote{
+  font-size: 10px;
+}
+}
+@media only screen and (max-width: 550px){
+  #missionQuoteSection{
+  height: 600px;
+}
+  #missionQuote{
+  font-size: 8px;
+}
 }
 
 #faqs{
@@ -1232,11 +1157,14 @@ span{
 }
 
 #whoarewe {
-	background: #ff8c05;
+	background: #e67e22;
 	color: #FFF;
 	text-align: center;
 	
 	.container {
 		margin-bottom: 50px;
 	}
+}
+#messages{
+  z-index: 1000;
 }
