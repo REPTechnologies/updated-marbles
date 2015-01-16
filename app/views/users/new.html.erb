@@ -1,32 +1,41 @@
-<header class="fixedheader" style="overflow: hidden; margin:0px">
+<header class="main_h" style="overflow: hidden; margin:0px">
+  <%= render "layouts/application/error_messages" %>
   <div class="container" id="dropdowncontainer">      
     <div class="col-sm-3 hidden-xs" id="dropdownphoto">
-      <%= image_tag "Orange Logo48.svg"%>
+      <%= link_to image_tag("Orange Logo48.svg"), root_path  %>
 			<span id="logotext" class="links">marbles.mx</span>
     </div>
-			 <div class="col-lg-7 col-md-8 col-sm-10 col-xs-12" id="headercontainer">
-      <form id="topfixed2" class="form-inline hidden" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
-            <input name="utf8" type="hidden" value="✓">
-
-            <div id="email_group" class="form-group">
-              <input id="user-email-fake" name="user[email]" type="text" class="form-control" placeholder="Email">
-            </div>
-
-            <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="fake" value="Get Early Access">
-      </form>
-        
-        
+    <div class="mobile-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-      
+    <div id="linksandform">
+      <div id="emailForm">
+        <form id="topfixed" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+          <input name="utf8" type="hidden" value="✓">
+          <div id="email_group" class="form-group" style="margin-bottom: 15px">
+            <input id="user-email-fixed" name="user[email]" type="text" class="form-control" placeholder="Email">
+          </div>
+          <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access" style="margin-bottom: 15px">
+        </form>
+      </div>
+      <nav id="navbarrow">
+        <ul>
+          <li><%= link_to "About", about_path %></li>
+          <li><%= link_to "Blog", blog_path %>&nbsp;&nbsp;&nbsp;</li>
+          <li><%= link_to "FAQs", faq_path %>&nbsp;&nbsp;&nbsp;</li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
-<%= render "layouts/application/error_messages" %>
-<%= render "layouts/application/error_messages" %>
+
 
 <section id="homebanner">
     <div class="container">
         <div id="toptext" class="col-md-12 text-center" style="margin-top: 20vh">
-            <h1>live skillfully.<br><br>navigate thoughts, relationships, and experiences with ease<br><br>develop momentary awareness, intuition, and confidence with marbles.mx</h1>
+            <h1 id="introQuote">live skillfully.<br><br>navigate thoughts, relationships, and experiences with ease<br><br>develop momentary awareness, intuition, and confidence with marbles.mx</h1>
             <form id="bottomfixed" class="form-inline text-center" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
               <input name="utf8" type="hidden" value="✓">
             
@@ -151,7 +160,7 @@
 
         
             <div class="col-md-5" id="leadtext"><h1>Share your events on marbles for everyone to see</h1>
-              <h3 id="leadbottomtext"><br>Connect with the students who will get the most from your activities <br><br>Record your impact on campus</h3>
+              <p id="leadbottomtext"><br>Connect with the students who will get the most from your activities <br><br>Record your impact on campus</p>
             </div>
 		</div>
 </section>
