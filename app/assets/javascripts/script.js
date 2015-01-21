@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+	
 	// hide .navbar first
 	$("header.fixed").hide();
 	
@@ -61,7 +61,6 @@ $(document).ready(function(){
 
 	});
 
-
 });
 	
 
@@ -109,6 +108,6 @@ $('.fixed li a').click(function() {
     }
 });
 
-
+x
 
 	

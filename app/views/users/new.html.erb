@@ -2,7 +2,7 @@
   <%= render "layouts/application/error_messages" %>
   <div class="container" id="dropdowncontainer">      
     <div class="col-sm-3 hidden-xs" id="dropdownphoto">
-      <%= link_to image_tag("Orange Logo48.svg"), root_path  %>
+      <%= link_to image_tag("Orange Logo48.svg"), root_path, { :target => '_top' }  %>
 			<span id="logotext" class="links">marbles.mx</span>
     </div>
     <div class="mobile-toggle">
@@ -22,9 +22,9 @@
       </div>
       <nav id="navbarrow">
         <ul>
-          <li><%= link_to "About", about_path %></li>
+          <li id="aboutlink"><%= link_to "About", about_path,  { :target => '_top' } %></li>
           <li><%= link_to "Blog", blog_path %>&nbsp;&nbsp;&nbsp;</li>
-          <li><%= link_to "FAQs", faq_path %>&nbsp;&nbsp;&nbsp;</li>
+          <li id="faqlink"><%= link_to "FAQs", faq_path, { :target => '_top' } %>&nbsp;&nbsp;&nbsp;</li>
         </ul>
       </nav>
     </div>
