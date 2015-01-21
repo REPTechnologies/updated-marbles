@@ -108,6 +108,5 @@ $('.fixed li a').click(function() {
     }
 });
 
-x
 
 	
