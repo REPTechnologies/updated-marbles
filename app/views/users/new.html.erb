@@ -2,7 +2,7 @@
   <%= render "layouts/application/error_messages" %>
   <div class="container" id="dropdowncontainer">      
     <div class="col-sm-3 hidden-xs" id="dropdownphoto">
-      <%= link_to image_tag("Orange Logo48.svg"), root_path  %>
+      <%= link_to image_tag("Orange Logo48.svg"), root_path, { :target => '_top' }  %>
 			<span id="logotext" class="links">marbles.mx</span>
     </div>
     <div class="mobile-toggle">
@@ -22,9 +22,9 @@
       </div>
       <nav id="navbarrow">
         <ul>
-          <li><%= link_to "About", about_path %></li>
+          <li id="aboutlink"><%= link_to "About", about_path,  { :target => '_top' } %></li>
           <li><%= link_to "Blog", blog_path %>&nbsp;&nbsp;&nbsp;</li>
-          <li><%= link_to "FAQs", faq_path %>&nbsp;&nbsp;&nbsp;</li>
+          <li id="faqlink"><%= link_to "FAQs", faq_path, { :target => '_top' } %>&nbsp;&nbsp;&nbsp;</li>
         </ul>
       </nav>
     </div>
@@ -35,7 +35,7 @@
 <section id="homebanner">
     <div class="container">
         <div id="toptext" class="col-md-12 text-center" style="margin-top: 20vh">
-            <h1 id="introQuote">boost your potential<br><br>expand cognitive skills through self-reflection<br><br>develop confidence, intuition, and awareness with marbles.mx</h1>
+            <h1 id="introQuote">live skillfully<br><br>expand cognitive skills through self-reflection<br><br>develop confidence, intuition, and awareness with marbles.mx</h1>
             <form id="bottomfixed" class="form-inline text-center" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
               <input name="utf8" type="hidden" value="✓">
             
