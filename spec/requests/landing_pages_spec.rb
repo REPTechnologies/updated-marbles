@@ -104,7 +104,7 @@ describe 'Landing page' do
 
   it 'has description' do
     should have_content <<-DESC
-feel valuable
+is keeping up with what you should be getting in the way of who you want to be?
     DESC
   end
 
