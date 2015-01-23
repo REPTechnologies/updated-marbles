@@ -914,9 +914,8 @@ span{
 }
 
 
-.scroll-dwn {
- width: 100%;
-  padding: 50px 0px;
+#scroll-dwn {
+  width: 100%;
   text-align: center;
   color: #f2f2f2;
 
@@ -930,8 +929,7 @@ span{
 	.scroll-dwn-arrow:after {
   content: "";
 
-  top: 40px;
-  right: 1px;
+  top: -10px;
   border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 	}
@@ -1175,6 +1173,7 @@ span{
 
 ul li { 
 	font-family: Source Sans Pro;
+	margin-top: 2px;
 }
 
 u {
