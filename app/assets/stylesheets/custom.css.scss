@@ -213,19 +213,21 @@ nav ul a {
     width: 100%;
     position: relative;
     max-width: 767px;
-    padding-top: 3px;
+    padding-top: 5px;
   }
 }
 
 @media only screen and (max-width: 430px){
   #emailForm, #subit-fixed{
-    margin-top: 150px;
+    margin-top: 210px;
   }
+  
   #emailForm{
     margin-left: -20px;
   }
+  
   #dropdowncontainer{
-    min-height: 210px;
+    min-height: 260px;
   }
 }
 
@@ -438,11 +440,6 @@ section {
   color: $dark-gray-color;
   margin-top: 30px;
   padding: $padding-size;
-}
-
-.container.row {
-  position: relative;
-  text-align: center;
 }
 
 #chevrondown {
@@ -707,31 +704,30 @@ header.main {
 
 #track{
     background: #e67e22;
-    min-height: 650px;
-    opacity: 0;
-  width: 100%;
 }
 
 #trackparagraph{
     color: white;
-    position: relative;
     font-size: 110%;
   text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 #trackheader{
-    color: white;
-    text-align: center;
-    margin-top: 5%;
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 50px;
 }
 
 #trackphoto{
   position: relative;
   margin-bottom: 3%;
 	max-width: 450px;
-	margin-left: auto;
-	margin-right: auto;
-  
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /******************** Footer/Call to action ****************/
@@ -833,7 +829,6 @@ header.main {
 
 #thesis{
     background: #e67e22;
-	  width: 100%;
 }
 #orbs { 
 	background: #e67e22;
@@ -841,6 +836,8 @@ header.main {
 	color: white;
 	padding-bottom: 3%;
 	font-size: 250%;
+  display: inline;
+  float: left;
 }
 
 #balance{
@@ -890,13 +887,13 @@ span{
 @media only screen and (max-width: 1000px) { 
 
     #chevron {
-        margin-top: 5%;
+        margin-top: 3%;
     }
 }
 @media only screen and (max-width: 900px) { 
 
     #chevron {
-        margin-top: 3%;
+        margin-top: 1%;
     }
 }
 

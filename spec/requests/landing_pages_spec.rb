@@ -104,7 +104,7 @@ describe 'Landing page' do
 
   it 'has description' do
     should have_content <<-DESC
-is keeping up with expectations getting in the way of living how you want?
+realize your potential
     DESC
   end
 
