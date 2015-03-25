@@ -104,7 +104,7 @@ describe 'Landing page' do
 
   it 'has description' do
     should have_content <<-DESC
-live skillfully
+accelerate your personal growth process
     DESC
   end
 
