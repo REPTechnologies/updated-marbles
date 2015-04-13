@@ -86,7 +86,7 @@ MarblesLandingpage::Application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'reptech.io',
-    user_name:            'donovan@reptech.io',
+    user_name:            'adam@reptech.io',
     password:             'bgdxeipszbavyxys',
     authentication:       'plain'
   }
