@@ -87,7 +87,7 @@ MarblesLandingpage::Application.configure do
     port:                 587,
     domain:               'reptech.io',
     user_name:            'adam@reptech.io',
-    password:             'bgdxeipszbavyxys',
+    password:             'spike123-=',
     authentication:       'plain'
   }
 
