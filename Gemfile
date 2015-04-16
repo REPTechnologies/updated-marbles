@@ -68,6 +68,9 @@ end
 # Use unicorn as the app server
 gem 'unicorn'
 
+# meta tags enables
+gem 'metamagic'
+
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
