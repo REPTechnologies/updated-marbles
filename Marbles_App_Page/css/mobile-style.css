@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url("reset.css");
+/*
+ Red: #e74c3c
+ Yellow: #f1c40f
+ Orange: #e67e22
+ Green: #26A65B
+ Blue: #3597D3
+ Purple: #9B59B6
+ Pink: #DB0A5B 
+*/
+
+html, body { font-family: 'Source Sans Pro', sans-serif; font-size: 38px;}
+
+/*All Section (abstract)*/
+section h3 {
+	font-size: 89px; /*~89pt*/
+	font-weight:normal;
+}
+
+section p {
+	font-size: 56px; /*~42pt*/
+}
+.vertical-align {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+.vertical-align-block {
+	display: inline-block;
+	vertical-align: middle;
+	float:none;
+	width: 0;
+	height: 100vh;
+}
+
+.horizontal-align-block {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Section One:
+Introduction content with phone mock-up, and
+form with input (email) and download button*/
+#section_one {
+	text-align: center;
+}
+#section_one .title{ 
+  color: #3597D3; 
+  padding-bottom: 0; 
+  margin-bottom: 0.5em;
+}
+
+/*
+Email and Download form
+*/
+.input-container{
+  margin-top: 1.6em;
+}
+.input-container input{
+  height: auto;
+  width: 80%;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+
+input#email {
+  border: 2px solid #e67e22;
+  color: #e67e22;
+}
+
+input::-webkit-input-placeholder {
+	color: #e67e22;
+}
+input::-moz-placeholder {
+	color: #e67e22;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+	color: #e67e22;
+}
+input:-ms-input-placeholder { 
+	color: #e67e22;
+}
+
+input#download {
+  margin-top: 5%;
+  border: 1px solid #e67e22;
+  background-color: #e67e22;
+  color: white;
+}
+
+/*Section Two:*/
+#section_two #phone-animation {
+	display: block;
+	width: 60%;
+	min-width: 209px;
+	height: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+/*Section Three*/
+#section_three {
+	margin-top: 15%;
+	text-align:center;
+	margin-bottom: 143px;
+}
+
+#section_three .download-content {
+	width: 90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#section_three .download-content p {
+	color: black;
+	font-weight: 300;
+}
+
+#section_three .download-content .title{
+	color: #3597D3;
+	font-size: 88px;
+	font-weight: 400;
+}
+
+#section_three .store {
+	width: 36%;
+	min-width: 120px;
+	margin: 30px 1% 30px 1%;
+}
+
+

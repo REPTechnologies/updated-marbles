@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url("reset.css");
+
+html, body { font-family: 'Source Sans Pro', sans-serif; font-size: 38px;}
+
+/*All Section (abstract)*/
+section { height: 100vh; }
+
+section h3 {
+	font-size: 60px;
+	font-weight:normal;
+}
+
+section p {
+	font-size: 37px; /*~28pt*/
+}
+
+.vertical-align {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+.vertical-align-block {
+	display: inline-block;
+	vertical-align: middle;
+	float:none;
+	width: 0;
+	height: 100vh;
+}
+
+.horizontal-align-block {
+	margin-left: auto;
+	margin-right: auto;
+}
+.mockup-image-background {
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/*Section one:
+Introduction content with phone mock-up, and
+form with input (email) and download button*/
+#section_one .title{ color: #3597D3; padding-bottom: 0; margin-bottom: 8px;}
+.intro-text {
+	width: 100%;
+	padding-left: 30%;
+}
+
+#section_one #phone-animation {
+	margin-left: 25%;
+	width: 37.6%;
+	min-width: 209px;
+	height: auto;
+	
+}
+
+/*
+Email and Download form
+*/
+.input-container{
+  margin-top: 35px;
+}
+.input-container input{
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 200;
+}
+
+input#email {
+  border: 2px solid #e67e22;
+  border-radius: 10px;
+  color: #e67e22;
+}
+
+input::-webkit-input-placeholder {
+	color: #e67e22;
+}
+input::-moz-placeholder {
+	color: #e67e22;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+	color: #e67e22;
+}
+input:-ms-input-placeholder { 
+	color: #e67e22;
+}
+
+input#download {
+  border: 1px solid #e67e22;
+  background-color: #e67e22;
+  color: white;
+  border-radius: 8px;
+}
+
+/*Section Two, Three, and Four*/
+.image-slide-container p {
+	font-size: 0.8em;
+}
+#section_two #poll-image {
+	background-image: url(../images/desktop_slides/Marbles%20Desktop%20Poll.png);
+}
+
+#section_three #trends-image {
+	background-image: url(../images/desktop_slides/Marbles%20Desktop%20Trends.png);
+}
+
+#section_four #tips-image {
+	background-image: url(../images/desktop_slides/Marbles%20Desktop%20Tips.png);
+}
+
+/*Section Five*/
+#section_five{
+	display: block;
+	width: 100%;
+	background-image:url(../images/University-of-Minnesota.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#section_five .download-content .title{
+	color: white;
+	font-weight: 300;
+}
+
+#section_five .download-content {
+	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	color: white;
+	font-weight: 200;
+	text-align:center;
+}
+
+#section_five .store {
+	width: 9%;
+	min-width: 120px;
+	margin: 30px 1% 30px 1%;
+}
+
+
+/*Responsive css*/
+@media only screen and (max-width: 850px){
+	.image-slide-container p { font-size: 0.4em; }
+	.mockup-image-background {
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+}
+
+@media only screen and (max-width: 1200px) { 
+section h3 { font-size: 1.4em; }
+section p { font-size: 0.7em; }
+
+/*Section One (media):*/
+#section_one .intro-text {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0; 
+}
+#section_one .input-container input {
+  height: 40px;
+  font-size: 0.5em;
+}
+}
