@@ -146,9 +146,7 @@ input#download {
 
 /*Responsive css*/
 @media only screen and (max-width: 430px){
-	.image-slide-container { display: none; 
-		
-	}
+	#section_one #phone-animation { width: 10%;}
 }
 
 @media only screen and (max-width: 850px){
