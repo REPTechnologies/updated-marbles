@@ -99,6 +99,18 @@ input#download {
 }
 
 /*Section Two, Three, and Four*/
+.image-slide-container {
+	position: relative;*/
+}
+
+.image-slide-container > .row{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 .image-slide-container p {
 	font-size: 0.8em;
 }
@@ -106,16 +118,16 @@ input#download {
 	background-image: url(../images/desktop_slides/Marbles%20Desktop%20Poll.png);
 }
 
-#section_three #trends-image {
+#section_two #trends-image {
 	background-image: url(../images/desktop_slides/Marbles%20Desktop%20Trends.png);
 }
 
-#section_four #tips-image {
+#section_two #tips-image {
 	background-image: url(../images/desktop_slides/Marbles%20Desktop%20Tips.png);
 }
 
 /*Section Five*/
-#section_five{
+#section_three{
 	display: block;
 	width: 100%;
 	background-image:url(../images/University-of-Minnesota.png);
@@ -123,12 +135,13 @@ input#download {
 	background-size: cover;
 }
 
-#section_five .download-content .title{
+#section_three .download-content .title{
 	color: white;
+	font-size: 78px;
 	font-weight: 300;
 }
 
-#section_five .download-content {
+#section_three .download-content {
 	width: 100%;
 	margin-left:auto;
 	margin-right:auto;
@@ -137,7 +150,7 @@ input#download {
 	text-align:center;
 }
 
-#section_five .store {
+#section_three .store {
 	width: 9%;
 	min-width: 120px;
 	margin: 30px 1% 30px 1%;
@@ -146,7 +159,8 @@ input#download {
 
 /*Responsive css*/
 @media only screen and (max-width: 770px){
-	#section_one #phone-animation { display: none;}
+	#section_one #phone-animation {margin-top: 30%;}
+	#section_two{ display: none;}
 }
 
 @media only screen and (max-width: 850px){
