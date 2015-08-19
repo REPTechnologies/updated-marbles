@@ -1,0 +1,544 @@
+
+
+@charset "utf-8";
+/* CSS Document */
+
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.container {
+	max-width:1170px;
+	margin: 0px auto;
+}
+body {
+	font-family:Tahoma, Geneva, sans-serif;
+}
+img {
+	max-width: 100%;
+}
+ul, a {
+	text-decoration:none;
+	list-style:none;
+}
+.row {
+	float:left;
+	width:100%;
+}
+.row:before, .row:after {
+	content: " ";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.container:before, .container:after {
+	display:table;
+	content:"";
+	line-height:0;
+}
+.container:after {
+	clear:both;
+}
+.wrappall
+{
+	margin:0 auto;
+	width: 100%;
+  max-width: 1500px;
+}
+.header
+{
+	float:left;
+	width:100%;
+	margin:40px 0;
+}
+.logo
+{
+	float:left;
+	width:50%
+}
+.nav
+{
+	float:left;
+	text-align:right;
+	width:50%;
+	margin-top:28px;
+}
+.nav ul li
+{
+	display:inline-block;
+	margin-left:30px;
+}
+.nav ul li a
+{
+color:#3498db;
+font-size:16px;
+font-family:'Tahoma', Geneva, sans-serif;
+}
+.banner
+{
+	float:left;
+	width:100%; 
+	margin-bottom:50px;
+}
+.left_banner
+{
+	float:left;
+	width:50%;
+	margin-top:10%;
+	margin-left:10%;
+}
+.left_banner h2
+{
+	color:#3498db;
+	font-size:40px;
+	font-weight:normal;
+	font-size:arial;
+}
+.left_banner p
+{
+	float:left;
+	width:60%;
+	font-size:24px;
+	line-height:30px;
+	margin-top:10px;
+}
+.banner_form
+{
+	float:left;
+	width:100%;
+	margin-top:30px;
+}
+.email_form
+{
+	border:1px solid #fbaf40;
+	padding:10px;
+	border-radius:10px;
+	font-size:20px;
+	text-align:center;
+	color:#e67e22;
+}
+.submit_button_banner
+{
+	background:#fbaf40;
+	color:#fff;
+	border-radius:10px;
+	font-size:20px;
+	text-align:center;
+	padding:10px 40px;
+	border:none;
+}
+.right_banner
+{
+	float:right;
+	margin-right:10%;
+}
+.container2
+{
+	max-width:950px;
+	margin:0 auto;
+	
+}
+.slider_wrapper
+{
+	float:left;
+	width:100%;
+	background:url('slider.jpg') no-repeat left top;
+	height:699px;
+    background-color: #FBF9F9;
+	
+}
+.slider_wrapper p
+{
+	float:left;
+	float:right;
+	text-align:left;
+	width:35%;
+	color:#000;
+	font-size:24px;
+	line-height:36px;
+	margin-top:278px;
+	margin-bottom:278px;
+}
+.footer_wrapper
+{
+	float:left;
+	width:100%;
+	
+        background:url('background.jpg') no-repeat left top;
+	text-align:center;
+	color:#fff;
+	padding-bottom:90px;
+}
+.footer_wrapper h2
+{
+	font-size:60px;
+	font-weight:normal;
+	padding:120px 0 50px 0;
+}
+.footer_wrapper p
+{
+	font-size:40px;
+	line-height:100px;
+}
+footer
+{
+	z-index: 1;
+	padding: 5px;
+	background: #666;
+	opacity: .95;
+	box-sizing: border-box;
+	position: initial;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	height: 58px;
+	color: #cccccc;
+	float:left;
+}
+#footerrow div.col-sm-5.col-xs-12 
+{
+	width: 41.66666667%;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#footerrow div#hire {
+color: #bcbfc0;
+z-index: 2;
+margin: 16.5px 0;
+}
+#footerrow.col-sm-7 {
+width: 58.33333333%;
+float: left;
+position: relative;
+min-height: 1px;
+padding-left: 15px;
+padding-right: 15px;
+}
+.text-right {
+text-align: right;
+}
+.download-aap
+{
+	float:left;
+	width:100%;
+	margin:40px 0;
+}
+.download-aap a
+{
+	display:inline-block;
+	margin:0 20px
+}
+.owl-theme .owl-controls
+{
+	margin-top:0px;
+	margin-bottom:20px;
+}
+div.owl-buttons {
+display: none;
+}
+/***** modified by vinod ******/
+.wc_slder_image_contents_container_left_block{
+          float: left;
+	  width: 50%;
+	}
+        .wc_slder_image_contents_container_right_block{
+           float: right;
+         }
+	.wc_slder_image_contents_container_left_block img {
+	   width: 100% !important;
+           display:none;
+	}
+ /***** modified by vinod ******/
+
+ 
+ 
+ 
+ 
+ 
+ 
+ /****************** Modified By inderpal Sir *************************/
+.wc_slder_image_contents_container{
+     display: table;
+     width: 100%;
+}
+.wc_slder_image_contents_container_left_block{
+     display: table-cell;
+     width: 100%;
+}
+ .wc_slder_image_contents_container_right_block{
+     display: table-cell;
+     float: initial;
+     max-width: 400px;
+     vertical-align: middle;
+     width: 40%;
+}
+.slider_wrapper .wc_slder_image_contents_container_right_block p{
+     margin: 0px;
+     width: 100%;
+     padding: 0px 20px;
+}
+.slider_wrapper{
+     background: none;
+     height: auto;
+     padding-bottom: 10px;
+}
+.wc_slder_image_contents_container_left_block img{
+     display: block;
+}
+.slider_wrapper .container {
+     max-width: 100%;
+}
+.footer_wrapper{
+     background-size: cover;
+}
+.slicknav_menu {
+	display:none;
+}
+#main-slider
+{
+	float:left;
+}
+#responsve-logo
+{
+	display:none;
+}
+.bx-wrapper{
+          float: left;
+          width: 100%;
+}
+#main-slider .item{  
+     float: left !important;
+}
+/****************************************** End Of Modification **********************************/
+
+
+
+
+/********************************* Responsive Style ******************************************/
+@media(max-width:1024px)
+{
+   .wrappall 
+	{
+		float: left;
+		max-width: 100%;
+		padding: 0px 10px;
+    }	
+}
+@media(max-width:768px)
+{
+	.header 
+	{
+		margin-top: 0px;
+	}
+	
+	.js #menu
+	{
+		display:none;
+	}
+	.js .slicknav_menu 
+	 {
+		display:block;
+		background: url('responsve-logo.png') no-repeat;
+		background-repeat: no-repeat;
+		background-size: 50px;
+		background-position: 12px 4px;
+	}
+	.js .slicknav_menu .slicknav_menutxt
+	 {
+		display:none;
+	} 
+	/*.js .slicknav_menu
+	{
+		background: #fff;
+	}*/
+	.js .slicknav_menu .slicknav_icon-bar 
+	{
+		background-color: #3498db;
+	}
+	.js .slicknav_btn
+	{
+		background-color: #fff;
+	}
+	.js .slicknav_nav a
+	{
+		color: #3498db;
+                font-size:16px;
+                font-family: 'Tahoma', Geneva, sans-serif;
+	}
+	.js .slicknav_nav a:hover
+	{
+		color: #3498db;
+	}
+	.js .slicknav_nav
+	{
+		color: #3498db;
+	}
+	.left_banner 
+	{
+		width: 100%;
+		margin-left: 0%;
+		text-align: center;
+		margin-top: 0%;
+	}
+	.left_banner p 
+	{
+		width: 100%;
+	}
+	.right_banner 
+	{
+		float: right;
+		margin-top: 5%;
+		width: 100%;
+		text-align: center;
+		margin-right:0px;
+	}
+	#desktop-logo
+	{
+		display:none;
+	}
+	#responsve-logo
+	{
+		display:block;
+	}
+	#footerrow div.col-sm-5.col-xs-12 
+	{
+		width: 32%;
+	}
+	#footerrow div.col-sm-5.col-xs-12 a img 
+	{
+		width: 30px;
+		height: 30px;
+	}
+	#footerrow div#hire
+	{
+		float:left;
+		width:68%;
+	}
+
+}
+
+@media(max-width:640px)
+{
+	footer
+	{
+		height: auto;
+	}
+	#footerrow div.col-sm-5.col-xs-12 
+	{
+		width: 100%;
+		text-align: center;
+		padding-top: 10px;
+	}
+	#footerrow div#hire
+	{
+		float:left;
+		width:100%;
+		text-align: center;
+	}
+}
+@media(max-width:557px)
+{
+	.js .slicknav_menu
+	{
+		background-position: 12px 18px;
+		padding-top: 20px;
+	}
+	.email_form
+	{
+		max-width: 100%;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.submit_button_banner
+	{
+		max-width: 100%;
+		width: 100%;
+	}
+	#main-slider 
+	{
+		display: none !important;
+	}
+	.footer_wrapper 
+	{
+		background: none;
+		color: #333;
+	}
+	.footer_wrapper h2
+	{
+		color: #3498db;
+	}
+}
+@media(max-width:480px)
+{
+	.download-aap a
+	{
+		display: table-cell;
+		margin: 0 0px;
+		padding-bottom: 20px;
+		float: left;
+		width: 50%;
+	}
+	.footer_wrapper p 
+	{
+		font-size: 28px;
+	}
+	.footer_wrapper h2
+	{
+		padding-top:0px;  
+	}
+}
+@media(max-width:360px)
+{
+	.download-aap a 
+	{
+		display: inline-block;
+		margin: 0 0px;
+		text-align: center;
+		float: none;
+		width: 100%;
+	}
+	.footer_wrapper p 
+	{
+		font-size: 21px;
+		line-height: 70px;
+	}
+	.email_form
+	{
+		margin-bottom: 30px;
+	}
+	.right_banner 
+	{
+		margin-top: 20%;
+	}
+}
+@media(max-width:320px)
+{
+	.footer_wrapper p 
+	{
+		font-size: 20px;
+		line-height: 35px;
+	}
+}
+/********************************* end Of Responsive Style **********************************/

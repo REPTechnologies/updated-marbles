@@ -1,0 +1,174 @@
+<% meta title: "marbles.mx | accelerate your personal growth |",
+     description: "an app to develop self-awarenss, confidence, and intuition in 30 seconds",
+     keywords: %w(stress relief app self-help achieving goals realize potential stress levels improve focus study help suicide yoga internship phone app how to get help hope depression anxiety successful career support therapy) %>
+
+<header class="main_h" style="overflow: hidden; margin:0px">
+  <%= render "layouts/application/error_messages" %>
+  <div class="container" id="dropdowncontainer">      
+    <div class="col-sm-3 hidden-xs" id="dropdownphoto">
+      <%= link_to image_tag("Orange Logo48.svg"), root_path, { :target => '_top' }  %>
+			<span id="logotext" class="links">marbles.mx</span>
+    </div>
+    <div class="mobile-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="linksandform">
+      <div id="emailForm">
+        <form id="topfixed" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+          <input name="utf8" type="hidden" value="✓">
+          <div id="email_group" class="form-group" style="margin-bottom: 15px">
+            <input id="user-email-fixed" name="user[email]" type="text" class="form-control" placeholder="Email">
+          </div>
+          <input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access" style="margin-bottom: 15px">
+        </form>
+      </div>
+      <nav id="navbarrow">
+        <ul>
+          <li id="aboutlink"><%= link_to "About", about_path,  { :target => '_top' } %></li>
+          <li><%= link_to "Blog", blog_path %>&nbsp;&nbsp;&nbsp;</li>
+          <li id="faqlink"><%= link_to "FAQs", faq_path, { :target => '_top' } %>&nbsp;&nbsp;&nbsp;</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+<section id="homebanner">
+    <div class="container">
+        <div id="toptext" class="col-md-10 col-md-offset-1 text-center" style="margin-top: 20vh">
+            <h1 id="introQuote"><br>accelerate your personal growth<br><br>focus on what matters most<br><br>marbles.mx</h1>
+            <form id="bottomfixed" class="form-inline text-center" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+              <input name="utf8" type="hidden" value="✓">
+            
+              <div id="email_group" class="form-group">
+                <input id="user-email-main" name="user[email]" type="text" class="form-control" placeholder="Email">
+              </div>
+            
+              <input id="submit-main" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access" >
+        </form>
+ 
+        </div>
+			<div class="col-md-12" id="scroll-dwn">
+  			<div class="scroll-dwn-arrow" id="animate"><span id="chevron" class="glyphicon glyphicon-chevron-down"></span></div>
+			</div>
+    </div>
+</section>
+<!--Section2------------------------------------------------ -->
+<section id="thesis">
+	<div class="container">
+    <h1 id="personalGuide">don't waste time, get to your full potential faster</h1>
+  <div id="orbs" >                  
+    <div class="col-md-3 col-sm-6 text-center">
+      <div id="balance">
+        <%= image_tag "balance.svg"%>
+      </div>
+      <span>Balance</span>
+      <p id="span1">Make decisions more confidently</p>
+      </div>           
+      <div class="col-md-3 col-sm-6 text-center">
+        <div id="find">
+          <%= image_tag "find.svg"%>
+        </div>
+        <span>Focus</span>
+        <p id="span2">Direct your mental energy towards self-development, not self-distraction</p>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div id="dial">
+          <%= image_tag "track.svg"%>
+        </div>
+        <span>Track</span>
+        <p id="span4">Operate at 100%, leaving the excuses and complaining behind</p>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <div id="share" style='margin-top: 3px'>
+          <%= image_tag "user.svg" %>
+        </div>
+        <span style="margin-top:10px">Anonymous</span>
+        <p id="span3">Freedom to explore a lifestyle that builds you up</p>
+      </div>
+		</div>
+	</div>
+</section>
+<!-- ------------------------------- -->
+<section id="section1">
+    
+     <div class="container">
+        <div> <!-- refers to the fact that it takes up 4 colums -->
+            <h1 id="section1header" class="text-center">#liveskillfully</h1>
+        </div>
+            <div class="col-sm-6 text-center" id="ratingparagraph">
+              <p>Our simple organization system is your roadmap to discover what's really helping you in life and what's holding you back.</p>
+            </div>
+						<div id="ratingsystemphoto" class="col-sm-6" >
+              <%= image_tag "chaos.png"%>
+            </div>
+        	</div>
+        </div>
+    
+</section>
+
+<!-- ------------------------------------------------ -->
+<section id="track">
+  <div class="container">
+  <div id="trackheader"> 
+        <h1>Track Trends</h1>
+    </div>
+    
+    <div id="trackparagraphcontainer" class="col-md-6" >
+        <div id="trackparagraph" class="text-centered">
+            <p>Grow your mind and perception faster by letting go of your limiting beliefs and learning the best ways to improve yourself...all in one place.</p>
+        </div>
+    </div>
+    
+        
+            <div id="trackphoto" class="col-md-6 text-center" style="margin-left: 8%">
+                 <%= image_tag "trackhorizontal.png"%>
+            </div>
+  
+</section>
+<!-- ------------------------------- -->
+<section id="section2">
+		<div class="testimonial" id="testimonial">
+				<p class="quote col-md-8 col-md-offset-2"><small>"Taking the poll is like a timeout on life for myself, I can see how important elements of my life, like a sense of purpose, are changing in seconds, marbles.mx helps me realize my full potential faster." - Alan</small>
+				</p>
+        </div>
+  </div>
+</section>
+
+<!-- ---------------------------------- -->
+
+<section id="section3" class="container">
+	<div id="lead">        
+    <div id="leadtext" class="col-md-8 col-md-offset-2 text-center" ><h1></h1>
+      <h1 id="leadbottomtext"><br>"Go confidently in the direction of your dreams.  Live the life you have imagined." – Henry David Thoreau</h1><br><br>
+    </div>
+	</div>
+</section>
+
+<!-- ------------------------------------------------ -->
+
+<section id="calltoaction">
+    <div class="container">
+        <div class="col-md-12 text-center" id="calltoactiontext">
+					 <div class="text-center">
+						 <%= image_tag "Orange Logo100.svg"%> <br><br>
+					</div>
+            <h1 class="col-sm-8 col-sm-offset-2">sign up now for our exclusive beta <br><br>get alerted of our android and iPhone app</h1>
+            <form id="bottomfixed" class="form-inline text-center" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+              <input name="utf8" type="hidden" value="✓">
+            
+              <div id="email_group" class="form-group">
+                <input id="user-email-bottom" name="user[email]" type="text" class="form-control" placeholder="Email">
+              </div>
+            
+              <input id="submit-bottom" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access">
+        </form>
+ 
+        </div>
+    </div>
+</section>
+
+
