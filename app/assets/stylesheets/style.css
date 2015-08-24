@@ -98,6 +98,7 @@ font-family:'Tahoma', Geneva, sans-serif;
 	float:left;
 	width:100%; 
 	margin-bottom:50px;
+        margin-top:80px; 
 }
 .left_banner
 {
@@ -482,12 +483,12 @@ display: none;
 	}
 	.footer_wrapper 
 	{
-		background: none;
-		color: #333;
+		/*background: none;
+		color: #333;*/
 	}
 	.footer_wrapper h2
 	{
-		color: #3498db;
+		/*color: #3498db;*/
 	}
 }
 @media(max-width:480px)
