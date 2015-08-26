@@ -16,7 +16,8 @@
                var main_slider = $('#main-slider').bxSlider({
                     mode: 'vertical',
                     slideMargin: 5,
-                    auto : true,
+                    speed : 1000,
+                    auto : false,
                });
                
                $('#main-slider').mousewheel(function(event, delta, deltaX, deltaY) {
@@ -65,6 +66,17 @@
 					<p>
 						accelerate your personal growth with marbles, the easiest app to reflect and focus on what matters most
 					</p>
+
+					
+					<!--<div id="emailForm" class="banner_form">
+						<form id="topfixed" class="form-inline" accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" method="post">
+						<input name="utf8" type="hidden" value="✓">
+						<div id="email_group" class="form-group" style="margin-bottom: 15px">
+						<input id="user-email-fixed" name="user[email]" type="text" class="form-control" placeholder="Email">
+						</div>
+						<input id="submit-fixed" class="btn btn-large btn-success" name="commit" type="submit" value="Get Early Access" style="margin-bottom: 15px">
+						</form>
+					</div>-->
 					<div class="banner_form">
 						<form action="">
 							<input type="text" name="" value="" placeholder="enter email address" class="email_form"/>
@@ -81,7 +93,7 @@
 	<div id="main-slider" class="liquid-slider">
 		<div class="item">
 			<div class="slider_wrapper">
-				<div class="container">
+				<div class="containerr">
 				<div class="wc_slder_image_contents_container">
 				<div class="wc_slder_image_contents_container_left_block"> <%= image_tag("home_images/poll_slide.jpg", :alt => "Poll Slide") %> </div>
 				<div class="wc_slder_image_contents_container_right_block">
@@ -96,7 +108,7 @@
 		</div>
 		<div class="item">
 			<div class="slider_wrapper">
-				<div class="container">
+				<div class="containerr">
 					<div class="wc_slder_image_contents_container">
 					<div class="wc_slder_image_contents_container_left_block"> <%= image_tag("home_images/trend_slide.jpg", :alt => "Trend Slide") %> </div>
 					<div class="wc_slder_image_contents_container_right_block">
@@ -112,7 +124,7 @@
 		</div>
 		<div class="item">
 			<div class="slider_wrapper">
-				<div class="container">
+				<div class="containerr">
 					<div class="wc_slder_image_contents_container">
 		<div class="wc_slder_image_contents_container_left_block"> <%= image_tag("home_images/tip_slide.jpg", :alt => "Tips Slide") %></div>
 					<div class="wc_slder_image_contents_container_right_block">
