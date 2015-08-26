@@ -332,6 +332,20 @@ display: none;
 #main-slider .item{  
      float: left !important;
 }
+
+.bx-wrapper .bx-controls-direction a {
+  display:none;
+}
+
+.wrappall .bx-wrapper .bx-viewport {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 0px solid #fff;
+	left: 0px;
+	background: #fff;
+}
+
 /****************************************** End Of Modification **********************************/
 
 
