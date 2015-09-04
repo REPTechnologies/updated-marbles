@@ -12,7 +12,7 @@
     <%= javascript_include_tag ('lib/bxslider/jquery.bxslider.min.js') %> 
     <%= javascript_include_tag ('lib/bxslider/jquery.mousewheel.min.js') %> 
     <script type="text/javascript">
-          $(document).ready(function(){
+         /* $(document).ready(function(){
                var main_slider = $('#main-slider').bxSlider({
                     mode: 'vertical',
                     slideMargin: 5,
@@ -30,7 +30,7 @@
                     event.stopPropagation();
                     event.preventDefault();
                });
-          });
+          });*/
           
           
      </script>
@@ -95,7 +95,7 @@
 			<div class="slider_wrapper">
 				<div class="containerr">
 				<div class="wc_slder_image_contents_container">
-				<div class="wc_slder_image_contents_container_left_block"> <%= image_tag("home_images/poll_slide.jpg", :alt => "Poll Slide") %> </div>
+				<div class="wc_slder_image_contents_container_left_block"> <%= image_tag("home_images/poll_image.png", :alt => "Poll Slide") %> </div>
 				<div class="wc_slder_image_contents_container_right_block">
 				<p>
 				check in to get a snapshot of your well-being in seconds. see for yourself what's helping and what's not so you can get on thriving.
@@ -110,7 +110,7 @@
 			<div class="slider_wrapper">
 				<div class="containerr">
 					<div class="wc_slder_image_contents_container">
-					<div class="wc_slder_image_contents_container_left_block"> <%= image_tag("home_images/trend_slide.jpg", :alt => "Trend Slide") %> </div>
+					<div class="wc_slder_image_contents_container_left_block"> <%= image_tag("home_images/trend_image.png", :alt => "Trend Slide") %> </div>
 					<div class="wc_slder_image_contents_container_right_block">
 					<p>
 					watch how your responses fluctuate over time and notice patterns about how your mind works.
@@ -126,7 +126,7 @@
 			<div class="slider_wrapper">
 				<div class="containerr">
 					<div class="wc_slder_image_contents_container">
-		<div class="wc_slder_image_contents_container_left_block"> <%= image_tag("home_images/tip_slide.jpg", :alt => "Tips Slide") %></div>
+		<div class="wc_slder_image_contents_container_left_block"> <%= image_tag("home_images/tips_image.png", :alt => "Tips Slide") %></div>
 					<div class="wc_slder_image_contents_container_right_block">
 					<p>
 					access an anonymous messaging board with tips about how to live your best from people just like you.
@@ -158,13 +158,6 @@
           </div>
      </div>
 </div>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
- <%= javascript_include_tag('lib/SlickNav-master/dist/jquery.slicknav.js') %>   
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#menu').slicknav();
-});
-</script>
 
 </body>
 </html>
