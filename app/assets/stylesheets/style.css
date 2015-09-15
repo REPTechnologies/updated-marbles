@@ -102,6 +102,9 @@ font-family:'Tahoma', Geneva, sans-serif;
      color:#3498db;
 }
 
+#footerrow.row {
+   margin-bottom: 0px;
+}
 
 .banner
 {
