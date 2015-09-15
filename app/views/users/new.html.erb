@@ -11,44 +11,21 @@
      <%= stylesheet_link_tag ('lib/bxslider/jquery.bxslider.css') %>
     <%= javascript_include_tag ('lib/bxslider/jquery.bxslider.min.js') %> 
     <%= javascript_include_tag ('lib/bxslider/jquery.mousewheel.min.js') %> 
-    <script type="text/javascript">
-         /* $(document).ready(function(){
-               var main_slider = $('#main-slider').bxSlider({
-                    mode: 'vertical',
-                    slideMargin: 5,
-                    speed : 1000,
-                    auto : false,
-               });
-               
-               $('#main-slider').mousewheel(function(event, delta, deltaX, deltaY) {
-                    if (delta > 0) {
-                         main_slider.goToPrevSlide();
-                    }
-                    if (deltaY < 0){
-                         main_slider.goToNextSlide();
-                    }
-                    event.stopPropagation();
-                    event.preventDefault();
-               });
-          });*/
-          
-          
-     </script>
 </head>
 <body>
-<header class="main_h" style="overflow: hidden; margin:0px; background:#666;">
+<header class="main_h" style="overflow: hidden; margin:0px; background:#FFF;">
   <%= render "layouts/application/error_messages" %>
   <div class="container" id="dropdowncontainer">      
 	    <div class="col-sm-3 hidden-xs" id="dropdownphoto">
 	      <%= link_to image_tag("Orange Logo48.svg"), root_path, { :target => '_top' }  %>
-				<span id="logotext" class="links">marbles.mx</span>
+				<span id="logotext" class="links">marblesapp</span>
 	    </div>
 	    <div class="mobile-toggle">
 	      <span></span>
 	      <span></span>
 	      <span></span>
 	    </div>
-	      <nav id="navbarrow">
+	      <nav id="navbarrow" class="wc_nav">
 		<ul>
 		  <li id="aboutlink"><%= link_to "About", about_path,  { :target => '_top' } %></li>
 		  <li><%= link_to "Blog", blog_path %>&nbsp;&nbsp;&nbsp;</li>
@@ -86,55 +63,6 @@
 				</div>
 				<div class="right_banner">
 					<%= image_tag("home_images/mobile.png", :alt => "Mobile") %>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="main-slider" class="liquid-slider">
-		<div class="item">
-			<div class="slider_wrapper">
-				<div class="containerr">
-				<div class="wc_slder_image_contents_container">
-				<div class="wc_slder_image_contents_container_left_block"> <%= image_tag("home_images/poll_image.png", :alt => "Poll Slide") %> </div>
-				<div class="wc_slder_image_contents_container_right_block">
-				<p>
-				check in to get a snapshot of your well-being in seconds. see for yourself what's helping and what's not so you can get on thriving.
-
-				</p>
-				</div>
-				</div>
-				</div>
-			</div>
-		</div>
-		<div class="item">
-			<div class="slider_wrapper">
-				<div class="containerr">
-					<div class="wc_slder_image_contents_container">
-					<div class="wc_slder_image_contents_container_left_block"> <%= image_tag("home_images/trend_image.png", :alt => "Trend Slide") %> </div>
-					<div class="wc_slder_image_contents_container_right_block">
-					<p>
-					watch how your responses fluctuate over time and notice patterns about how your mind works.
-
-
-					</p>
-					</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="item">
-			<div class="slider_wrapper">
-				<div class="containerr">
-					<div class="wc_slder_image_contents_container">
-		<div class="wc_slder_image_contents_container_left_block"> <%= image_tag("home_images/tips_image.png", :alt => "Tips Slide") %></div>
-					<div class="wc_slder_image_contents_container_right_block">
-					<p>
-					access an anonymous messaging board with tips about how to live your best from people just like you.
-
-
-					</p>
-					</div>
-					</div>
 				</div>
 			</div>
 		</div>
