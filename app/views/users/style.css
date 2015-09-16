@@ -184,12 +184,13 @@ color:#3498db;
 	text-align:center;
 	color:#fff;
 	padding-bottom:90px;
+  
 }
 .footer_wrapper h2
 {
 	font-size:60px;
 	font-weight:normal;
-	padding:120px 0 50px 0;
+	padding:120px 100px 50px 100px;
 }
 .footer_wrapper p
 {
