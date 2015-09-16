@@ -40,7 +40,7 @@ var App = {
   App.clearMessages = clearMessages;
 
   $('[name="commit"]').click(function () {
-    ga('send', 'event', 'button', 'click', 'get early access');
+    ga('send', 'event', 'button', 'click', 'get updates');
   });
 })(jQuery);
 
