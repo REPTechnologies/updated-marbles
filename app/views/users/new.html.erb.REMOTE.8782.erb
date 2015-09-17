@@ -1,24 +1,25 @@
 <% meta title: "marblesapp | accelerate your personal growth |",
-<<<<<<< HEAD
-description: "a mobile app to develop self-awarenss, confidence, and intuition in 30 seconds or less",
-     keywords: %w(stress relief app self-help achieving goals realize potential stress levels improve focus study help suicide yoga internship phone app how to get help hope depression anxiety successful career support therapy managing stress) %>
-=======
      description: "an app to develop self-awarenss, confidence, and intuition in 30 seconds",
      keywords: %w(stress relief app self-help achieving goals realize potential stress levels improve focus study help suicide yoga internship phone app how to get help hope depression anxiety successful career support therapy) %>
 <%= stylesheet_link_tag ('style.css') %>
->>>>>>> 9c59a1251da58af82da686d4654dfe081dee183e
 
 <header class="main_h" style="overflow: hidden; margin:0px; background:#FFF;">
   <%= render "layouts/application/error_messages" %>
   <div class="container" id="dropdowncontainer">      
-	    <div class id="dropdownphoto">
+	    <div class="col-sm-3 hidden-xs" id="dropdownphoto">
 	      <%= link_to image_tag("Orange Logo48.svg"), root_path, { :target => '_top' }  %>
-				<span id="logotext" class="links"></span>
+				<span id="logotext" class="links">marblesapp</span>
 	    </div>
-
+	    <div class="mobile-toggle">
+	      <span></span>
+	      <span></span>
+	      <span></span>
 	    </div>
 	      <nav id="navbarrow" class="wc_nav">
 		<ul>
+		  <li id="aboutlink"><%= link_to "About", about_path,  { :target => '_top' } %></li>
+		  <li><%= link_to "Blog", blog_path %>&nbsp;&nbsp;&nbsp;</li>
+		  <li id="faqlink"><%= link_to "FAQs", faq_path, { :target => '_top' } %>&nbsp;&nbsp;&nbsp;</li>
 		</ul>
 	      </nav>
     </div>
@@ -28,9 +29,9 @@ description: "a mobile app to develop self-awarenss, confidence, and intuition i
 		<div class="container">
 			<div class="row">
 				<div class="left_banner">
-					<h2>marblesapp</h2>
+					<h2>marbles</h2>
 					<p>
-						the easiest self-development tool to help you reflect, track progress, and grow
+						accelerate your personal growth with marbles, the easiest app to reflect and focus on what matters most
 					</p>
 
 					
@@ -45,13 +46,13 @@ description: "a mobile app to develop self-awarenss, confidence, and intuition i
 					</div>-->
 					<div class="banner_form">
 						<form action="">
-							<input id="user-email-secondary" name="user[email]" type="text" placeholder="Email" class="email_form"/>
-							<input id="submit-secondary" type="submit" name="commit" value="Get Updates" class="submit_button_banner"/>
+							<input type="text" name="" value="" placeholder="enter email address" class="email_form"/>
+							<input type="submit" name="" value="download app" class="submit_button_banner"/>
 						</form>
 					</div>
 				</div>
 				<div class="right_banner">
-          <%= image_tag("phone_animation2.gif", :alt => "Mobile") %>
+					<%= image_tag("home_images/mobile.png", :alt => "Mobile") %>
 				</div>
 			</div>
 		</div>
@@ -60,14 +61,17 @@ description: "a mobile app to develop self-awarenss, confidence, and intuition i
 
 <div class="footer_wrapper">
      <div class="container">
-          <div class="row" style: margin-top="50px">
-               <h2>discover you.</h2>
+          <div class="row">
+               <h2>get the app now!</h2>
                <div class="download-aap" id="wc_download">
                     <a href="https://itunes.apple.com/us/app/marblesapp/id1022281020?mt=8" target="_blank"><%= image_tag("home_images/app1.png", :alt => "Iphone App") %></a>
                     <a href="https://play.google.com/store/apps/details?id=com.RES.marbles" target="_blank"><%= image_tag("home_images/app2.png", :alt => "Android App") %></a>
                </div>
                <p>
                     download on the app stores today
+               </p>
+               <p>
+                    #liveskillfully
                </p>
           </div>
      </div>

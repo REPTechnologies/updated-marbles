@@ -1,13 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
 <% meta title: "marblesapp | accelerate your personal growth |",
-<<<<<<< HEAD
 description: "a mobile app to develop self-awarenss, confidence, and intuition in 30 seconds or less",
      keywords: %w(stress relief app self-help achieving goals realize potential stress levels improve focus study help suicide yoga internship phone app how to get help hope depression anxiety successful career support therapy managing stress) %>
-=======
-     description: "an app to develop self-awarenss, confidence, and intuition in 30 seconds",
-     keywords: %w(stress relief app self-help achieving goals realize potential stress levels improve focus study help suicide yoga internship phone app how to get help hope depression anxiety successful career support therapy) %>
-<%= stylesheet_link_tag ('style.css') %>
->>>>>>> 9c59a1251da58af82da686d4654dfe081dee183e
 
+    <%= stylesheet_link_tag ('style.css') %>
+    <%= stylesheet_link_tag ('lib/SlickNav-master/dist/slicknav.css') %>
+     <script src="http://code.jquery.com/jquery-latest.js"></script>	
+     <%= stylesheet_link_tag ('lib/bxslider/jquery.bxslider.css') %>
+    <%= javascript_include_tag ('lib/bxslider/jquery.bxslider.min.js') %> 
+    <%= javascript_include_tag ('lib/bxslider/jquery.mousewheel.min.js') %> 
+</head>
+<body>
 <header class="main_h" style="overflow: hidden; margin:0px; background:#FFF;">
   <%= render "layouts/application/error_messages" %>
   <div class="container" id="dropdowncontainer">      
@@ -30,7 +35,7 @@ description: "a mobile app to develop self-awarenss, confidence, and intuition i
 				<div class="left_banner">
 					<h2>marblesapp</h2>
 					<p>
-						the easiest self-development tool to help you reflect, track progress, and grow
+						the easiest self-development app to help you reflect, track progress, and grow
 					</p>
 
 					
@@ -72,3 +77,6 @@ description: "a mobile app to develop self-awarenss, confidence, and intuition i
           </div>
      </div>
 </div>
+
+</body>
+</html>
